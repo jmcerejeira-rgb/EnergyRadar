@@ -1,137 +1,127 @@
 from __future__ import annotations
-import json, os
+
+import json
+import os
+
 from openai import OpenAI
 
-SCHEMA = {
-  "type": "object",
-  "additionalProperties": False,
-  "properties": {
-    "executive_summary": {"type": "string"},
 
-    "opportunities": {
-      "type": "array",
-      "items": {
+def _item_schema(properties, required):
+    return {
         "type": "object",
         "additionalProperties": False,
-        "properties": {
-          "empresa": {"type": "string"},
-          "pais": {"type": "string"},
-          "setor": {"type": "string"},
-          "descricao_2_linhas": {"type": "string"},
-          "sinal_observado": {"type": "string"},
-          "fonte_data": {"type": "string"},
-          "url": {"type": "string"},
-          "angulo_ma": {"type": "string"},
-          "potenciais_compradores_investidores": {
-            "type": "array",
-            "items": {"type": "string"}
-          },
-          "score": {"type": "integer", "minimum": 1, "maximum": 5},
-          "proximo_passo": {"type": "string"}
-        },
-        "required": [
-          "empresa",
-          "pais",
-          "setor",
-          "descricao_2_linhas",
-          "sinal_observado",
-          "fonte_data",
-          "url",
-          "angulo_ma",
-          "potenciais_compradores_investidores",
-          "score",
-          "proximo_passo"
-        ]
-      }
-    },
-
-    "regulatory_developments": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": False,
-        "properties": {
-          "tema": {"type": "string"},
-          "desenvolvimento": {"type": "string"},
-          "impacto_esperado": {"type": "string"},
-          "implicacao_ma": {"type": "string"},
-          "fonte_data": {"type": "string"},
-          "url": {"type": "string"},
-          "score": {"type": "integer", "minimum": 1, "maximum": 5}
-        },
-        "required": [
-          "tema",
-          "desenvolvimento",
-          "impacto_esperado",
-          "implicacao_ma",
-          "fonte_data",
-          "url",
-          "score"
-        ]
-      }
-    },
-
-    "market_watch": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": False,
-        "properties": {
-          "titulo": {"type": "string"},
-          "categoria": {"type": "string"},
-          "motivo_relevancia": {"type": "string"},
-          "porque_nao_e_lead_ma": {"type": "string"},
-          "fonte_data": {"type": "string"},
-          "url": {"type": "string"},
-          "score": {"type": "integer", "minimum": 1, "maximum": 5}
-        },
-        "required": [
-          "titulo",
-          "categoria",
-          "motivo_relevancia",
-          "porque_nao_e_lead_ma",
-          "fonte_data",
-          "url",
-          "score"
-        ]
-      }
-    },
-
-    "critical_alerts": {
-      "type": "array",
-      "items": {"type": "string"}
-    },
-
-    "top_weekly_opportunities": {
-      "type": "array",
-      "items": {"type": "string"}
+        "properties": properties,
+        "required": required,
     }
-  },
-  "required": [
-    "executive_summary",
-    "opportunities",
-    "regulatory_developments",
-    "market_watch",
-    "critical_alerts",
-    "top_weekly_opportunities"
-  ]
+
+
+SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "properties": {
+        "today_in_30_seconds": {
+            "type": "array",
+            "maxItems": 4,
+            "items": {"type": "string"},
+        },
+        "executive_summary": {"type": "string"},
+        "banker_actions": {
+            "type": "array",
+            "maxItems": 3,
+            "items": {"type": "string"},
+        },
+        "opportunities": {
+            "type": "array",
+            "maxItems": 3,
+            "items": _item_schema(
+                {
+                    "empresa": {"type": "string"},
+                    "pais": {"type": "string"},
+                    "setor": {"type": "string"},
+                    "descricao": {"type": "string"},
+                    "trigger": {"type": "string"},
+                    "angulo_ma": {"type": "string"},
+                    "proximo_passo": {"type": "string"},
+                    "score": {"type": "integer", "minimum": 2, "maximum": 5},
+                    "source_ids": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 3,
+                        "items": {"type": "integer", "minimum": 1},
+                    },
+                },
+                [
+                    "empresa", "pais", "setor", "descricao", "trigger",
+                    "angulo_ma", "proximo_passo", "score", "source_ids",
+                ],
+            ),
+        },
+        "market_watch": {
+            "type": "array",
+            "maxItems": 3,
+            "items": _item_schema(
+                {
+                    "titulo": {"type": "string"},
+                    "porque_importa": {"type": "string"},
+                    "leitura_ma": {"type": "string"},
+                    "acao": {"type": "string"},
+                    "score": {"type": "integer", "minimum": 2, "maximum": 5},
+                    "source_ids": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 3,
+                        "items": {"type": "integer", "minimum": 1},
+                    },
+                },
+                ["titulo", "porque_importa", "leitura_ma", "acao", "score", "source_ids"],
+            ),
+        },
+        "regulatory_developments": {
+            "type": "array",
+            "maxItems": 5,
+            "items": _item_schema(
+                {
+                    "tema": {"type": "string"},
+                    "desenvolvimento": {"type": "string"},
+                    "impacto": {"type": "string"},
+                    "implicacao_ma": {"type": "string"},
+                    "score": {"type": "integer", "minimum": 2, "maximum": 5},
+                    "source_ids": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 3,
+                        "items": {"type": "integer", "minimum": 1},
+                    },
+                },
+                ["tema", "desenvolvimento", "impacto", "implicacao_ma", "score", "source_ids"],
+            ),
+        },
+    },
+    "required": [
+        "today_in_30_seconds",
+        "executive_summary",
+        "banker_actions",
+        "opportunities",
+        "market_watch",
+        "regulatory_developments",
+    ],
 }
+
 
 def analyse(news_items, prompt_text: str, model: str = "gpt-4.1-mini"):
     client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    payload = json.dumps(news_items, ensure_ascii=False)[:120000]
+    payload = json.dumps(news_items, ensure_ascii=False)
 
-    resp = client.responses.create(
+    response = client.responses.create(
         model=model,
-        input=f"{prompt_text}\n\nNotícias em JSON:\n{payload}",
+        input=f"{prompt_text}\n\nItens disponíveis em JSON:\n{payload}",
         text={
             "format": {
                 "type": "json_schema",
                 "name": "daily_energy_ma_radar",
                 "schema": SCHEMA,
-                "strict": True
+                "strict": True,
             }
         },
     )
-
-    return json.loads(resp.output_text)
+    return json.loads(response.output_text)
