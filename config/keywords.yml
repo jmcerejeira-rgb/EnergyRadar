@@ -1,0 +1,99 @@
+include:
+  # M&A / corporate triggers
+  - aquisição
+  - aquisicao
+  - venda
+  - alienação
+  - alienacao
+  - fusão
+  - fusao
+  - operação de concentração
+  - operacao de concentracao
+  - concentração
+  - concentracao
+  - controlo exclusivo
+  - controlo conjunto
+  - não oposição
+  - nao oposicao
+  - notifica a aquisição
+  - notifica a aquisicao
+  - investimento
+  - financiamento
+  - refinanciamento
+  - mandato
+  - advisor
+  - strategic review
+  - sale process
+  - divestment
+  - tender
+  - concurso
+  - concessão
+  - concessao
+  - parceria
+  - joint venture
+
+  # Energy subsectors
+  - solar
+  - fotovoltaico
+  - fotovoltaica
+  - eólico
+  - eolica
+  - wind
+  - BESS
+  - armazenamento
+  - bateria
+  - battery
+  - biomassa
+  - bioenergia
+  - biometano
+  - hidrogénio
+  - hidrogenio
+  - autoconsumo
+  - UPAC
+  - UPP
+  - PPA
+  - eficiência energética
+  - eficiencia energetica
+  - ESCO
+  - EV charging
+  - carregamento elétrico
+  - carregamento eletrico
+  - mobilidade elétrica
+  - mobilidade eletrica
+
+  # Regulatory / market triggers
+  - ERSE
+  - DGEG
+  - REN
+  - AdC
+  - rede elétrica
+  - rede eletrica
+  - ligação à rede
+  - ligacao a rede
+  - ponto de ligação
+  - ponto de ligacao
+  - licenciamento
+  - consulta pública
+  - consulta publica
+  - regulamento
+  - tarifas
+  - garantias de origem
+  - garantia de potência
+  - garantia de potencia
+  - serviços de sistema
+  - servicos de sistema
+  - restrições técnicas
+  - restricoes tecnicas
+  - curtailment
+  - indisponibilidade
+  - leilão
+  - leilao
+
+exclude:
+  - futebol
+  - celebridade
+  - crime
+  - opinião
+  - opiniao
+  - lifestyle
+  - receita
