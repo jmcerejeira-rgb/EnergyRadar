@@ -23,26 +23,41 @@ def _score(value: Any) -> str:
     return f"{number}/5 — {labels.get(number, '')}".strip(" —")
 
 
-def _refs(source_ids) -> str:
-    refs = []
-    for sid in source_ids or []:
-        try:
-            refs.append(f"[{int(sid)}]")
-        except Exception:
-            continue
-    return " ".join(refs)
-
-
-def _used_sources(report: dict, catalog: dict) -> list[dict]:
-    used = set()
+def _source_index(report: dict, catalog: dict) -> tuple[list[dict], dict[int, int]]:
+    """Build a compact, consecutive source list and collapse duplicate URLs."""
+    ordered_ids: list[int] = []
     for section in ("opportunities", "market_watch", "regulatory_developments"):
         for item in report.get(section, []):
             for sid in item.get("source_ids", []):
                 try:
-                    used.add(int(sid))
+                    sid = int(sid)
                 except Exception:
-                    pass
-    return [catalog[sid] for sid in sorted(used) if sid in catalog and catalog[sid].get("url")]
+                    continue
+                if sid not in ordered_ids:
+                    ordered_ids.append(sid)
+
+    sources: list[dict] = []
+    source_map: dict[int, int] = {}
+    url_to_display: dict[str, int] = {}
+
+    for sid in ordered_ids:
+        source = catalog.get(sid) or {}
+        url = str(source.get("url") or "").strip()
+        if not url:
+            continue
+        normalized = url.rstrip("/").lower()
+        if normalized in url_to_display:
+            source_map[sid] = url_to_display[normalized]
+            continue
+
+        display_id = len(sources) + 1
+        url_to_display[normalized] = display_id
+        source_map[sid] = display_id
+        entry = dict(source)
+        entry["display_id"] = display_id
+        sources.append(entry)
+
+    return sources, source_map
 
 
 TEMPLATE = """
@@ -81,12 +96,14 @@ ul { padding-left:20px; }
 {% if r.executive_summary %}<div>{{ r.executive_summary }}</div>{% endif %}
 </div>
 
-{% if r.banker_actions %}
 <div class="action">
 <b>O que faria hoje</b>
+{% if r.banker_actions %}
 <ul>{% for action in r.banker_actions %}<li>{{ action }}</li>{% endfor %}</ul>
-</div>
+{% else %}
+<div>Hoje não identifiquei nenhuma ação comercial prioritária.</div>
 {% endif %}
+</div>
 
 <h3>Oportunidades M&A</h3>
 {% for o in r.opportunities %}
@@ -118,7 +135,7 @@ ul { padding-left:20px; }
 <div class="score">{{ d.score | score }}</div>
 <div class="label">Desenvolvimento</div><div>{{ d.desenvolvimento }}</div>
 <div class="label">Impacto</div><div>{{ d.impacto }}</div>
-<div class="label">Implicação M&A</div><div>{{ d.implicacao_ma }}</div>
+<div class="label">Potencial impacto em ativos</div><div>{{ d.implicacao_ma }}</div>
 </div>
 {% else %}<p class="empty">Sem alterações regulatórias materiais.</p>{% endfor %}
 
@@ -126,7 +143,7 @@ ul { padding-left:20px; }
 <h3>Fontes</h3>
 <ol class="sources">
 {% for s in sources %}
-<li value="{{ s.source_id }}">
+<li value="{{ s.display_id }}">
 <b>{{ s.source }}</b>{% if s.published %} — {{ s.published }}{% endif %}<br>
 {{ s.title }} — <a href="{{ s.url }}">abrir fonte</a>
 </li>
@@ -148,12 +165,25 @@ def render_html(report: dict, catalog: dict | None = None) -> str:
     report.setdefault("executive_summary", "")
 
     catalog = catalog or {}
-    sources = _used_sources(report, catalog)
+    sources, source_map = _source_index(report, catalog)
+
+    def refs_filter(source_ids) -> str:
+        refs = []
+        seen = set()
+        for sid in source_ids or []:
+            try:
+                display_id = source_map.get(int(sid))
+            except Exception:
+                continue
+            if display_id and display_id not in seen:
+                refs.append(f"[{display_id}]")
+                seen.add(display_id)
+        return " ".join(refs)
 
     env = Environment(autoescape=select_autoescape(default=True))
     env.filters["fmt"] = _fmt
     env.filters["score"] = _score
-    env.filters["refs"] = _refs
+    env.filters["refs"] = refs_filter
 
     return env.from_string(TEMPLATE).render(
         r=report,
