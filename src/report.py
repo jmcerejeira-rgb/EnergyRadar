@@ -23,6 +23,21 @@ def _score(value: Any) -> str:
     return f"{number}/5 — {labels.get(number, '')}".strip(" —")
 
 
+def _opportunity_type(value: Any) -> str:
+    labels = {
+        "processo_venda_provavel": "Processo de venda provável",
+        "mandato_financiamento": "Potencial mandato de financiamento",
+        "cliente_acompanhar": "Cliente a acompanhar",
+        "contexto_mercado": "Contexto de mercado",
+    }
+    return labels.get(str(value or "").strip(), _fmt(value))
+
+
+def _probability(value: Any) -> str:
+    labels = {"alta": "Probabilidade alta", "media": "Probabilidade média", "baixa": "Probabilidade baixa"}
+    return labels.get(str(value or "").strip().lower(), _fmt(value))
+
+
 def _source_index(report: dict, catalog: dict) -> tuple[list[dict], dict[int, int]]:
     """Build a compact, consecutive source list and collapse duplicate URLs."""
     ordered_ids: list[int] = []
@@ -109,14 +124,18 @@ ul { padding-left:20px; }
 {% for o in r.opportunities %}
 <div class="card">
 <div class="title">{{ o.empresa }} — {{ o.setor }} <span class="refs">{{ o.source_ids | refs }}</span></div>
-<div class="score">{{ o.pais }} | {{ o.score | score }}</div>
+<div class="score">{{ o.pais }} | Deal Score {{ o.deal_score }}/100 | {{ o.probabilidade_transacao | probability }}</div>
+<div class="label">Tipo</div><div>{{ o.tipo_oportunidade | opportunity_type }}</div>
 <div class="label">O que aconteceu</div><div>{{ o.descricao }}</div>
 <div class="label">Trigger</div><div>{{ o.trigger }}</div>
+<div class="label">Porque agora</div><div>{{ o.porque_agora }}</div>
 <div class="label">Ângulo M&A</div><div>{{ o.angulo_ma }}</div>
+{% if o.quem_pode_mexer %}<div class="label">Quem pode mexer</div><div>{{ o.quem_pode_mexer | join(', ') }}</div>{% endif %}
 <div class="label">Próximo passo</div><div>{{ o.proximo_passo }}</div>
 </div>
 {% else %}<p class="empty">Sem oportunidades M&A acionáveis.</p>{% endfor %}
 
+{% if r.market_watch %}
 <h3>Notícias que merecem leitura</h3>
 {% for m in r.market_watch %}
 <div class="card">
@@ -124,9 +143,9 @@ ul { padding-left:20px; }
 <div class="score">{{ m.score | score }}</div>
 <div class="label">Porque importa</div><div>{{ m.porque_importa }}</div>
 <div class="label">Leitura M&A</div><div>{{ m.leitura_ma }}</div>
-{% if m.acao %}<div class="label">Ação</div><div>{{ m.acao }}</div>{% endif %}
 </div>
-{% else %}<p class="empty">Sem notícias adicionais que justifiquem leitura.</p>{% endfor %}
+{% endfor %}
+{% endif %}
 
 <h3>Regulação material</h3>
 {% for d in r.regulatory_developments %}
@@ -184,6 +203,8 @@ def render_html(report: dict, catalog: dict | None = None) -> str:
     env.filters["fmt"] = _fmt
     env.filters["score"] = _score
     env.filters["refs"] = refs_filter
+    env.filters["opportunity_type"] = _opportunity_type
+    env.filters["probability"] = _probability
 
     return env.from_string(TEMPLATE).render(
         r=report,
