@@ -1,0 +1,258 @@
+# Source strategy:
+# 1) RSS = cleanest source type; use for media/trade/Ren REMIT feeds.
+# 2) html_indexes = extract individual links from official index pages.
+# 3) http_pages = fallback only; noisy because a full page becomes one item.
+
+rss:
+  # Portugal / Iberia press and deal-flow context
+  - name: ECO Energia
+    url: https://eco.sapo.pt/categoria/energia/feed/
+    limit: 25
+
+  - name: ECO Empresas
+    url: https://eco.sapo.pt/categoria/empresas/feed/
+    limit: 25
+
+  - name: Jornal de Negocios Empresas
+    url: https://www.jornaldenegocios.pt/rss/empresas
+    limit: 25
+
+  # Sector trade sources; useful for buyers, comparables and sentiment
+  - name: Renewables Now
+    url: https://renewablesnow.com/news/rss/
+    limit: 30
+    include_text_terms:
+      - Portugal
+      - Spain
+      - Iberia
+      - Portuguese
+      - Spanish
+      - acquisition
+      - sale
+      - merger
+      - investment
+      - financing
+      - PPA
+      - battery
+      - storage
+      - solar
+      - wind
+      - biomethane
+
+  - name: PV Magazine
+    url: https://www.pv-magazine.com/feed/
+    limit: 30
+    include_text_terms:
+      - Portugal
+      - Spain
+      - Iberia
+      - acquisition
+      - sale
+      - investment
+      - financing
+      - PPA
+      - battery
+      - storage
+      - solar
+
+  - name: Energy Storage News
+    url: https://www.energy-storage.news/feed/
+    limit: 30
+    include_text_terms:
+      - Portugal
+      - Spain
+      - Iberia
+      - acquisition
+      - investment
+      - financing
+      - BESS
+      - battery
+      - storage
+
+  # REN REMIT feeds. These are operational/market signals, not M&A signals by themselves.
+  - name: REN REMIT Eletricidade Tempo Real
+    url: https://mercado.ren.pt/_layouts/SIMEE.Webfeeds/Electric.aspx
+    limit: 30
+
+  - name: REN REMIT Eletricidade Arquivo
+    url: https://mercado.ren.pt/_layouts/SIMEE.Webfeeds/Electric_arch.aspx
+    limit: 30
+
+  - name: REN REMIT Gas Tempo Real
+    url: https://mercado.ren.pt/_layouts/SIMEE.Webfeeds/Gas.aspx
+    limit: 30
+
+  - name: REN REMIT Gas Arquivo
+    url: https://mercado.ren.pt/_layouts/SIMEE.Webfeeds/Gas_arch.aspx
+    limit: 30
+
+html_indexes:
+  # Regulador: tariffs, consultations, market rules, grid/access changes.
+  - name: ERSE Comunicados
+    parser: erse
+    fetch_detail: true
+    url: https://www.erse.pt/comunicacao/comunicados/
+    base_url: https://www.erse.pt
+    limit: 25
+    include_link_patterns:
+      - /comunicacao/comunicados/
+    include_text_terms:
+      - eletricidade
+      - gás
+      - energia
+      - tarifas
+      - regulamento
+      - consulta pública
+      - autoconsumo
+      - mobilidade elétrica
+      - mercado
+      - redes
+
+  - name: ERSE Consultas Publicas Em Curso
+    parser: erse
+    fetch_detail: true
+    url: https://www.erse.pt/atividade/consultas-publicas/em-curso/
+    base_url: https://www.erse.pt
+    limit: 25
+    include_text_terms:
+      - eletricidade
+      - gás
+      - energia
+      - rede
+      - acesso
+      - tarifas
+      - regulamento
+      - mercado
+      - autoconsumo
+      - armazenamento
+
+  - name: ERSE Consultas Publicas Concluidas
+    parser: erse
+    fetch_detail: true
+    url: https://www.erse.pt/atividade/consultas-publicas/concluidas/
+    base_url: https://www.erse.pt
+    limit: 15
+    include_text_terms:
+      - eletricidade
+      - gás
+      - energia
+      - rede
+      - acesso
+      - tarifas
+      - regulamento
+      - mercado
+      - autoconsumo
+      - armazenamento
+
+  # Licenciamento / política energética.
+  - name: DGEG Destaques
+    parser: dgeg
+    fetch_detail: true
+    url: https://www.dgeg.gov.pt/pt/destaques/
+    base_url: https://www.dgeg.gov.pt
+    limit: 25
+    include_link_patterns:
+      - /pt/destaques/
+    include_text_terms:
+      - energia
+      - eletricidade
+      - renovável
+      - renováveis
+      - solar
+      - fotovoltaico
+      - autoconsumo
+      - armazenamento
+      - hidrogénio
+      - biometano
+      - licenciamento
+      - leilão
+      - rede
+
+  - name: DGEG Energia Destaques
+    parser: dgeg
+    fetch_detail: true
+    url: https://www.dgeg.gov.pt/pt/destaques/?filter=Energia
+    base_url: https://www.dgeg.gov.pt
+    limit: 25
+    include_link_patterns:
+      - /pt/destaques/
+    include_text_terms:
+      - energia
+      - eletricidade
+      - renovável
+      - renováveis
+      - solar
+      - fotovoltaico
+      - autoconsumo
+      - armazenamento
+      - hidrogénio
+      - biometano
+      - licenciamento
+      - leilão
+      - rede
+
+  # Grid and system operator news.
+  - name: REN Noticias
+    parser: ren_corporate
+    fetch_detail: true
+    url: https://www.ren.pt/media/noticias
+    base_url: https://www.ren.pt
+    limit: 25
+    include_text_terms:
+      - eletricidade
+      - gás
+      - energia
+      - rede
+      - interligação
+      - armazenamento
+      - hidrogénio
+      - renovável
+      - capacidade
+      - investimento
+
+  - name: REN Mercado Eletrico Noticias
+    parser: ren_mercado
+    fetch_detail: true
+    url: https://mercado.ren.pt/PT/Electr/Comunicacao/Noticias
+    base_url: https://mercado.ren.pt
+    limit: 25
+    include_text_terms:
+      - mercado
+      - eletricidade
+      - energia
+      - rede
+      - restrições técnicas
+      - interligação
+      - desvios
+      - serviços de sistema
+      - capacidade
+      - indisponibilidade
+
+  # Competition authority: direct M&A / merger-control signal.
+  - name: AdC Noticias e Comunicados
+    url: https://www.concorrencia.pt/index.php/pt/noticias-comunicados-e-intervencoes?created=&created_1=&from=&keys=&to=&type_1=All
+    base_url: https://www.concorrencia.pt
+    limit: 30
+    include_link_patterns:
+      - /pt/noticias/
+      - /pt/comunicados/
+      - /pt/articles/
+    include_text_terms:
+      - concentração
+      - aquisição
+      - controlo exclusivo
+      - controlo conjunto
+      - não oposição
+      - notifica
+      - energia
+      - eletricidade
+      - solar
+      - renováveis
+      - infraestrutura
+      - carregamento
+      - concessão
+
+http_pages:
+  # Keep this section short. Full-page scraping is noisy; prefer RSS/html_indexes above.
+  - name: ERSE Consultas Publicas Em Curso Full Page Fallback
+    url: https://www.erse.pt/atividade/consultas-publicas/em-curso/
