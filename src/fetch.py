@@ -38,6 +38,9 @@ JUNK_URL_PARTS = (
     "facebook.com", "twitter.com", "x.com/", "linkedin.com/share", "whatsapp://",
 )
 
+DEFAULT_CONNECT_TIMEOUT = 10
+DEFAULT_READ_TIMEOUT = 30
+
 
 def load_yaml(path: str):
     with open(path, "r", encoding="utf-8") as f:
