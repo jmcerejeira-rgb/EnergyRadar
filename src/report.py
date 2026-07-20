@@ -6,218 +6,177 @@ from typing import Any
 from jinja2 import Environment, select_autoescape
 
 
-def _fmt(value: Any, fallback: str = "-") -> str:
-    if value is None:
-        return fallback
-    text = str(value).strip()
-    return text if text else fallback
+def _source_index(report: dict, catalog: dict):
+    ids: list[int] = []
+    sources: list[dict] = []
+    mapping: dict[int, int] = {}
+    by_url: dict[str, int] = {}
 
-
-def _score(value: Any) -> str:
-    labels = {5: "Acionável", 4: "Forte", 3: "Monitorizar", 2: "Baixa prioridade"}
-    try:
-        number = int(value)
-    except Exception:
-        return "-"
-    return f"{number}/5 — {labels.get(number, '')}".strip(" —")
-
-
-def _opportunity_type(value: Any) -> str:
-    labels = {
-        "processo_venda_provavel": "Processo de venda provável",
-        "mandato_financiamento": "Potencial mandato de financiamento",
-        "cliente_acompanhar": "Cliente a acompanhar",
-        "contexto_mercado": "Contexto de mercado",
-    }
-    return labels.get(str(value or "").strip(), _fmt(value))
-
-
-def _probability(value: Any) -> str:
-    labels = {"alta": "Probabilidade alta", "media": "Probabilidade média", "baixa": "Probabilidade baixa"}
-    return labels.get(str(value or "").strip().lower(), _fmt(value))
-
-
-def _source_index(report: dict, catalog: dict) -> tuple[list[dict], dict[int, int]]:
-    """Build a compact, consecutive source list and collapse duplicate URLs."""
-    ordered_ids: list[int] = []
     for section in ("opportunities", "market_watch", "regulatory_developments"):
         for item in report.get(section, []):
             for sid in item.get("source_ids", []):
-                try:
-                    sid = int(sid)
-                except Exception:
-                    continue
-                if sid not in ordered_ids:
-                    ordered_ids.append(sid)
+                sid_int = int(sid)
+                if sid_int not in ids:
+                    ids.append(sid_int)
 
-    sources: list[dict] = []
-    source_map: dict[int, int] = {}
-    url_to_display: dict[str, int] = {}
-
-    for sid in ordered_ids:
-        source = catalog.get(sid) or {}
-        url = str(source.get("url") or "").strip()
-        if not url:
-            continue
-        normalized = url.rstrip("/").lower()
-        if normalized in url_to_display:
-            source_map[sid] = url_to_display[normalized]
+    for sid in ids:
+        src = catalog.get(int(sid), {})
+        url = str(src.get("url") or "").strip()
+        normalised_url = url.rstrip("/").casefold()
+        if not normalised_url:
             continue
 
-        display_id = len(sources) + 1
-        url_to_display[normalized] = display_id
-        source_map[sid] = display_id
-        entry = dict(source)
-        entry["display_id"] = display_id
-        sources.append(entry)
+        if normalised_url in by_url:
+            mapping[int(sid)] = by_url[normalised_url]
+            continue
 
-    return sources, source_map
+        number = len(sources) + 1
+        by_url[normalised_url] = number
+        mapping[int(sid)] = number
+        sources.append({**src, "display_id": number})
+
+    return sources, mapping
 
 
-TEMPLATE = """
-<!doctype html>
+def _normalise_report(report: dict | None) -> dict:
+    r = dict(report or {})
+    r.setdefault("dashboard", {})
+    r["dashboard"].setdefault("setores_ativos", [])
+    r["dashboard"].setdefault("geografias", [])
+
+    for key in (
+        "prioridades",
+        "opportunities",
+        "market_watch",
+        "regulatory_developments",
+    ):
+        r.setdefault(key, [])
+
+    # Counts come from the rendered sections, never from model-written prose.
+    r["counts"] = {
+        "opportunities": len(r["opportunities"]),
+        "market_watch": len(r["market_watch"]),
+        "regulation": len(r["regulatory_developments"]),
+    }
+
+    # No commercial-priority section without a genuine opportunity.
+    if not r["opportunities"]:
+        r["prioridades"] = []
+
+    return r
+
+
+TEMPLATE = """<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <style>
-body { font-family: Arial, Helvetica, sans-serif; color:#17212b; line-height:1.45; max-width:820px; margin:auto; }
-h2 { margin-bottom:3px; }
-h3 { margin:24px 0 10px; border-bottom:1px solid #d9e0e7; padding-bottom:5px; }
-.sector {font-size:12px;font-weight:700;color:#1f5a7a;margin:4px 0 8px;}
-.meta { color:#66737f; font-size:12px; }
-.stats { display:flex; gap:10px; margin:14px 0; flex-wrap:wrap; }
-.stat { background:#f3f6f8; border-radius:6px; padding:9px 12px; font-size:13px; }
-.hero { background:#f3f6f8; padding:14px 18px; margin:16px 0; border-radius:6px; }
-.action { background:#fff8e6; padding:12px 16px; border-left:4px solid #c58b00; margin:14px 0; }
-.card { border:1px solid #d9e0e7; border-radius:6px; padding:13px 15px; margin-bottom:10px; }
-.title { font-size:16px; font-weight:bold; }
-.label { color:#66737f; font-size:12px; text-transform:uppercase; letter-spacing:.04em; margin-top:8px; }
-.refs { color:#3b668c; font-weight:bold; white-space:nowrap; }
-.score { font-size:12px; color:#52616f; }
-.empty { color:#66737f; font-style:italic; }
-.sources { font-size:12px; color:#52616f; }
-.sources li { margin-bottom:7px; }
-a { color:#185b8d; }
-ul { padding-left:20px; }
+body{font-family:Arial,sans-serif;color:#17212b;line-height:1.38;max-width:820px;margin:auto;padding:8px}
+h1{font-size:21px;margin:0 0 3px}
+h2{font-size:16px;margin:23px 0 9px;border-bottom:1px solid #d9e0e7;padding-bottom:5px}
+.meta,.small{color:#66737f;font-size:12px}
+.dashboard{background:#f3f6f8;border-radius:7px;padding:11px 13px;margin:15px 0}
+.dashboard-row{margin:3px 0;font-size:13px}
+.card{border:1px solid #d9e0e7;border-radius:7px;padding:11px 13px;margin-bottom:8px}
+.title{font-size:14px;font-weight:bold}
+.details{color:#52616f;font-size:12px;margin-top:2px}
+.label{font-size:10px;text-transform:uppercase;color:#66737f;margin-top:7px;font-weight:bold}
+.refs{color:#185b8d;font-size:11px}
+table{border-collapse:collapse;width:100%;font-size:12px}
+th,td{border-bottom:1px solid #e4e8ec;text-align:left;padding:7px;vertical-align:top}
+.sources{font-size:11px;color:#52616f;padding-left:21px}
+.sources li{margin-bottom:7px}
+.empty{font-style:italic;color:#66737f;font-size:13px}
+a{color:#185b8d}
 </style>
 </head>
 <body>
-<h2>Energy & Infrastructure M&A Radar | Iberia | {{ date }}</h2>
-<p class="meta">Leitura diária de originação. Informação sujeita a confirmação nas fontes originais.</p>
+<h1>Infrastructure &amp; Energy M&amp;A Radar | Iberia</h1>
+<div class="meta">{{ date }} · Briefing diário de originação</div>
 
-<div class="stats">
-<div class="stat"><b>Oportunidades M&A:</b> {{ r.opportunities | length }}</div>
-<div class="stat"><b>Notícias relevantes:</b> {{ r.market_watch | length }}</div>
-<div class="stat"><b>Regulação material:</b> {{ r.regulatory_developments | length }}</div>
+<div class="dashboard">
+<div class="dashboard-row"><b>Oportunidades acionáveis:</b> {{ r.counts.opportunities }}</div>
+<div class="dashboard-row"><b>Monitorização:</b> {{ r.counts.market_watch }}</div>
+<div class="dashboard-row"><b>Regulação:</b> {{ r.counts.regulation }}</div>
+<div class="dashboard-row"><b>Setores:</b> {{ r.dashboard.setores_ativos|join(', ') or '—' }}</div>
+<div class="dashboard-row"><b>Geografias:</b> {{ r.dashboard.geografias|join(', ') or '—' }}</div>
 </div>
 
-<div class="hero">
-<b>Hoje em 30 segundos</b>
-<ul>
-{% for bullet in r.today_in_30_seconds %}<li>{{ bullet }}</li>{% endfor %}
-</ul>
-{% if r.executive_summary %}<div>{{ r.executive_summary }}</div>{% endif %}
-</div>
-
-{% if r.banker_actions %}
-<div class="action">
-<b>O que faria hoje</b>
-<ul>{% for action in r.banker_actions %}<li>{{ action }}</li>{% endfor %}</ul>
-</div>
+{% if r.prioridades %}
+<h2>Prioridades de hoje</h2>
+<table>
+<tr><th>Prioridade</th><th>Empresa/ativo</th><th>Tipo</th><th>Ação</th></tr>
+{% for p in r.prioridades %}
+<tr><td>{{ p.prioridade }}</td><td>{{ p.empresa }}</td><td>{{ p.tipo }}</td><td>{{ p.acao }}</td></tr>
+{% endfor %}
+</table>
 {% endif %}
 
-<h3>Oportunidades M&A</h3>
+<h2>Oportunidades</h2>
 {% for o in r.opportunities %}
 <div class="card">
-<div class="title">{{ o.empresa }} — {{ o.setor }} <span class="refs">{{ o.source_ids | refs }}</span></div>
-<div class="score">{{ o.pais }} | Deal Score {{ o.deal_score }}/100 | {{ o.probabilidade_transacao | probability }}</div>
-<div class="label">Tipo</div><div>{{ o.tipo_oportunidade | opportunity_type }}</div>
-<div class="label">O que aconteceu</div><div>{{ o.descricao }}</div>
-<div class="label">Trigger</div><div>{{ o.trigger }}</div>
-<div class="label">Porque agora</div><div>{{ o.porque_agora }}</div>
-<div class="label">Ângulo M&A</div><div>{{ o.angulo_ma }}</div>
-{% if o.quem_pode_mexer %}<div class="label">Quem pode mexer</div><div>{{ o.quem_pode_mexer | join(', ') }}</div>{% endif %}
-<div class="label">Próximo passo</div><div>{{ o.proximo_passo }}</div>
+<div class="title">{{ o.empresa }} — {{ o.pais }} <span class="refs">{{ o.source_ids|refs }}</span></div>
+<div class="details">{{ o.tipo }} · Deal Score {{ o.deal_score }}/100 · Confiança: {{ o.confianca }}</div>
+<div class="label">Porque interessa</div>
+<div>{{ o.porque_interessa }}</div>
+<div class="label">Próximo passo</div>
+<div>{{ o.proximo_passo }}</div>
 </div>
-{% else %}<p class="empty">Sem oportunidades M&A acionáveis.</p>{% endfor %}
+{% else %}
+<p class="empty">Nenhuma oportunidade acionável identificada.</p>
+{% endfor %}
 
 {% if r.market_watch %}
-<h3>Notícias que merecem leitura</h3>
+<h2>Monitorização</h2>
 {% for m in r.market_watch %}
 <div class="card">
-<div class="title">{{ m.titulo }} <span class="refs">{{ m.source_ids | refs }}</span></div>
-<div class="sector">{{ m.setor }}{% if m.subcategoria %} → {{ m.subcategoria }}{% endif %}</div>
-<div class="score">{{ m.score | score }}</div>
-<div class="label">Porque importa</div><div>{{ m.porque_importa }}</div>
-<div class="label">Leitura M&A</div><div>{{ m.leitura_ma }}</div>
+<div class="title">{{ m.titulo }} — {{ m.pais }} <span class="refs">{{ m.source_ids|refs }}</span></div>
+<div>{{ m.resumo }}</div>
 </div>
 {% endfor %}
 {% endif %}
 
 {% if r.regulatory_developments %}
-<h3>Regulação material</h3>
+<h2>Regulação</h2>
 {% for d in r.regulatory_developments %}
 <div class="card">
-<div class="title">{{ d.tema }} <span class="refs">{{ d.source_ids | refs }}</span></div>
-<div class="sector">{{ d.setor }}{% if d.subcategoria %} → {{ d.subcategoria }}{% endif %}</div>
-<div class="score">{{ d.score | score }}</div>
-<div class="label">Desenvolvimento</div><div>{{ d.desenvolvimento }}</div>
-<div class="label">Impacto</div><div>{{ d.impacto }}</div>
-<div class="label">Potencial impacto em ativos</div><div>{{ d.implicacao_ma }}</div>
+<div class="title">{{ d.tema }} — {{ d.pais }} <span class="refs">{{ d.source_ids|refs }}</span></div>
+<div>{{ d.resumo }}</div>
 </div>
 {% endfor %}
 {% endif %}
 
 {% if sources %}
-<h3>Fontes</h3>
+<h2>Fontes</h2>
 <ol class="sources">
 {% for s in sources %}
 <li value="{{ s.display_id }}">
-<b>{{ s.source }}</b>{% if s.published %} — {{ s.published }}{% endif %}<br>
+<b>{{ s.source or 'Fonte' }}</b>{% if s.published %} — {{ s.published }}{% endif %}<br>
 {{ s.title }} — <a href="{{ s.url }}">abrir fonte</a>
 </li>
 {% endfor %}
 </ol>
 {% endif %}
 </body>
-</html>
-"""
+</html>"""
 
 
 def render_html(report: dict, catalog: dict | None = None) -> str:
-    report = dict(report or {})
-    for key in (
-        "today_in_30_seconds", "banker_actions", "opportunities",
-        "market_watch", "regulatory_developments",
-    ):
-        report.setdefault(key, [])
-    report.setdefault("executive_summary", "")
+    r = _normalise_report(report)
+    sources, mapping = _source_index(r, catalog or {})
 
-    catalog = catalog or {}
-    sources, source_map = _source_index(report, catalog)
-
-    def refs_filter(source_ids) -> str:
-        refs = []
-        seen = set()
-        for sid in source_ids or []:
-            try:
-                display_id = source_map.get(int(sid))
-            except Exception:
-                continue
-            if display_id and display_id not in seen:
-                refs.append(f"[{display_id}]")
-                seen.add(display_id)
-        return " ".join(refs)
+    def refs(values: Any) -> str:
+        output: list[str] = []
+        for value in values or []:
+            sid = int(value)
+            if sid in mapping:
+                output.append(f"[{mapping[sid]}]")
+        return " ".join(output)
 
     env = Environment(autoescape=select_autoescape(default=True))
-    env.filters["fmt"] = _fmt
-    env.filters["score"] = _score
-    env.filters["refs"] = refs_filter
-    env.filters["opportunity_type"] = _opportunity_type
-    env.filters["probability"] = _probability
-
+    env.filters["refs"] = refs
     return env.from_string(TEMPLATE).render(
-        r=report,
+        r=r,
         sources=sources,
         date=datetime.now().strftime("%Y-%m-%d"),
     )

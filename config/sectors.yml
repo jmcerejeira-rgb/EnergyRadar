@@ -1,0 +1,53 @@
+sectors:
+  energy:
+    - solar
+    - onshore_wind
+    - offshore_wind
+    - hydro
+    - biomass
+    - biogas
+    - biomethane
+    - hydrogen
+    - BESS
+    - thermal_generation
+    - district_heating
+    - decentralized_energy
+
+  networks:
+    - electricity_transmission
+    - electricity_distribution
+    - gas_networks
+    - interconnectors
+    - smart_grids
+
+  transport:
+    - roads
+    - rail
+    - ports
+    - airports
+    - urban_mobility
+    - EV_charging
+
+  environmental:
+    - water
+    - wastewater
+    - waste_management
+    - recycling
+    - environmental_services
+
+  digital:
+    - fiber
+    - towers
+    - data_centers
+    - edge_infrastructure
+    - subsea_cables
+
+  social:
+    - healthcare_infrastructure
+    - education_infrastructure
+    - public_facilities
+
+rules:
+  iberian_priority: true
+  include_global_only_with_iberian_link: true
+  operational_news_requires_transactional_trigger: true

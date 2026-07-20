@@ -1,10 +1,5 @@
 .env
-.env.*
-!.env.example
-*.docx
-*key*
-*password*
 __pycache__/
 *.pyc
-data/
-logs/
+.venv/
+data/seen_items.json

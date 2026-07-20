@@ -1,31 +1,65 @@
-companies:
-  - Greenvolt
-  - Capwatt
-  - Ecoinside
-  - DST Solar
-  - Martifer
-  - Mota-Engil Renewing
-  - Efacec
-  - CME
-  - Galp
-  - EDP Renováveis
-  - Helexia
-  - Voltalia Portugal
-  - Endesa Portugal
-  - Iberdrola Portugal
-buyers_investors:
-  - EDP
-  - Galp
-  - Iberdrola
-  - Endesa
-  - Engie
-  - TotalEnergies
-  - Brookfield
-  - Macquarie
-  - Ardian
-  - Antin
-  - EQT
-  - Marguerite
-  - Mirova
-  - Meridiam
-  - Cubico
+entities:
+  - name: Capwatt
+    priority: 5
+    type: developer_operator
+    geographies: [Portugal, Espanha]
+    sectors: [biomassa, solar, BESS, energia_descentralizada]
+
+  - name: Finerge
+    priority: 5
+    type: IPP
+    geographies: [Portugal, Espanha]
+    sectors: [eolica, solar, BESS]
+
+  - name: Matrix Renewables
+    priority: 5
+    type: developer_IPP
+    geographies: [Espanha, Portugal]
+    sectors: [solar, BESS]
+
+  - name: Sonnedix
+    priority: 5
+    type: IPP
+    geographies: [Espanha, Portugal]
+    sectors: [solar, BESS]
+
+  - name: EDP
+    priority: 5
+    type: utility
+    geographies: [Portugal, Espanha]
+    sectors: [redes, eolica, solar, hidro, BESS]
+
+  - name: Galp
+    priority: 5
+    type: energy_company
+    geographies: [Portugal, Espanha]
+    sectors: [solar, BESS, biocombustiveis, hidrogenio]
+
+  - name: Q Energy
+    priority: 4
+    type: fund_operator
+    geographies: [Espanha, Portugal]
+    sectors: [solar, eolica, BESS]
+
+  - name: Voltalia
+    priority: 4
+    type: developer_IPP
+    geographies: [Portugal, Espanha]
+    sectors: [solar, eolica, BESS]
+
+  - name: Iberdrola
+    priority: 4
+    type: utility
+    geographies: [Espanha, Portugal]
+    sectors: [redes, eolica, solar, BESS, hidrogenio]
+
+  - name: ENGIE
+    priority: 4
+    type: utility_infrastructure
+    geographies: [Portugal, Espanha]
+    sectors: [energia_descentralizada, solar, BESS, redes, servicos_energia]
+
+rules:
+  watchlist_hit_bonus_max: 15
+  watchlist_hit_alone_is_not_trigger: true
+  require_transactional_signal_for_opportunity: true

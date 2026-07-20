@@ -1,11 +1,9 @@
 from __future__ import annotations
-
 import os
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
-from time import perf_counter
 from pathlib import Path
-
+from time import perf_counter
 from dotenv import load_dotenv
 
 from fetch import load_yaml, fetch_rss, fetch_http_pages, fetch_html_indexes, filter_items
@@ -14,132 +12,73 @@ from report import render_html
 from emailer import send_email
 from persistence import load_seen, save_seen, prune_seen, filter_new_items, mark_items_seen
 from watchlist import annotate_watchlist_items, sort_by_watchlist_priority, build_watchlist_prompt
-from triage import annotate_triage, sort_by_triage_priority, triage_counts, build_triage_prompt
 
 ROOT = Path(__file__).resolve().parents[1]
-SEEN_PATH = ROOT / "data" / "seen_items.json"
+SEEN_PATH = ROOT / "data/seen_items.json"
 MAX_AGE_DAYS = int(os.getenv("MAX_NEWS_AGE_DAYS", "30"))
-MAX_ITEMS_FOR_AI = int(os.getenv("MAX_ITEMS_FOR_AI", "40"))
-
+MAX_ITEMS_FOR_AI = int(os.getenv("MAX_ITEMS_FOR_AI", "50"))
 
 def _parse_date(value):
-    if not value:
-        return None
-    text = str(value).strip()
+    if not value: return None
     try:
-        dt = parsedate_to_datetime(text)
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return dt.astimezone(timezone.utc)
+        dt = parsedate_to_datetime(str(value))
+        return (dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)).astimezone(timezone.utc)
     except Exception:
-        pass
+        try:
+            dt = datetime.fromisoformat(str(value).replace("Z","+00:00"))
+            return (dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)).astimezone(timezone.utc)
+        except Exception:
+            return None
 
-    clean = text.replace("Z", "+00:00")
-    try:
-        dt = datetime.fromisoformat(clean)
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return dt.astimezone(timezone.utc)
-    except Exception:
-        return None
-
-
-def _is_recent(item, max_age_days=MAX_AGE_DAYS):
+def _recent(item):
     dt = _parse_date(item.get("published"))
-    if dt is None:
-        # Keep undated items, but the model is instructed to be conservative.
-        return True
-    cutoff = datetime.now(timezone.utc) - timedelta(days=max_age_days)
-    return dt >= cutoff
+    return dt is None or dt >= datetime.now(timezone.utc)-timedelta(days=MAX_AGE_DAYS)
 
+def _prepare(items):
+    out=[]
+    for i,item in enumerate(items[:MAX_ITEMS_FOR_AI],1):
+        x=dict(item); x["source_id"]=i
+        x["title"]=str(x.get("title",""))[:500]; x["summary"]=str(x.get("summary",""))[:1800]
+        out.append(x)
+    return out
 
-def _prepare_for_ai(items):
-    prepared = []
-    for source_id, item in enumerate(items[:MAX_ITEMS_FOR_AI], start=1):
-        clean = dict(item)
-        clean["source_id"] = source_id
-        clean["summary"] = str(clean.get("summary", ""))[:1800]
-        clean["title"] = str(clean.get("title", ""))[:500]
-        prepared.append(clean)
-    return prepared
+def _catalog(items):
+    return {int(x["source_id"]): {k:x.get(k,"") for k in ("title","source","published","url")} for x in items}
 
-
-def _source_catalog(items):
-    catalog = {}
-    for item in items:
-        sid = int(item["source_id"])
-        catalog[sid] = {
-            "source_id": sid,
-            "title": item.get("title", ""),
-            "source": item.get("source", ""),
-            "published": item.get("published", ""),
-            "url": item.get("url", ""),
-        }
-    return catalog
-
+def _prompt(watchlist):
+    parts=[]
+    for name in ("system_context.md","daily_report.md","editorial_rules.md","scoring_rules.md","deal_patterns.md"):
+        parts.append((ROOT/"prompts"/name).read_text(encoding="utf-8"))
+    parts.append(build_watchlist_prompt(watchlist))
+    return "\n\n".join(parts)
 
 def main():
-    started_at = perf_counter()
-    print("[STEP 1/6] Loading configuration...", flush=True)
-    load_dotenv(ROOT / ".env")
+    start=perf_counter()
+    load_dotenv(ROOT/".env")
+    sources=load_yaml(str(ROOT/"config/sources.yml"))
+    keywords=load_yaml(str(ROOT/"config/keywords.yml"))
+    watchlist=load_yaml(str(ROOT/"config/watchlist.yml"))
+    items=[]
+    items += fetch_rss(sources.get("rss",[]))
+    items += fetch_html_indexes(sources.get("html_indexes",[]))
+    items += fetch_http_pages(sources.get("http_pages",[]))
+    items=filter_items(items, keywords.get("include",[]), keywords.get("exclude",[]))
+    items=[x for x in items if _recent(x)]
+    items=sort_by_watchlist_priority(annotate_watchlist_items(items,watchlist))
+    seen=prune_seen(load_seen(SEEN_PATH), int(os.getenv("SEEN_RETENTION_DAYS","90")))
+    new_items=filter_new_items(items,seen,int(os.getenv("EDITORIAL_DEDUP_DAYS","7")))
+    if not new_items and os.getenv("SEND_EMPTY_REPORTS","false").lower() not in {"1","true","yes"}:
+        save_seen(SEEN_PATH,seen); print("No new items. Email not sent."); return
+    prepared=_prepare(new_items)
+    report=analyse(prepared,_prompt(watchlist)) if prepared else {
+        "dashboard":{"setores_ativos":[],"geografias":[]},"prioridades":[],
+        "opportunities":[],"market_watch":[],"regulatory_developments":[]
+    }
+    html=render_html(report,_catalog(prepared))
+    subject=f"Infrastructure & Energy M&A Radar | Iberia | {datetime.now().strftime('%Y-%m-%d')}"
+    send_email(subject,html)
+    save_seen(SEEN_PATH,mark_items_seen(seen,new_items))
+    print(f"Finished in {perf_counter()-start:.1f}s; analysed {len(prepared)} items.")
 
-    sources = load_yaml(str(ROOT / "config/sources.yml"))
-    keywords = load_yaml(str(ROOT / "config/keywords.yml"))
-    watchlist = load_yaml(str(ROOT / "config/watchlist.yml"))
-    base_prompt = (ROOT / "prompts/daily_report.md").read_text(encoding="utf-8")
-    prompt = base_prompt + "\n\n" + build_watchlist_prompt(watchlist) + "\n\n" + build_triage_prompt()
-
-    print("[STEP 2/6] Fetching and filtering sources...", flush=True)
-    items = []
-    items += fetch_rss(sources.get("rss", []))
-    items += fetch_html_indexes(sources.get("html_indexes", []))
-    items += fetch_http_pages(sources.get("http_pages", []))
-    items = filter_items(items, keywords.get("include", []), keywords.get("exclude", []))
-    items = [item for item in items if _is_recent(item)]
-    items = annotate_watchlist_items(items, watchlist)
-    items = sort_by_watchlist_priority(items)
-    items = annotate_triage(items)
-    items = sort_by_triage_priority(items)
-
-    print("[STEP 3/6] Loading seen-items history...", flush=True)
-    seen = prune_seen(load_seen(SEEN_PATH), days=int(os.getenv("SEEN_RETENTION_DAYS", "90")))
-    new_items = filter_new_items(items, seen)
-
-    print(f"Fetched relevant recent items: {len(items)}", flush=True)
-    print(f"Already seen items: {len(items) - len(new_items)}", flush=True)
-    print(f"New items: {len(new_items)}", flush=True)
-    print("Triage counts:", triage_counts(new_items), flush=True)
-
-    if not new_items:
-        if os.getenv("SEND_EMPTY_REPORTS", "false").lower() not in {"1", "true", "yes"}:
-            save_seen(SEEN_PATH, seen)
-            print("No new items. Email not sent.", flush=True)
-            return
-        report = {
-            "today_in_30_seconds": ["Sem notícias novas face ao histórico."],
-            "executive_summary": "Sem novidades materiais.",
-            "banker_actions": [],
-            "opportunities": [],
-            "market_watch": [],
-            "regulatory_developments": [],
-        }
-        catalog = {}
-    else:
-        ai_items = _prepare_for_ai(new_items)
-        catalog = _source_catalog(ai_items)
-        print(f"[STEP 4/6] Analysing {len(ai_items)} items with OpenAI...", flush=True)
-        report = analyse(ai_items, prompt)
-
-    print("[STEP 5/6] Rendering and sending email...", flush=True)
-    html = render_html(report, catalog)
-    subject = f"Energy M&A Radar | Portugal | {datetime.now().strftime('%Y-%m-%d')}"
-    send_email(subject, html)
-
-    seen = mark_items_seen(seen, new_items)
-    save_seen(SEEN_PATH, seen)
-    print(f"Seen database updated: {SEEN_PATH}", flush=True)
-    print(f"[STEP 6/6] Finished in {perf_counter() - started_at:.1f}s", flush=True)
-
-
-if __name__ == "__main__":
+if __name__=="__main__":
     main()

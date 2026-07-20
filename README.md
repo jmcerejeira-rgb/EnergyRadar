@@ -1,24 +1,31 @@
-# Energy M&A Deal Radar — Portugal
+# Infrastructure & Energy M&A Radar — Iberia
 
-Relatório diário por email para oportunidades M&A e desenvolvimentos regulatórios no setor elétrico português.
+Radar diário de originação para infraestrutura e energia em Portugal e Espanha.
 
-## Setup
+## Instalação
 
-1. Criar repositório GitHub e copiar estes ficheiros.
-2. Adicionar secrets em **Settings → Secrets and variables → Actions**:
-   - `OPENAI_API_KEY`
-   - `SMTP_HOST` — ex: `smtp.gmail.com` ou `smtp.office365.com`
-   - `SMTP_PORT` — normalmente `587`
-   - `SMTP_USER`
-   - `SMTP_PASSWORD`
-   - `EMAIL_FROM`
-   - `EMAIL_TO` — emails separados por vírgula
-3. Ir a **Actions → Daily Energy M&A Radar → Run workflow** para testar manualmente.
-4. O cron corre em dias úteis.
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+python src/main.py
+```
 
-## Ajustes recomendados
+## Estrutura
 
-- Completar `config/sources.yml` com fontes pagas ou RSS internos.
-- Expandir `config/watchlist.yml`.
-- Rever semanalmente falsos positivos e keywords.
-- Usar password de aplicação para Gmail/Outlook, quando aplicável.
+- `config/sources.yml`: fontes.
+- `config/keywords.yml`: filtro inicial.
+- `config/watchlist.yml`: entidades prioritárias.
+- `config/scoring.yml`: regras e limites.
+- `prompts/`: instruções editoriais e de classificação.
+- `src/classify.py`: análise estruturada pela API OpenAI.
+- `src/report.py`: email HTML.
+- `src/persistence.py`: deduplicação por URL e por assinatura editorial durante 7 dias.
+
+## GitHub Actions
+
+Criar os secrets:
+`OPENAI_API_KEY`, `SMTP_USER`, `SMTP_PASSWORD`, `EMAIL_FROM`, `EMAIL_TO`.
+
+O workflow corre diariamente às 06:00 UTC e também pode ser executado manualmente.

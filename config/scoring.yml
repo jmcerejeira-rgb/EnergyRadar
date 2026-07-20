@@ -1,0 +1,71 @@
+deal_score:
+  base:
+    confirmed_sale_process: 35
+    strategic_review: 28
+    advisor_appointed: 25
+    capital_raise: 25
+    refinancing_required: 22
+    investor_search: 22
+    carve_out: 22
+    sponsor_exit: 20
+    distress: 25
+    project_finance_search: 20
+
+  modifiers:
+    target_or_asset_identified: 12
+    iberian_relevance: 8
+    portugal_relevance: 5
+    watchlist_priority_5: 12
+    watchlist_priority_4: 8
+    primary_source: 5
+    credible_financial_press: 4
+    specific_timeline: 5
+    named_advisor: 7
+    transaction_size_disclosed: 4
+
+  penalties:
+    vague_language: -10
+    no_identified_entity: -15
+    no_specific_action: -15
+    duplicate_without_material_update: -30
+    generic_corporate_statement: -15
+
+  caps:
+    no_concrete_trigger: 60
+    generic_regulation: 30
+    inauguration_or_completion: 35
+    ppa_or_commercial_agreement_only: 45
+    licensing_only: 40
+    public_funding_only: 40
+    watchlist_hit_only: 45
+
+classification:
+  opportunity_min_score: 61
+  high_priority_min_score: 81
+  monitoring_min_score: 31
+
+confidence:
+  high:
+    - explicit_transaction_trigger
+    - identified_asset_or_company
+    - primary_or_direct_source
+  medium:
+    - multiple_consistent_signals
+    - incomplete_process_confirmation
+  low:
+    - inference
+    - indirect_source
+    - missing_key_information
+
+limits:
+  priorities: 7
+  opportunities: 7
+  monitoring: 7
+  regulation: 7
+  opportunity_words: 80
+  monitoring_words: 30
+  regulation_words: 20
+  target_email_words_min: 500
+  target_email_words_max: 700
+  absolute_email_words: 900
+  deduplication_days: 7

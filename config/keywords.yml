@@ -1,99 +1,42 @@
 include:
-  # M&A / corporate triggers
-  - aquisição
-  - aquisicao
-  - venda
-  - alienação
-  - alienacao
-  - fusão
-  - fusao
-  - operação de concentração
-  - operacao de concentracao
-  - concentração
-  - concentracao
-  - controlo exclusivo
-  - controlo conjunto
-  - não oposição
-  - nao oposicao
-  - notifica a aquisição
-  - notifica a aquisicao
-  - investimento
-  - financiamento
-  - refinanciamento
-  - mandato
-  - advisor
+  - M&A
+  - acquisition
+  - acquire
+  - sale
+  - sell
+  - divest
   - strategic review
-  - sale process
-  - divestment
-  - tender
-  - concurso
-  - concessão
-  - concessao
-  - parceria
+  - asset rotation
+  - investor
+  - investment
+  - financing
+  - refinancing
+  - capital raise
   - joint venture
-
-  # Energy subsectors
+  - infrastructure
+  - energy
+  - renewable
   - solar
-  - fotovoltaico
-  - fotovoltaica
-  - eólico
-  - eolica
   - wind
+  - storage
   - BESS
-  - armazenamento
-  - bateria
-  - battery
-  - biomassa
-  - bioenergia
-  - biometano
+  - grid
+  - transmission
+  - distribution
+  - water
+  - waste
+  - transport
+  - port
+  - airport
+  - rail
+  - telecom
+  - data center
+  - centro de dados
   - hidrogénio
-  - hidrogenio
-  - autoconsumo
-  - UPAC
-  - UPP
-  - PPA
-  - eficiência energética
-  - eficiencia energetica
-  - ESCO
-  - EV charging
-  - carregamento elétrico
-  - carregamento eletrico
-  - mobilidade elétrica
-  - mobilidade eletrica
-
-  # Regulatory / market triggers
-  - ERSE
-  - DGEG
-  - REN
-  - AdC
-  - rede elétrica
-  - rede eletrica
-  - ligação à rede
-  - ligacao a rede
-  - ponto de ligação
-  - ponto de ligacao
-  - licenciamento
-  - consulta pública
-  - consulta publica
-  - regulamento
-  - tarifas
-  - garantias de origem
-  - garantia de potência
-  - garantia de potencia
-  - serviços de sistema
-  - servicos de sistema
-  - restrições técnicas
-  - restricoes tecnicas
-  - curtailment
-  - indisponibilidade
-  - leilão
-  - leilao
-
+  - biometano
+  - biomassa
 exclude:
-  - futebol
-  - celebridade
-  - crime
-  - opinião
-  - opiniao
-  - lifestyle
-  - receita
+  - sports
+  - celebrity
+  - fashion
+  - gaming
