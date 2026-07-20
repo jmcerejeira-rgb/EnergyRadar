@@ -7,11 +7,6 @@ from typing import Any
 
 from openai import OpenAI
 
-SCHEMA = {
-  "type": "object",
-  "additionalProperties": False,
-  "properties": {
-    "executive_summary": {"type": "string"},
 
 SCHEMA = {
     "type": "object",
@@ -320,51 +315,6 @@ def _is_geographically_relevant(item: dict) -> bool:
     # EU-wide regulation may remain only in the regulatory section.
     return "união europeia" in geography or "european union" in geography or geography.strip() == "ue"
 
-    "market_watch": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": False,
-        "properties": {
-          "titulo": {"type": "string"},
-          "categoria": {"type": "string"},
-          "motivo_relevancia": {"type": "string"},
-          "porque_nao_e_lead_ma": {"type": "string"},
-          "fonte_data": {"type": "string"},
-          "url": {"type": "string"},
-          "score": {"type": "integer", "minimum": 1, "maximum": 5}
-        },
-        "required": [
-          "titulo",
-          "categoria",
-          "motivo_relevancia",
-          "porque_nao_e_lead_ma",
-          "fonte_data",
-          "url",
-          "score"
-        ]
-      }
-    },
-
-    "critical_alerts": {
-      "type": "array",
-      "items": {"type": "string"}
-    },
-
-    "top_weekly_opportunities": {
-      "type": "array",
-      "items": {"type": "string"}
-    }
-  },
-  "required": [
-    "executive_summary",
-    "opportunities",
-    "regulatory_developments",
-    "market_watch",
-    "critical_alerts",
-    "top_weekly_opportunities"
-  ]
-}
 
 def _is_eu_policy_item(item: dict) -> bool:
     text = " ".join(
@@ -546,7 +496,7 @@ def analyse(items: list[dict], prompt: str) -> dict:
     model = os.getenv("OPENAI_MODEL", "gpt-5-mini")
     payload = json.dumps(items, ensure_ascii=False)
 
-    resp = client.responses.create(
+    response = client.responses.create(
         model=model,
         instructions=prompt,
         input=(

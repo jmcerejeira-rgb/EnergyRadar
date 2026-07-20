@@ -101,10 +101,6 @@ Prioridade editorial:
 
 Não repetir a mesma notícia com títulos diferentes.
 
-Top oportunidades da semana:
-- Só inclui oportunidades de Portugal ou Espanha.
-- Só inclui itens que também aparecem em "Oportunidades M&A" ou que tenham trigger M&A concreto.
-- Se não houver oportunidades reais, deixa vazio.
 
 ## Filtro geográfico obrigatório
 

@@ -5,7 +5,7 @@ import re
 from datetime import datetime, timezone
 from typing import Iterable
 from urllib.parse import urljoin, urlparse
-
+import time
 import feedparser
 import requests
 import yaml
@@ -16,6 +16,9 @@ DEFAULT_HEADERS = {
     "User-Agent": "Energy M&A Radar/0.3 (+local research tool)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
+
+SESSION = requests.Session()
+SESSION.headers
 
 PT_MONTHS = {
     "janeiro": "01", "jan": "01",
