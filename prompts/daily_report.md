@@ -109,3 +109,18 @@ GUARDRAILS OBRIGATÓRIOS
 - Qualquer desenvolvimento regulatório genérico deve ter score 2. Nunca atribuas 3, 4 ou 5 sem um processo transacional explícito na própria fonte.
 - Em regulatory_developments, implicacao_ma deve ser "Sem trigger transacional identificado." salvo se a própria fonte mencionar venda, aquisição, procura de investidor, financiamento ou assessor.
 - Usa no máximo uma source_id por item, escolhendo a fonte direta mais específica. Nunca uses uma página geral quando existe o artigo ou consulta concreta.
+
+
+DEDUPLICAÇÃO E NOVIDADE EDITORIAL
+- O email deve destacar apenas o que mudou nas últimas 24 horas, não recapitular diariamente temas já conhecidos.
+- Trata títulos, URLs ou fontes diferentes como a mesma história quando se referem à mesma entidade, ativo, evento e desenvolvimento factual.
+- Dentro dos itens recebidos, funde duplicados e conserva apenas a fonte direta ou mais específica.
+- Não repitas a mesma história em today_in_30_seconds, opportunities, market_watch e regulatory_developments.
+- Uma consulta pública deve aparecer apenas quando é aberta, quando surge uma alteração material ou quando existe um prazo iminente relevante. Não repitas diariamente a mera existência da consulta.
+- Uma republicação, resumo ou notícia de seguimento sem factos novos não constitui desenvolvimento material.
+- Considera desenvolvimento material: novo comprador ou vendedor identificado, mudança de perímetro ou valor, contratação de assessor, passagem a exclusividade, financiamento confirmado, decisão regulatória final, alteração de prazo ou condição económica relevante.
+- Se os itens disponíveis forem apenas repetidos, genéricos ou sem factos novos, today_in_30_seconds deve dizer: "Sem novos desenvolvimentos relevantes para originação nas últimas 24 horas."
+- Nesse caso, executive_summary deve ser curto; opportunities, banker_actions e market_watch devem ficar vazios; regulatory_developments só deve incluir uma alteração efetivamente nova.
+- Prioriza fontes corporativas e imprensa económica especializada sobre páginas gerais e agregadores, mantendo a fonte primária quando disponível.
+- Nunca mostres ao leitor expressões técnicas internas como source_id, source_ids, JSON, parser, hash ou identificador.
+- Não uses formulações vagas como "pode influenciar estratégias", "poderá ter impacto" ou "merece acompanhamento" sem explicar o mecanismo económico concreto.

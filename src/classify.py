@@ -2,6 +2,9 @@ from __future__ import annotations
 
 import json
 import os
+import re
+import unicodedata
+from difflib import SequenceMatcher
 
 from openai import OpenAI
 
@@ -131,6 +134,57 @@ SCHEMA = {
 
 
 
+def _plain(text: str) -> str:
+    text = unicodedata.normalize("NFKD", str(text or ""))
+    text = "".join(ch for ch in text if not unicodedata.combining(ch))
+    text = re.sub(r"\b(source[_ ]?ids?|json|parser|hash|identificador)\b", "", text, flags=re.I)
+    text = re.sub(r"[^a-zA-Z0-9 ]+", " ", text).lower()
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _editorial_text(item: dict, section: str) -> str:
+    fields = {
+        "opportunities": ("empresa", "setor", "descricao", "trigger"),
+        "market_watch": ("titulo", "porque_importa", "leitura_ma"),
+        "regulatory_developments": ("tema", "desenvolvimento", "impacto"),
+    }[section]
+    return _plain(" ".join(str(item.get(k) or "") for k in fields))
+
+
+def _same_story(a: str, b: str) -> bool:
+    if not a or not b:
+        return False
+    sa, sb = set(a.split()), set(b.split())
+    overlap = len(sa & sb) / max(1, min(len(sa), len(sb)))
+    return overlap >= 0.72 or SequenceMatcher(None, a, b).ratio() >= 0.78
+
+
+def _strip_internal_language(value):
+    if isinstance(value, str):
+        value = re.sub(r"\bsource[_ ]?ids?\s*[:#]?\s*[0-9, ]*", "", value, flags=re.I)
+        value = re.sub(r"\s+", " ", value).strip(" -–—,:;")
+        return value
+    if isinstance(value, list):
+        return [_strip_internal_language(v) for v in value]
+    if isinstance(value, dict):
+        return {k: _strip_internal_language(v) for k, v in value.items()}
+    return value
+
+
+def _deduplicate_sections(report: dict) -> dict:
+    seen: list[str] = []
+    for section in ("opportunities", "market_watch", "regulatory_developments"):
+        kept = []
+        for item in report.get(section) or []:
+            key = _editorial_text(item, section)
+            if any(_same_story(key, previous) for previous in seen):
+                continue
+            seen.append(key)
+            kept.append(item)
+        report[section] = kept
+    return report
+
+
 _VAGUE_ACTION_TERMS = (
     "monitorizar", "acompanhar", "avaliar", "contactar utilities",
     "perceber impacto", "eventual", "potenciais movimentações",
@@ -146,7 +200,8 @@ _NON_IBERIAN_PHRASES = (
 
 def _normalise_report(report: dict) -> dict:
     """Apply deterministic guardrails after the model response."""
-    report = dict(report or {})
+    report = _strip_internal_language(dict(report or {}))
+    report = _deduplicate_sections(report)
 
     opportunities = list(report.get("opportunities") or [])
     opportunities.sort(key=lambda x: int(x.get("deal_score") or 0), reverse=True)
@@ -188,10 +243,16 @@ def _normalise_report(report: dict) -> dict:
         item["implicacao_ma"] = "Sem trigger transacional identificado."
         item["source_ids"] = list(item.get("source_ids") or [])[:1]
         cleaned_reg.append(item)
-    report["regulatory_developments"] = cleaned_reg[:5]
+    report["regulatory_developments"] = cleaned_reg[:3]
 
     for item in report["opportunities"]:
         item["source_ids"] = list(item.get("source_ids") or [])[:1]
+
+    if not report["opportunities"] and not report["market_watch"] and not report["regulatory_developments"]:
+        report["today_in_30_seconds"] = [
+            "Sem novos desenvolvimentos relevantes para originação nas últimas 24 horas."
+        ]
+        report["executive_summary"] = "Não foram identificados novos factos com relevância transacional ou económica material."
 
     return report
 

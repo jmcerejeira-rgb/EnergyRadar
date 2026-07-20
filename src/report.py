@@ -85,6 +85,8 @@ body { font-family: Arial, Helvetica, sans-serif; color:#17212b; line-height:1.4
 h2 { margin-bottom:3px; }
 h3 { margin:24px 0 10px; border-bottom:1px solid #d9e0e7; padding-bottom:5px; }
 .meta { color:#66737f; font-size:12px; }
+.stats { display:flex; gap:10px; margin:14px 0; flex-wrap:wrap; }
+.stat { background:#f3f6f8; border-radius:6px; padding:9px 12px; font-size:13px; }
 .hero { background:#f3f6f8; padding:14px 18px; margin:16px 0; border-radius:6px; }
 .action { background:#fff8e6; padding:12px 16px; border-left:4px solid #c58b00; margin:14px 0; }
 .card { border:1px solid #d9e0e7; border-radius:6px; padding:13px 15px; margin-bottom:10px; }
@@ -103,6 +105,12 @@ ul { padding-left:20px; }
 <h2>Energy M&A Radar | Portugal | {{ date }}</h2>
 <p class="meta">Leitura diária de originação. Informação sujeita a confirmação nas fontes originais.</p>
 
+<div class="stats">
+<div class="stat"><b>Oportunidades M&A:</b> {{ r.opportunities | length }}</div>
+<div class="stat"><b>Notícias relevantes:</b> {{ r.market_watch | length }}</div>
+<div class="stat"><b>Regulação material:</b> {{ r.regulatory_developments | length }}</div>
+</div>
+
 <div class="hero">
 <b>Hoje em 30 segundos</b>
 <ul>
@@ -111,14 +119,12 @@ ul { padding-left:20px; }
 {% if r.executive_summary %}<div>{{ r.executive_summary }}</div>{% endif %}
 </div>
 
+{% if r.banker_actions %}
 <div class="action">
 <b>O que faria hoje</b>
-{% if r.banker_actions %}
 <ul>{% for action in r.banker_actions %}<li>{{ action }}</li>{% endfor %}</ul>
-{% else %}
-<div>Hoje não identifiquei nenhuma ação comercial prioritária.</div>
-{% endif %}
 </div>
+{% endif %}
 
 <h3>Oportunidades M&A</h3>
 {% for o in r.opportunities %}
@@ -147,6 +153,7 @@ ul { padding-left:20px; }
 {% endfor %}
 {% endif %}
 
+{% if r.regulatory_developments %}
 <h3>Regulação material</h3>
 {% for d in r.regulatory_developments %}
 <div class="card">
@@ -156,7 +163,8 @@ ul { padding-left:20px; }
 <div class="label">Impacto</div><div>{{ d.impacto }}</div>
 <div class="label">Potencial impacto em ativos</div><div>{{ d.implicacao_ma }}</div>
 </div>
-{% else %}<p class="empty">Sem alterações regulatórias materiais.</p>{% endfor %}
+{% endfor %}
+{% endif %}
 
 {% if sources %}
 <h3>Fontes</h3>

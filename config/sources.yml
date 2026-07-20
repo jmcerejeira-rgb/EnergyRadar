@@ -47,6 +47,88 @@ rss:
       - battery
       - storage
 
+
+  # Spain: specialist energy press
+  - name: El Periodico de la Energia
+    url: https://elperiodicodelaenergia.com/feed/
+    limit: 30
+    include_text_terms:
+      - España
+      - Portugal
+      - Iberia
+      - adquisición
+      - compra
+      - venta
+      - desinversión
+      - inversión
+      - financiación
+      - refinanciación
+      - socio
+      - joint venture
+      - cartera
+      - proyecto
+      - solar
+      - eólica
+      - almacenamiento
+      - BESS
+      - biometano
+      - hidrógeno
+
+  - name: Energia Estrategica
+    url: https://www.energiaestrategica.com/feed/
+    limit: 30
+    include_text_terms:
+      - España
+      - Portugal
+      - Europa
+      - adquisición
+      - compra
+      - venta
+      - inversión
+      - financiación
+      - socio
+      - cartera
+      - solar
+      - eólica
+      - almacenamiento
+      - BESS
+
+  - name: Energias Renovables
+    url: https://www.energias-renovables.com/rss.xml
+    limit: 30
+    include_text_terms:
+      - España
+      - Portugal
+      - adquisición
+      - compra
+      - venta
+      - inversión
+      - financiación
+      - cartera
+      - solar
+      - eólica
+      - almacenamiento
+      - biometano
+
+  # Europe: transaction and market context
+  - name: reNEWS
+    url: https://renews.biz/feed/
+    limit: 30
+    include_text_terms:
+      - Portugal
+      - Spain
+      - Iberia
+      - acquisition
+      - sale
+      - divestment
+      - investment
+      - financing
+      - portfolio
+      - offshore
+      - wind
+      - solar
+      - storage
+
 html_indexes:
   # Portugal: energy regulation
   - name: ERSE Comunicados
@@ -153,6 +235,101 @@ html_indexes:
       - infraestrutura
       - carregamento
       - concessão
+
+
+  # Portugal: general business press, tightly filtered for energy and transactions
+  - name: Expresso Economia
+    fetch_detail: true
+    url: https://expresso.pt/economia
+    base_url: https://expresso.pt
+    limit: 25
+    include_link_patterns:
+      - /economia/
+      - /economia/202
+    include_text_terms:
+      - energia
+      - eletricidade
+      - renováveis
+      - solar
+      - eólica
+      - armazenamento
+      - BESS
+      - biomassa
+      - biometano
+      - hidrogénio
+      - infraestrutura
+      - concessão
+      - aquisição
+      - compra
+      - venda
+      - desinvestimento
+      - investidor
+      - fundo
+      - financiamento
+      - refinanciamento
+      - parceria
+      - capital
+
+  # Spain: official market and policy sources
+  - name: REE Sala de Prensa
+    fetch_detail: true
+    url: https://www.ree.es/es/sala-de-prensa/actualidad
+    base_url: https://www.ree.es
+    limit: 20
+    include_text_terms:
+      - inversión
+      - red
+      - interconexión
+      - almacenamiento
+      - capacidad
+      - renovables
+      - electricidad
+
+  - name: CNMC Energia
+    fetch_detail: true
+    url: https://www.cnmc.es/ambitos-de-actuacion/energia
+    base_url: https://www.cnmc.es
+    limit: 20
+    include_text_terms:
+      - electricidad
+      - gas
+      - energía
+      - redes
+      - acceso
+      - tarifas
+      - mercado
+      - almacenamiento
+
+  - name: MITECO Energia
+    fetch_detail: true
+    url: https://www.miteco.gob.es/es/energia.html
+    base_url: https://www.miteco.gob.es
+    limit: 20
+    include_text_terms:
+      - energía
+      - electricidad
+      - renovables
+      - almacenamiento
+      - hidrógeno
+      - biogás
+      - red
+      - subasta
+
+  - name: IDAE Noticias
+    fetch_detail: true
+    url: https://www.idae.es/noticias
+    base_url: https://www.idae.es
+    limit: 20
+    include_text_terms:
+      - inversión
+      - financiación
+      - ayudas
+      - renovables
+      - almacenamiento
+      - hidrógeno
+      - biogás
+      - autoconsumo
+
 
 # Excluded in V1:
 # - Jornal de Negócios Empresas RSS: endpoint returns 404.
