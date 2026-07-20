@@ -1,0 +1,650 @@
+{
+  "5da9da82ae453a93e4eb4934432efa9a544da2c18a466fe8ec5ff3b353942fdb": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Capwatt sells Spanish BESS project",
+    "url": "https://www.renews.biz/uncategorized/capwatt-sells-spanish-bess-project/",
+    "editorial_key": "b02c242db8fcba7bcd8e329ced8b1dd5f89fa9a90a65ff981d5587ab7e33f382"
+  },
+  "daf8ff3dbed6e42a527f7be5e7f4c533336fcc968a527d558a77d660d2204890": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Return y Engie sellan un acuerdo a diez años para impulsar el almacenamiento de baterías en España",
+    "url": "https://elperiodicodelaenergia.com/return-y-engie-sellan-un-acuerdo-a-diez-anos-para-impulsar-el-almacenamiento-de-baterias-en-espana/",
+    "editorial_key": "e8b57fe4b38589ed96744016ebcfbee344e4dcdcd4a5c388964a9af4f4b1b7e0"
+  },
+  "8bb17264f97d8609237c434e47255b6474753a2c5a188ac046842e5d6e9e8bf1": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Spain awards €165 million for 2 GW pumped storage projects",
+    "url": "https://www.pv-magazine.com/2026/07/20/spain-awards-e165-million-for-2-gw-pumped-storage-projects/",
+    "editorial_key": "9090ffe4df502be85df084e77260ee4117a077f32aed73b5d649cd27bd87ab36"
+  },
+  "cbff1c549080863b0f56743de143eccd1e985c8bf8dc429c4efa5bc28c655f71": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Envision Energy showcases next-generation energy storage solutions at The smarter E 2026",
+    "url": "https://www.pv-magazine.com/2026/07/20/envision-energy-showcases-next-generation-energy-storage-solutions-at-the-smarter-e-2026/",
+    "editorial_key": "1845ae17b5ed8a63e16efa82d874286fd4eea4ce12913386db5bd89dc0646876"
+  },
+  "cec409ac2458d76e4303169e71788cf8009c0bc5c29984be7494b789409aa502": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Solyco releases 500 W full-black back contact solar module with 24.5% efficiency",
+    "url": "https://www.pv-magazine.com/2026/07/20/solyco-release-500-w-full-black-back-contact-solar-module-with-24-5-efficiency/",
+    "editorial_key": "f0d568d5ad525b3e43a9cb600d05be6c48e2f1e82d1118b4cb5c24af603150d1"
+  },
+  "23a9f5499baa723c881a42d6d7e150b2c1910a03d494e94db0357e411b3fe4f0": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Deep learning model improves PV segmentation in remote sensing images",
+    "url": "https://www.pv-magazine.com/2026/07/20/deep-learning-model-improves-pv-segmentation-in-remote-sensing-images/",
+    "editorial_key": "6e713b13309c89a9a23030d00d23af7f079187df738059f1125ee73818ba3c7f"
+  },
+  "f46c19283226250dd496f6dbfd7a5344f869c011d9199bd06b4e3e48f8b7a393": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Netherlands proposes stricter rules for solar near airports",
+    "url": "https://www.pv-magazine.com/2026/07/20/netherlands-proposes-stricter-rules-for-solar-near-airports/",
+    "editorial_key": "0434d6136398907c6db7621ab7ea6a9892907a724e9ee94e8b965d1623ad0ca4"
+  },
+  "71d16bfa81fb6027bb218d904298a407cfe20fedd479fa20296df43ab0a3fcd9": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Autowell showcases latest PV and energy storage solutions at The smarter E 2026",
+    "url": "https://www.pv-magazine.com/2026/07/20/autowell-showcases-latest-pv-and-energy-storage-solutions-at-the-smarter-e-2026/",
+    "editorial_key": "98165df64111629396465130f49de3aa6d684f4c1d074591f23b1204385fefd0"
+  },
+  "409f66cc0c26e47019aec07b8735e5cd1377463eb837856f0561df51a7cafab9": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Ukraine recognizes solar installer as official profession",
+    "url": "https://www.pv-magazine.com/2026/07/20/ukraine-recognizes-solar-installer-as-official-profession/",
+    "editorial_key": "95019910531fd4c3f44a4ab1781e191a4cc753c83aa00c301c798f08fcab77b8"
+  },
+  "6b4b6afd2cc068c52a8b28e1561b9db39cc5f1a02ca26e656d09371f00b4b4c5": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Residential BESS ‘access without upfront cash’: Palmetto launches battery subscription in 25 US states",
+    "url": "https://www.energy-storage.news/residential-bess-access-without-upfront-cash-palmetto-launches-battery-subscription-in-25-us-states/",
+    "editorial_key": "cb4b185e5a1e51db152ae4b4313c60dc91b8af6f05845b3c786bdc167a436805"
+  },
+  "2637fc1cd8fcd3a1e4047601c20857560ce7e788cef4a10a713ac4d55c2f6f25": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "1.8GWh Germany BESS moves to construction; 15GWh+ progressed since grid fees decision",
+    "url": "https://www.energy-storage.news/1-8gwh-germany-bess-moves-to-construction-15gwh-progressed-since-grid-fees-decision/",
+    "editorial_key": "6c9b5425c63e7450c8b70f28f5ab1a7cfcccdc9fdf1bb56a8c032e21f517251f"
+  },
+  "9ab0a7234a199e009c78634b2aa7087a2e97f6f6b490748ef5b15cf7e14e4a84": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Masdar reaches financial close on ‘round-the-clock’ hybrid solar project with 19GWh BESS in UAE",
+    "url": "https://www.energy-storage.news/masdar-reaches-financial-close-on-round-the-clock-hybrid-solar-project-with-19gwh-bess-in-uae/",
+    "editorial_key": "a76e2e1a9699c0d263bdb06ff4a4cdba71d63644eefad9021112c34ba1175f51"
+  },
+  "caf2019855a6f51e0acd15b426ef5ca0a1d3525d966b13feb6576fe96054781f": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "EU releases Electrification Action Plan, reaffirms 200GW 2030 energy storage target",
+    "url": "https://www.energy-storage.news/eu-releases-electrification-action-plan-reaffirms-200gw-2030-energy-storage-target/",
+    "editorial_key": "0e9004b433ee22d9d00c241fb7aff5a707059dbbf563d6e623fc94ea731a0376"
+  },
+  "d2f5e607028622078e9bcc0b611fa294caef5d1d773e92325baa0dbb08ce5902": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Middle East, Southeast Asia and India emerge as key alternate manufacturing hubs to China",
+    "url": "https://www.energy-storage.news/middle-east-southeast-asia-and-india-emerge-as-key-alternate-manufacturing-hubs-to-china/",
+    "editorial_key": "6553e95370db140999375f566daa13a28ffaea09c6c0b5f95d06643625608927"
+  },
+  "7c5e9fd4c6fcfae68b9d93898cb779a206ac2f303adb4f3662fb39b3cd7a1135": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Hithium looks to replicate residential solution ARKVOLT’s Asian success into Europe",
+    "url": "https://www.energy-storage.news/hithium-looks-to-replicate-residential-solution-arkvolts-asian-success-into-europe/",
+    "editorial_key": "5950fdea3c54f434e202adf95d37aefebc65a67664b63195a118c6984365ff7d"
+  },
+  "2eca4e2ec6483d742949492ccd1c5c8a87bc5705cb55ffbabccbad907e9da579": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "CHINT: Bridging AI infrastructure and energy transition through integrated power solutions",
+    "url": "https://www.energy-storage.news/chint-bridging-ai-infrastructure-and-energy-transition-through-integrated-power-solutions/",
+    "editorial_key": "c585c240dcb98f9dd8c22ceacf74664718a8c73f820fab5ef479f5b9ce5b3628"
+  },
+  "d18fe74fa421005dee52d71a71983dbf6697c0240c4703283beb29b0c3c52fb2": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Australia adds 9.1GW of new generation and storage in FY26 with battery storage dominating",
+    "url": "https://www.energy-storage.news/australia-adds-9-1gw-of-new-generation-and-storage-in-fy26-with-battery-storage-dominating/",
+    "editorial_key": "6e2104f469862496312e7f037551c77d6f8ac1ee12a2f37561f019f2cd02aeab"
+  },
+  "ede14a0d2f0c4c2d8ec76bdcdf1a56eb3d3c530acb3e372b2c159dbfa3a0ba48": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Australia moves to legislate net-generator requirement for large-scale data centres",
+    "url": "https://www.energy-storage.news/australia-moves-to-legislate-net-generator-requirement-for-large-scale-data-centres/",
+    "editorial_key": "e17d023d8c63ba26120c670bd6ede352fe46747279b668ef4705e302c147794b"
+  },
+  "85f308d406204917a126de8b7019e24d1653875322cc595a7b51c933f2b28a67": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "California batteries missing out on revenue due to suboptimal bidding strategies, Gridmatic analysis finds",
+    "url": "https://www.energy-storage.news/california-batteries-missing-out-on-revenue-due-to-suboptimal-bidding-strategies-gridmatic-analysis-finds/",
+    "editorial_key": "259a2e6be3ded40f7990c78f06ab0a4d12176202fb6b49ca3c2979b10f74f3c5"
+  },
+  "c111c5a97f43e93fdfc3d75670963953f247b92ce799cfcd8d23491b75959bc8": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Eos to provide energy storage for US Department of Defense ‘Golden Dome,’ releases preliminary Q2 financials",
+    "url": "https://www.energy-storage.news/eos-to-provide-energy-storage-for-us-department-of-defense-golden-dome-releases-preliminary-q2-financials/",
+    "editorial_key": "8b525fbba48e68941b7ded11081741f1ef4bf1588e724512786d3225abe942d7"
+  },
+  "f72f2d4025a4a99dc4c1fe973e723ede5705664b1d4677fbaab86388060b6e8a": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "‘It’s on the up now’: How grid fee clarity unlocked BW ESS’ German ambitions",
+    "url": "https://www.energy-storage.news/its-on-the-up-now-how-grid-fee-clarity-unlocked-bw-ess-german-ambitions/",
+    "editorial_key": "0a95fef6a7ed25500b71585c7bd00bfa72be32a9140c8a34dff479d88450e4ac"
+  },
+  "df2b3227f3a71bf3401b95801652781245c19e5b8e4b6666e08d174175947a12": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Waaree, India’s biggest PV module supplier, opens 5.15GWh battery storage assembly plant",
+    "url": "https://www.energy-storage.news/waaree-indias-biggest-pv-module-supplier-opens-5-15gwh-battery-storage-assembly-plant/",
+    "editorial_key": "5f810c46173f8e53199b0e6ea3f422ab1b1597e2636b317d8b701f415b960e19"
+  },
+  "c007c893c7ff54829193de9da254745c4e6c43d392e17576aefef4432a86fefb": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "ib vogt wins approval for 480MWh battery storage site in Australia’s Wagga Wagga Special Activation Precinct",
+    "url": "https://www.energy-storage.news/ib-vogt-wins-approval-for-480mwh-battery-storage-site-in-australias-wagga-wagga-special-activation-precinct/",
+    "editorial_key": "6c0cdea229744457b01f53884d4cc3ed1db1e5cddf0fce57054846cfecf6e247"
+  },
+  "40c1958af58cc6c3913d72b4c9fda04ee51272b1f0b6719ed472aa5f4ba4946f": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Port of Newcastle cleared to safely stage grid-scale battery storage systems in New South Wales, Australia",
+    "url": "https://www.energy-storage.news/port-of-newcastle-cleared-to-safely-stage-grid-scale-battery-storage-systems-in-new-south-wales-australia/",
+    "editorial_key": "4ef1f474527588419a70bf0071c3fc055df5634614c53d22ccead6be79b5a3db"
+  },
+  "7fb65278fabab707811d000e50be73e39e8d956ae6c3e35af4a7a7699bb560db": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Sunrun, FranklinWH expand BESS virtual power plant capacity in California, Texas",
+    "url": "https://www.energy-storage.news/sunrun-franklinwh-expand-bess-virtual-power-plant-capacity-in-california-texas/",
+    "editorial_key": "4377e5557f21849b94408dfb490fa6f8c806c8321f822f0a18d2b7a01543935d"
+  },
+  "d4cc00cfa0536d0c961e02bff6f5730200e86455b77ba7493a705012b5db49b7": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Alfen and CATL agree 5GWh sodium-ion BESS partnership in Europe",
+    "url": "https://www.energy-storage.news/alfen-and-catl-agree-5gwh-sodium-ion-bess-partnership-in-europe/",
+    "editorial_key": "97ed25bd641b9df91094a8104aa2757f096a4a606f97ddec2141ffaf660bf06d"
+  },
+  "6ee37152e70284adbb4e15dcba34d2192062634a75436dd83bf00174febd82f1": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Thailand needs ‘many regulatory reforms’ of electricity sector to catch up with ASEAN leaders on energy storage",
+    "url": "https://www.energy-storage.news/thailand-needs-many-regulatory-reforms-of-electricity-sector-to-catch-up-with-asean-leaders-on-energy-storage/",
+    "editorial_key": "b54dc6434dd4350bc22999b43c833db2476705dc2972e3cb2d3896b02ef05ed2"
+  },
+  "fb6e6f1b15df3881243be4e5aacc0d2e7fe5cbec5f341c4b190fb55861517cb4": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "EU ROUNDUP: Operators commission 682MWh of BESS in Germany, Estonia, Belgium, Denmark and Bulgaria",
+    "url": "https://www.energy-storage.news/eu-roundup-operators-commission-682mwh-of-bess-in-germany-estonia-belgium-denmark-and-bulgaria/",
+    "editorial_key": "478bbc532080f5f0583599af4292fa17968468f12825f20602b5821a8c277afc"
+  },
+  "6b5e614b1eba1fb4accf99c8b62395a10e0cb939668f9cae87ee0a9c491c241e": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Behind CATL’s ‘zero degradation’ BESS technology",
+    "url": "https://www.energy-storage.news/behind-catls-zero-degradation-bess-technology/",
+    "editorial_key": "37999f1bc6fbac1aa38112c065a2cf7a43546f570c731bd7559259e9d49f87bf"
+  },
+  "3debb778ea0ff797f96711f8df821678768d4bc1dbc8b52375b0c942a345dc00": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Hithium on the European C&I BESS market and its need for a 4-hour solution",
+    "url": "https://www.energy-storage.news/hithium-on-the-european-ci-bess-market-and-its-need-for-a-4-hour-solution/",
+    "editorial_key": "4f4dcccbcf620e49d337894fa0aaf3896ec12c283a68dbc543f58601e7f89377"
+  },
+  "cb54d0e9b56cddf14782718f48a39c9c33ca06973f10e5708d5c4095d2dbbcb2": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Australia’s New South Wales grants planning consent for 3.6GWh pumped hydro project at former coal mine",
+    "url": "https://www.energy-storage.news/australias-new-south-wales-grants-planning-consent-for-3-6gwh-pumped-hydro-project-at-former-coal-mine/",
+    "editorial_key": "f5caf2d427728a8507d00cb5144676c3004ee02a85396f585c1e3962255d855a"
+  },
+  "8bc737d4bbb97742a0ee1877789af445f4ecc1eda0a711b1617b0199cf4afad1": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Australia’s Transgrid opens pathway for 900MW of grid-forming battery storage as synchronous condenser costs surge 38%",
+    "url": "https://www.energy-storage.news/australias-transgrid-opens-pathway-for-900mw-of-grid-forming-battery-storage-as-synchronous-condenser-costs-surge-38/",
+    "editorial_key": "913e4d008012227b35f7846c350f0fd2a22190b291b5135e83aceb7712e57526"
+  },
+  "549d958fca7638dda6b04387bab5805b2f3ce2ebf3bda0811d1b3aee2054ea95": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Avantus progresses California solar-plus-storage projects, Fluence providing domestic content BESS",
+    "url": "https://www.energy-storage.news/avantus-progresses-california-solar-plus-storage-projects-fluence-providing-domestic-content-bess/",
+    "editorial_key": "ee44bde435ecf1c13ea7691cc018f54d6dd12ed1c25f6da5e9e701d4956c8dfc"
+  },
+  "bde5406cc7705537441b4759b031ddbf0b1b411db579711640c530e04d64c4f6": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Global BESS deployments soar 27% in H1 2026, Saudi Arabia drives figures in June",
+    "url": "https://www.energy-storage.news/global-bess-deployments-soar-27-in-h1-2026-saudi-arabia-drives-figures-in-june/",
+    "editorial_key": "903591a56c1e3cd4e52edcc4cf670435b5c90e40b74ef17c85ac3657f1e444e9"
+  },
+  "8187d48dea2bb37a22cafecf7a97712980ae36210f8fcbddea4e6541849a38a1": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Google projects are evidence that long-duration CO2 Batteries are ‘reliable capacity assets,’ Energy Dome says",
+    "url": "https://www.energy-storage.news/google-projects-are-evidence-that-long-duration-co2-batteries-are-reliable-capacity-assets-energy-dome-says/",
+    "editorial_key": "6a8c375bcd31b5c33bc0584aabf9b9329b6258dbd4496d364e3c1a6e32e4db21"
+  },
+  "4c5671258767b94a971c1f804a9aa1023d79b360ed27a9b4138d9926198bb5d3": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Germany ROUNDUP: TotalEnergies and Kyon, Envision and Ju:niz, Flower progress BESS portfolios",
+    "url": "https://www.energy-storage.news/germany-roundup-totalenergies-and-kyon-envision-and-juniz-flower-progress-bess-portfolios/",
+    "editorial_key": "65104c8848e3b96a7f983ff81a006ba1219900371acc0b2bf7d8fd1fa91b6dba"
+  },
+  "0e4d3d784714d7a16e3a479ecafc0d71f1af3e16202ab0109267d48d1b677bbe": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "What does a bankable route-to-market strategy for battery storage in Europe actually look like?",
+    "url": "https://www.energy-storage.news/what-does-a-bankable-route-to-market-strategy-for-battery-storage-in-europe-actually-look-like/",
+    "editorial_key": "1f75b2e69b1308c54961fa1018c51b6eecdf17a656541b4dc2fb60f9744eee1d"
+  },
+  "2b5aa31e1dcdbb11056487975573cc80a21b808e099eac7a5f512846299413b5": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Over 4GWh of battery storage added to Australia’s updated National Renewable Energy Priority List",
+    "url": "https://www.energy-storage.news/over-4gwh-of-battery-storage-added-to-australias-updated-national-renewable-energy-priority-list/",
+    "editorial_key": "e6b83469b1bf31308c58bcf71cfe7a146cf01d057913143074ba6b1b2d4e8228"
+  },
+  "2481e58f9592ebfd9eeb295ff023cf90cb892aff7884ea3837a15ca8875e6bbb": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Pumped hydro costs revised up, battery storage costs down, as Australia’s CSIRO publishes final GenCost 2025-26 report",
+    "url": "https://www.energy-storage.news/pumped-hydro-costs-revised-up-battery-storage-costs-down-as-australias-csiro-publishes-final-gencost-2025-26-report/",
+    "editorial_key": "78964d550d667781c4b57888d27e9435484e5b90fc92e742eedea41f99989ae4"
+  },
+  "0a0aeeede2ebb9b2d51027dd8cd7c979289c7d3cbab1c1aca2cf2fa3b9b94ac9": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Portugal y Marruecos retoman el proyecto de interconexión energética y buscarán el apoyo de la UE",
+    "url": "https://elperiodicodelaenergia.com/portugal-y-marruecos-retoman-proyecto-de-interconexion-energetica-y-buscaran-apoyo-de-ue/",
+    "editorial_key": "2a274c5e163b733a5d01dc52830484f3a082955b8842e01606000b9361b8b5ba"
+  },
+  "060e73c869c8dacc43a4bbd334fe282a0c6a9c52752f6f792ef5f3dce6226765": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Los combustibles registran una fuerte subida en Portugal pese a la rebaja fiscal",
+    "url": "https://elperiodicodelaenergia.com/los-combustibles-registran-una-fuerte-subida-en-portugal-pese-a-la-rebaja-fiscal/",
+    "editorial_key": "4fe5922d75b701fc761eca735851cb59a35a2cd425a8d8a72eba7eb084e4fbd2"
+  },
+  "016304472cf4c80b803b31ba686bb21c2c45d86f636f4a76755a2658aa7dee08": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "El almacenamiento escribe el nuevo capítulo del autoconsumo",
+    "url": "https://elperiodicodelaenergia.com/el-almacenamiento-escribe-el-nuevo-capitulo-del-autoconsumo/",
+    "editorial_key": "159451c354139fea0ba505f9ccd230e2b138cc65cf1901c363e0f600cb48f7ad"
+  },
+  "c7cc87acd4cbbd6d5747e92cabb4dfe163934a3c2cc34dc4a241df48698f0248": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Asimetría en el acceso a red de proyectos de baterías: ¿cuánta es gestionable?",
+    "url": "https://elperiodicodelaenergia.com/asimetria-en-el-acceso-a-red-de-proyectos-de-baterias-cuanta-es-gestionable/",
+    "editorial_key": "9e0da6723e53c55348f3e03703d1c01c82733c6237213bedeb31bd55a999b17a"
+  },
+  "4c29e0d9bf92c97f26ed866812c55b60a062a9433f28446ab0b40c9449ca6e64": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "El Gobierno impulsa un estándar de excelencia para acelerar el despliegue de renovables y baterías",
+    "url": "https://elperiodicodelaenergia.com/el-gobierno-impulsa-un-estandar-de-excelencia-para-acelerar-el-despliegue-de-renovables-y-baterias/",
+    "editorial_key": "b60d1f1c19cc05b0903e49448e9f9f9b0f60eb7794c5457a11a94e7b906dfb2e"
+  },
+  "bc71c66503d4ac1e8826e4ef508ed87500db47af09c0e9c28313dabfc4155cb1": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Larkhill Garrison opens solar array",
+    "url": "https://www.renews.biz/remix/larkhill-garrison-opens-solar-array/",
+    "editorial_key": "628154d7b2bc10fd5b2a766d59350bcd03cf1431f84697c982923eabc64c7879"
+  },
+  "0fda23050c9ef08e197d90385e8e6f0b91f544f8d046ec016b4ffa02b7950286": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Construction surge pushes US wind outlook higher",
+    "url": "https://www.renews.biz/onshore-wind/construction-surge-pushes-us-wind-outlook-higher/",
+    "editorial_key": "21b55ce7c632d8d34ebee75d0c1974f5e990521155af36fabf3b4759652c5a1f"
+  },
+  "f59347b9c710ab7b95cb14e207bc00808bb868350868eb552863a51e27cf0463": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Exus closes $356m Pennsylvania wind financing",
+    "url": "https://www.renews.biz/onshore-wind/exus-closes-356m-pennsylvania-wind-financing/",
+    "editorial_key": "c7d36f31c383b819c3b2eaf95dcd65586b3aab9ac750ffab751b511ee3c5ad40"
+  },
+  "daf19e5f9cf3bfbbb4f542ccf7e8084d2bee7b6a3a6522b2b7eb20cb0399e2c8": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Eurowind starts Romanian wind farm construction",
+    "url": "https://www.renews.biz/onshore-wind/eurowind-starts-romanian-wind-farm-construction/",
+    "editorial_key": "b3e8d1fe22573b806b1cb63553c68a5d8bbea84929ca0b65f78ea7973591316e"
+  },
+  "80a328d6ba38d1dbfafc84ae076fc3e7daf22271ab73141faaf72120b75d5bbc": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "PNE secures 188MW German wind permits",
+    "url": "https://www.renews.biz/onshore-wind/pne-secures-188mw-german-wind-permits/",
+    "editorial_key": "f19faa0c26ba1a1febb1f724e6988b885f1187d7f114cfbed550f391cf956589"
+  },
+  "653d9df9f876c2956341069c709a14ad174d1506acd794140dc7a708e69b548d": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "ERG and Statkraft sign Italian wind PPA",
+    "url": "https://www.renews.biz/onshore-wind/erg-and-statkraft-sign-italian-wind-ppa/",
+    "editorial_key": "8e9a5f7349b31bedc8fa1e50ac6b30999df3a3cdd0b49925ee9a9f956ee1861c"
+  },
+  "65837fa35884e1ba36a48c661e85a30f260d3c9c662546573dcb9f74ec18632e": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Waltrop BESS moves into implementation",
+    "url": "https://www.renews.biz/other-news/energy-storage/waltrop-bess-moves-into-construction/",
+    "editorial_key": "41f01b67623837936854645edd71a33aeaf995049df527d4340cbb07a817465b"
+  },
+  "b30286c3ca979bffc37a9386dc99cdd71b9b221637fcdf8e16cd87c483482e7f": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "48MW data center eyed for Kane County, Illinois",
+    "url": "https://www.datacenterdynamics.com/en/news/48mw-data-center-eyed-for-kane-county-illinois/",
+    "editorial_key": "a680821a8c2aeda0115551081fc631bfd27e04886fe15e9bb60a87fecc138fb4"
+  },
+  "e4d3fbc13af4a70aaac146c7b31aa3a862cd34718299ee41547eb56676e267fb": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "DC Blox data center campus greenlit in Indianapolis, Indiana",
+    "url": "https://www.datacenterdynamics.com/en/news/dc-blox-data-center-campus-greenlit-in-indianapolis-indiana/",
+    "editorial_key": "d9ac5c0dcd360b0fc74f2c0afabf64d045021e8f6ccfebf557e7137b1b66f3b9"
+  },
+  "c7cb952ff18aa764c42688518c046944b34c9e6af2f5fc41649181b9ff5ac095": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "AI cloud startup General Compute raises $400m in debt financing",
+    "url": "https://www.datacenterdynamics.com/en/news/ai-cloud-startup-general-compute-raises-400m-in-debt-financing/",
+    "editorial_key": "440a43640e2272848cc4c0adb52d2363dc3e6950b2fca33dc15caf62f37f2019"
+  },
+  "5110adfdad5f83a29f988f396fe69ec6ba0cecf5d843bf135d81dac2adc2de13": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Local and state moratoria puts $1bn Long Island data center project in limbo",
+    "url": "https://www.datacenterdynamics.com/en/news/local-and-state-moratoria-puts-1bn-long-island-data-center-project-in-limbo/",
+    "editorial_key": "7c8839ba18afe611422f4df5527af2e867a0e3b73437b5fdb0ae12a47f91bb56"
+  },
+  "42342583f07a9d5891239ed78e3167f60b333a7344dd07b995eb95ad707523fb": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "CyrusOne announces sixth data center campus in San Antonio, Texas",
+    "url": "https://www.datacenterdynamics.com/en/news/cyrusone-announces-sixth-data-center-campus-in-san-antonio-texas/",
+    "editorial_key": "ac609ed59c430d51c9ab22b0349fd376b42816c1ef44879c499e75d7a149a12c"
+  },
+  "bb27641e45b551b570f4fd96d66037f984bbc8be277f581a4757b78bd4498e1e": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Google files for two data centers in Vernon, Texas",
+    "url": "https://www.datacenterdynamics.com/en/news/google-files-for-two-data-centers-in-vernon-texas/",
+    "editorial_key": "9cff23f33add25e1fa1a1e363014222e3dcdc2f1c58319930e532e5f7cf833d5"
+  },
+  "caef6ec0fb2c6a79541588e63ed1165a4af7931a60769d6773d9b91d3b5f5f27": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Nebius secures $775m in debt financing",
+    "url": "https://www.datacenterdynamics.com/en/news/nebius-secures-775m-in-debt-financing/",
+    "editorial_key": "d14dd2407ec1487cd6e24d7c1c90ebda1ea2f196617dd134fd5095af42e81a3b"
+  },
+  "6b8a4677d06ea14496a047f6cdb2b240218e609b16f9ebd39070f0dbda33a4d6": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Telefónica reignites plans to sell Telxius subsea cable business - report",
+    "url": "https://www.datacenterdynamics.com/en/news/telef%C3%B3nica-reignites-plans-to-sell-telxius-subsea-cable-business-report/",
+    "editorial_key": "d204a6e26633ea6753c6d47aa10e8117f7f390e315beb43806c699cf5a2a31c6"
+  },
+  "c0db5ac113f993ae40e140ae11248c9ba00396ffc887e4d910a42c1d8b69ef7a": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "City officials in Michigan deny request to lift data center moratorium",
+    "url": "https://www.datacenterdynamics.com/en/news/city-officials-in-michigan-denied-request-to-lift-data-center-moratorium/",
+    "editorial_key": "c5af06d8f1d8170237f4e593111781f4cfc62e57408adf5bb0a611e362dfdd3a"
+  },
+  "166795a59b405224a93eb35400688e59bc9f20a49e1c87fa269c57007c942764": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "DCD Studio: Why continuous thermal monitoring is mission-critical, with Athol Hankey, Exertherm by Eaton",
+    "url": "https://www.datacenterdynamics.com/en/videos/dcd-studio-why-continuous-thermal-monitoring-is-mission-critical-with-athol-hankey-exertherm-by-eaton/",
+    "editorial_key": "47d0f15ce2fa9af2f8fe0016b60f6029e000561577903aeb8dd836f08bd933b2"
+  },
+  "f604abd2db0d9251dd3ef983809f5cffddc966303844e1c2b190d2d98c0d83c9": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "International Finance Corporation to invest up to $175m in two AirTrunk data centers in Johor, Malaysia",
+    "url": "https://www.datacenterdynamics.com/en/news/international-finance-corporation-to-invest-up-to-175m-in-two-airtrunk-data-centers-in-johor-malaysia/",
+    "editorial_key": "7234f9896d099d7350a1391581fe66ac70f70dee3925d7aa66f14266f51d716b"
+  },
+  "7f1f455228d6c73ece20506726c8ba875dd843bb1ae095ad5f8560632703412c": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "New Mexico regulators reject natural gas pipeline for Oracle's 2.5GW Project Jupiter data center",
+    "url": "https://www.datacenterdynamics.com/en/news/new-mexico-regulators-reject-natural-gas-pipeline-for-oracles-25gw-project-jupiter-data-center/",
+    "editorial_key": "e0785ad0eebeb46b6cc26309dec80af2aa2d372a0fe346facd2d92ecabc7f30a"
+  },
+  "c778f19f5c8080b09b37eefab19d5f9deb1a9e7303f61583eaa40a2d21b616c3": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Beyond PUE: How to build a reliable and auditable liquid cooling operation for AI data centers",
+    "url": "https://www.datacenterdynamics.com/en/whitepapers/beyond-pue-how-to-build-a-reliable-and-auditable-liquid-cooling-operation-for-ai-data-centers/",
+    "editorial_key": "c69edfce01a97acf0e79af2e99773b474161e8d9e8a9620325d65f05ebfc8625"
+  },
+  "df914d64cc9854f62f5b816e3a8a0f91a7a23fc2b7462354d6e7465048473f9d": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Italo orders Velaro high speed trains for German open access operations",
+    "url": "https://www.railwaygazette.com/high-speed/2026/07/20/italo-orders-velaro-high-speed-trains-for-german-open-access-operations/",
+    "editorial_key": "2579d2b9ae8b35504624a7fbaf8312f413e75ffd04c778360c29c0a58e8a58dc"
+  },
+  "8ffd45d65fcf4f1e3a8713011005b87d7e768b9ad4462c41a01b4d3ae07f9de8": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Sound Transit awards asset management support services contract",
+    "url": "https://www.railwaygazette.com/light-rail/2026/07/20/sound-transit-awards-asset-management-support-services-contract/",
+    "editorial_key": "9f0e81fcd11ba2d835674d1eb727b5d62778482881d275cb11b41bd069a86499"
+  },
+  "946e681774d428b0188118af4403982f3f664f805baec54b0232ec54d619d24b": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Korail to replace TGV-derived KTX-I fleet with more EMU-320 trainsets",
+    "url": "https://www.railwaygazette.com/high-speed-train/2026/07/20/korail-to-replace-tgv-derived-ktx-i-fleet-with-more-emu-320-trainsets/",
+    "editorial_key": "71eea70ba5c311318e986bc19f31f1399f211cee3659115c6991299f338b2b6f"
+  },
+  "d62f0c8dabd88ac50d3adfe6ebfe6161daa148aee47a58168963a75114d91ee2": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Interview: ‘We have to make rail hassle-free’",
+    "url": "https://www.railwaygazette.com/operators/2026/07/19/interview-we-have-to-make-rail-hassle-free/",
+    "editorial_key": "a5173bc9e714f0276bcb280583989cecf430458a6c4b709bd1b4dd9cbb886aae"
+  },
+  "ed130d24bb5bfe4f9c5e14d27ab5144475af087e4d6ebd9684a171218af02fe1": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Romania: Suburban rail projects surge outside the capital",
+    "url": "https://www.railwaygazette.com/suburban-commuter-rail/2026/07/18/romania-slow-progress-on-bucuresti-package-in-contrast-with-tren-metropolitan-network-boom/",
+    "editorial_key": "66b1047591a3ff9ddc1af4b4882aceb18f4d4f1d9cc9c632cb0c2fab365e0b2e"
+  },
+  "f0c45a07ed2191da67750f4dae684d5802f687af5184b7b5aeb47ef5947a34dd": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Consulta Pública n.º 143",
+    "url": "https://www.erse.pt/atividade/consultas-publicas/consulta-pública-nº-143/",
+    "editorial_key": "22012aedf13adf2105ae828b838d3c749f3419fcb4188a9023a2622cc93548d1"
+  },
+  "5419edb007d7928d9e8f7e76c21f824a12f0f171c2f5fa48daccc38b0ee190ca": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Portugal regista novos máximos de consumo de eletricidade no verão",
+    "url": "https://www.ren.pt/media/noticias/portugal-regista-novos-maximos-de-consumo-de-eletricidade-no-verao",
+    "editorial_key": "55757b49ec43b6e0c99a80588f75dd6732da425e86a3c39f1dd0605521679034"
+  },
+  "05baadbf069fd1a75fce12eec64f7e39b8c72b0bd397e9c45601c7d034f6e5c0": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Eletricidade",
+    "url": "https://www.ren.pt/media/noticias?t=Eletricidade",
+    "editorial_key": "b94f3345299bc8ef3d4a396e4f9604e2586d72bed8a651a556d9a61675506acc"
+  },
+  "00daef2477c8042e7576794a3ad4258d743545fddde3ca6a0029a3b7d3cd2988": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Portugal e Espanha inauguram a nova interligação elétrica a 400 kV no norte, um projeto estratégico para a União Europeia",
+    "url": "https://www.ren.pt/media/noticias/portugal-e-espanha-inauguram-a-nova-interligacao-eletrica-a-400-kv-no-norte-um-projeto-estrategico-para-a-uniao-europeia",
+    "editorial_key": "e56a7170578028710fdfc118e53538a1e048bc5486dc967256d6d69fb4fd7f96"
+  },
+  "472ba0b0f420cb1791c05ec9f0c7f10876277e36fd73a286ff8ab7898912cea8": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Interligação",
+    "url": "https://www.ren.pt/media/noticias?t=Interligação",
+    "editorial_key": "354afd64d79e51594f3d669312c1b9420a7fe2ffeed66a815fdbfafdfb25829c"
+  },
+  "77055b9abed3b127eeeb131758d54f01d4efe8d75da1baf04337dc5bbbe1f6f3": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Leer más",
+    "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa-transporte/2026/07/red-electrica-amplia-la-subestacion-penaflor",
+    "editorial_key": "c3ae8f832afd93e653236ed9767502813fd705bf84bc3ffd81043b9ac78af549"
+  },
+  "86e22ac0a03422e81967839661f40989a1ecf08c2cac583d3df556d35570bdcf": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Leer más",
+    "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa-interconexiones/2026/07/red-electrica-trasladara-grandes-equipamientos-golfo-bizkaia",
+    "editorial_key": "c3ae8f832afd93e653236ed9767502813fd705bf84bc3ffd81043b9ac78af549"
+  },
+  "cfe7779b6985f0c6fb2054ba223842ca6a20d9a2a99f3516e33b7186487c11e0": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Leer más",
+    "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa-transporte/2026/07/red-electrica-avanza-en-las-obras-de-morella-laplana",
+    "editorial_key": "c3ae8f832afd93e653236ed9767502813fd705bf84bc3ffd81043b9ac78af549"
+  },
+  "9e4653a0d5a7e96ba60f6b5117ad50eca43bf578b4e2e9fbc064e5cc69a15d51": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Leer más",
+    "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa-transporte/2026/07/red-electrica-amplia-la-subestacion-betxi",
+    "editorial_key": "c3ae8f832afd93e653236ed9767502813fd705bf84bc3ffd81043b9ac78af549"
+  },
+  "8655e93985ceb5e735c6df0e97aab57ee22bf2d11f6fb0a74fd4db31d67f976a": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Leer más",
+    "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa-transporte/2026/07/red-electrica-amplia-subestaciones-toledo-torrijos-caleraychozas",
+    "editorial_key": "c3ae8f832afd93e653236ed9767502813fd705bf84bc3ffd81043b9ac78af549"
+  },
+  "b5d8de1eff9a2894d0a8ae1876f5007d919195fa4c64051f8d4f0d3d8ffd3c69": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Leer más",
+    "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa-transporte/2026/07/red-electrica-finaliza-subestacion-san-isidro",
+    "editorial_key": "c3ae8f832afd93e653236ed9767502813fd705bf84bc3ffd81043b9ac78af549"
+  },
+  "1f96c86f143aec796376a61b0e0c4d3170e06bd009702ef147117a690cf3a288": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Leer más",
+    "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa/2026/07/16-instalaciones-de-consumo-renuncian-sus-permisos-acceso-conexi%C3%B3n-mas-1-gw-capacidad-concedida-red-transporte",
+    "editorial_key": "c3ae8f832afd93e653236ed9767502813fd705bf84bc3ffd81043b9ac78af549"
+  },
+  "ca701c51963bd2a803a2c97408c47f2240485558fc7a846b2f654af225e75ddd": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Leer más",
+    "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa-transporte/2026/06/red-electrica-inicia-las-obras-arroyomolinos",
+    "editorial_key": "c3ae8f832afd93e653236ed9767502813fd705bf84bc3ffd81043b9ac78af549"
+  },
+  "d8e3294bd3de1d09e100c132c0356920f95831e6f6fc44f634547c3626a87cba": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Leer más",
+    "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa-transporte/2026/06/red-electrica-finaliza-la-nueva",
+    "editorial_key": "c3ae8f832afd93e653236ed9767502813fd705bf84bc3ffd81043b9ac78af549"
+  },
+  "15926bbc6defc8416c6b7d5f668f4dfeb1ce1a8530ff4e94a4176a1f9a4c8aa5": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Leer más",
+    "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa/2026/06/red-electrica-aprovecha-el-paron-estival-para-acelerar-la-construccion-de-la-nueva-linea-electrica-de-espinardo-en-la-ciudad-de-murcia",
+    "editorial_key": "c3ae8f832afd93e653236ed9767502813fd705bf84bc3ffd81043b9ac78af549"
+  },
+  "77a50e07531b5bd4ae0354eec7b59a3d9385ca9e3a07a74e081303d8cd53267c": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Consultas publicas energía",
+    "url": "https://www.cnmc.es/participa/consultas-publicas?field_taxonomia_target_id_1=4",
+    "editorial_key": "09d330f6f71cc44a0c0014114590edc82d638091c99517b241143652aa71d7fe"
+  },
+  "6ddd64877d87638aa01b1f8dc9505a3a9118c9e0f554f7b109fa7f8637b1d5fd": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Mercado eléctrico",
+    "url": "https://www.cnmc.es/sectores-que-regulamos/energia/supervision-del-mercado-electrico",
+    "editorial_key": "ef8ba2c9ef75a6fd5585b5c1e3858d5b9f21aeba6b24d6aa312d73a0ab5a4515"
+  },
+  "9ad27f00ace6c7ae36efd5e5b37297a2c6b7a15b7b12b823507d0348f3fe5a6d": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Mercado de gas",
+    "url": "https://www.cnmc.es/sectores-que-regulamos/energia/supervision-del-mercado-del-gas",
+    "editorial_key": "d36dceba9a9f3fa0ef59d87cb246d1313cd148c849603f6e74ebaf407c8d39b7"
+  },
+  "950bd1942190afa43639fcd1dfee32aa40c38dfab3ccaaed46c43de61fd5071a": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Mercado del petróleo y biocarburantes",
+    "url": "https://www.cnmc.es/sectores-que-regulamos/energia/mercado-de-los-productos-petroliferos",
+    "editorial_key": "58092428ffbcbd68d796705a863d18789e1328f8c3ab0a31a52e590ce777d4b8"
+  },
+  "02d664d12977b89a0bce3c8ce46d9c05a14bc1d0880dc566048abe0f5735a361": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Peajes, retribución y liquidaciones",
+    "url": "https://www.cnmc.es/sectores-que-regulamos/energia/peajes-retribucion-y-liquidaciones",
+    "editorial_key": "93659a921ec967493b9b6a4686be30775a5f34fd55406f68b0d24cd05ff02d92"
+  },
+  "f3f89ae44f8ec9516970c578c7743cbf71c6e9214a0567b3c14aab0cfc178aa6": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Conflictos, Inspecciones, Sanciones, DJV, Certificaciones y Recursos",
+    "url": "https://www.cnmc.es/sectores-que-regulamos/energia/acciones-con-los-agentes-de-los-mercados-energeticos",
+    "editorial_key": "08c0db519ef36837f354cdf3b9a9d1f09b6ff05982406d673485b87e50247574"
+  },
+  "473b39c75b17872b78aaead0e5abfefd82a9f88013b9f8a9d94cde5281eb3bfb": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Regulación del mercado eléctrico",
+    "url": "https://www.cnmc.es/sectores-que-regulamos/energia/regulacion-del-mercado-electrico",
+    "editorial_key": "081b3bfbd9237fedfd7343087440b4fbcc49f4510b405e0feb1f241a3ca5608e"
+  },
+  "3bd8c2760b6073533a6c44a8363dd268dff2dc5147e8c7f526527129041dc97a": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Tareas de la CNMC",
+    "url": "https://www.cnmc.es/sectores-que-regulamos/energia/remit",
+    "editorial_key": "584141b1e54b7cc2bdcc6044471789d52896b2536dcc2c5b87a5a16e5981869f"
+  },
+  "5d2e44523b21f788c2b980cf94ca162a855bc0ee4cfed0ff5a142080d8c42e54": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Tareas de la CNMC",
+    "url": "https://www.cnmc.es/sectores-que-regulamos/energia/mibel",
+    "editorial_key": "584141b1e54b7cc2bdcc6044471789d52896b2536dcc2c5b87a5a16e5981869f"
+  },
+  "17947380d0c594610d7212d6660b207a3149fe16156bf958f7f3066c5a22e800": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Subvenciones del Plan de Recuperación, Transformación y Resiliencia",
+    "url": "https://www.cnmc.es/sectores-que-regulamos/energia/subvenciones-directas-del-prtr",
+    "editorial_key": "c5570114b3d6380e3e905e5aa7c851d2d42ef3bfcb7c0cf905c8274acb332e5e"
+  },
+  "49f6192517c6f50ccf0ecd365dbeb1162df2d9ba3e3775c525e8ab0b949ed1a5": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Participación Pública Accede a las participaciones pública en materia de energía",
+    "url": "https://www.miteco.gob.es/es/energia/participacion.html",
+    "editorial_key": "3508728ea417ac5cd743920fb9e1cf98c1c2d0e93e0dd2c44d26a12f9746e455"
+  },
+  "04b7f9d254ce9768b6a1b9e954f0ae123c60a5197a8a8fafb9f79afa5a05fbb6": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Marco de Energía y Clima PNIEC 2023-2030 Plan Nacional de Energía y Clima (PNIEC 2023-2030)",
+    "url": "https://www.miteco.gob.es/es/energia/estrategia-normativa/pniec-23-30.html",
+    "editorial_key": "59a6099def2f3a48743fdd7e5df6e8346b0dfd66e89c4ca295395ed3f935cbc7"
+  },
+  "b2d011255a011cd3fce789cf180ee5d362770dfb5eed0121601709d9dd6a7c83": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Nueva sección Infraestructuras de energía eléctrica",
+    "url": "https://www.miteco.gob.es/es/energia/infraestructuras-integracion/infraestructuras.html",
+    "editorial_key": "e6a6246522b607da6343917c963d20d5c634d7e359c1f75f5ff3231dbd051daf"
+  },
+  "d81c43b089577fce31b2692d86375142fd0502f5f82d38812f0f97600bf98442": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Energía Eléctrica Red de transporte de energía electica Accede a la modifciación del Plan de desarrollo de la Red de transporte de energía eléctrica con horizonte 2030.",
+    "url": "https://www.miteco.gob.es/es/energia/estrategia-normativa/planificacion/planificacion-electrica.html",
+    "editorial_key": "c50ffb3b6c0c103bacb1b5de65e64cb45660cb36f8e6f6e7abeb0dce8b31bece"
+  },
+  "b2220b45339eb409184af2384562cf0c4ff013b3d62d56a322a401979ee7ca31": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Abierto el plazo de audiencia e información pública sobre la propuesta de Resolución de la Secretaría de Estado de Energía por la que se convoca el procedimiento de concurrencia competitiva para el otorgamiento de la resolución favorable de",
+    "url": "https://www.miteco.gob.es/es/energia/novedades/novedad-00044.html",
+    "editorial_key": "7c9c19c84a1df055dda787a17698b17c0823a9e747da6ef7feea29c79fd44e1f"
+  },
+  "9d1402aa2c7900c8e926e108e62fe74d101295b958366a3c569a069cbcdc82e3": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Abierto el plazo de audiencia e información pública sobre el proyecto de Real Decreto por el que se modifica el Real Decreto 738/2015, de 31 de julio, por el que se regula la actividad de producción de energía eléctrica y el procedimiento d",
+    "url": "https://www.miteco.gob.es/es/energia/novedades/novedad-00043.html",
+    "editorial_key": "730c5323f836bd3884a9d84f507127d92870e8a491611b79e8931fe3ba12d410"
+  },
+  "688c297255eef474edf9f5c0c854c6da4c5cbba5addd977a9ca99c4713827539": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "El IDAE adjudica 165 millones en ayudas a siete proyectos innovadores de almacenamiento energético mediante bombeo reversible",
+    "url": "https://www.idae.es/news-grid",
+    "editorial_key": "ec92d299cbbaa2227a56e124d7c66833e6f4264d33c7537a7fe86014c9e514eb"
+  },
+  "c9761d5ff81ee2cc3a58d9404239a63a99f771ae47ba89d7253578b5df273834": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "El IDAE adjudica 165 millones en ayudas a siete proyectos innovadores de almacenamiento energético mediante bombeo reversible",
+    "url": "https://www.idae.es/noticias/el-idae-adjudica-165-millones-en-ayudas-siete-proyectos-innovadores-de-almacenamiento",
+    "editorial_key": "ec92d299cbbaa2227a56e124d7c66833e6f4264d33c7537a7fe86014c9e514eb"
+  },
+  "c80fc4dd403c27f7d2d22595b4d97b5fd5a2eef59fd383bd7df5181ef1d23ed1": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "El IDAE refuerza la cadena de valor industrial en España con 162 millones para 40 proyectos de producción de tecnologías limpias",
+    "url": "https://www.idae.es/noticias/el-idae-refuerza-la-cadena-de-valor-industrial-en-espana-con-162-millones-para-40",
+    "editorial_key": "272db64b66d6ef600f770bb31857ddacc1be5eafb95a42a2eec9ce5a89c8d9da"
+  },
+  "a12e7851a96152ccbfdaa95408c0b36f2102bec50b80a9be367f44612a2276e1": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "El IDAE concede otros 104 millones en ayudas a la movilidad eléctrica con MOVES Corredores de Recarga y Flotas Plus",
+    "url": "https://www.idae.es/noticias/el-idae-concede-otros-104-millones-en-ayudas-la-movilidad-electrica-con-moves-corredores",
+    "editorial_key": "577d68d16b92c5a51e2d8e2e179f2bdb61f3b619c48069c6062d1ba56798043a"
+  },
+  "5208142ad935b2ece400e178b5aea328dcabfa6ab2379da59f0a64d3ed79da88": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "El IDAE asigna 20 millones a 11 nuevos proyectos para sustituir los combustibles fósiles por renovables en plantas de cogeneración",
+    "url": "https://www.idae.es/noticias/el-idae-asigna-20-millones-11-nuevos-proyectos-para-sustituir-los-combustibles-fosiles-por",
+    "editorial_key": "f3f0ada16bbc88046e4de418716077b73ae4671fd35dc82530855370a053e666"
+  },
+  "234fdd3c1d1c432ee565461b062893fce227b64387d5222301af18b3e1adfea3": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "El IDAE lanza 115 millones en ayudas para proyectos innovadores de ahorro y eficiencia energética",
+    "url": "https://www.idae.es/noticias/el-idae-lanza-115-millones-en-ayudas-para-proyectos-innovadores-de-ahorro-y-eficiencia",
+    "editorial_key": "a52a241d17539368eefb70139e4e6f1a0ccdc0df7e161794f6e388eccbdd9427"
+  },
+  "0b108494c2346aaaeebf0d6665c5fb5c9dfd1f3023b3bd9d56f23e354e8a1cdb": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "Sara Aagesen anuncia 368 millones para la rehabilitación energética de hospitales, centros de salud, colegios y centros educativos públicos",
+    "url": "https://www.idae.es/noticias/sara-aagesen-anuncia-368-millones-para-la-rehabilitacion-energetica-de-hospitales-centros",
+    "editorial_key": "2d2cae07a0b0ebe87acfd28fe30ba2c5ae18f9ba96d5b1a6c291f375c71fa838"
+  },
+  "f61587a658ed928c4e8c8740d83a4fbe0a01950bb4b4e80a8ab093e514f706a7": {
+    "seen_at": "2026-07-20T22:36:10.194788+00:00",
+    "title": "El IDAE asigna 512 millones en ayudas a la repotenciación eólica e hidroeléctrica a 149 proyectos en 16 comunidades autónomas",
+    "url": "https://www.idae.es/noticias/el-idae-asigna-512-millones-en-ayudas-la-repotenciacion-eolica-e-hidroelectrica-149",
+    "editorial_key": "8f5af3caa778d2c1ebefd91e24992370848eb2c6f1130de8d3052008ffbb9761"
+  }
+}

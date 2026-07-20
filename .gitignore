@@ -2,4 +2,4 @@
 __pycache__/
 *.pyc
 .venv/
-data/seen_items.json
+
