@@ -40,7 +40,8 @@ SCHEMA = {
                 {
                     "empresa": {"type": "string"},
                     "pais": {"type": "string"},
-                    "setor": {"type": "string"},
+                    "setor": {"type": "string", "enum": ["Energy", "Transport Infrastructure", "Digital Infrastructure", "Utilities Networks", "Water & Waste"]},
+                    "subcategoria": {"type": "string"},
                     "tipo_oportunidade": {
                         "type": "string",
                         "enum": [
@@ -74,7 +75,7 @@ SCHEMA = {
                     },
                 },
                 [
-                    "empresa", "pais", "setor", "tipo_oportunidade",
+                    "empresa", "pais", "setor", "subcategoria", "tipo_oportunidade",
                     "probabilidade_transacao", "deal_score", "descricao", "trigger",
                     "porque_agora", "angulo_ma", "quem_pode_mexer",
                     "proximo_passo", "score", "source_ids",
@@ -86,6 +87,8 @@ SCHEMA = {
             "maxItems": 3,
             "items": _item_schema(
                 {
+                    "setor": {"type": "string", "enum": ["Energy", "Transport Infrastructure", "Digital Infrastructure", "Utilities Networks", "Water & Waste"]},
+                    "subcategoria": {"type": "string"},
                     "titulo": {"type": "string"},
                     "porque_importa": {"type": "string"},
                     "leitura_ma": {"type": "string"},
@@ -98,7 +101,7 @@ SCHEMA = {
                         "items": {"type": "integer", "minimum": 1},
                     },
                 },
-                ["titulo", "porque_importa", "leitura_ma", "acao", "score", "source_ids"],
+                ["setor", "subcategoria", "titulo", "porque_importa", "leitura_ma", "acao", "score", "source_ids"],
             ),
         },
         "regulatory_developments": {
@@ -106,6 +109,8 @@ SCHEMA = {
             "maxItems": 5,
             "items": _item_schema(
                 {
+                    "setor": {"type": "string", "enum": ["Energy", "Transport Infrastructure", "Digital Infrastructure", "Utilities Networks", "Water & Waste"]},
+                    "subcategoria": {"type": "string"},
                     "tema": {"type": "string"},
                     "desenvolvimento": {"type": "string"},
                     "impacto": {"type": "string"},
@@ -118,7 +123,7 @@ SCHEMA = {
                         "items": {"type": "integer", "minimum": 1},
                     },
                 },
-                ["tema", "desenvolvimento", "impacto", "implicacao_ma", "score", "source_ids"],
+                ["setor", "subcategoria", "tema", "desenvolvimento", "impacto", "implicacao_ma", "score", "source_ids"],
             ),
         },
     },
@@ -144,9 +149,9 @@ def _plain(text: str) -> str:
 
 def _editorial_text(item: dict, section: str) -> str:
     fields = {
-        "opportunities": ("empresa", "setor", "descricao", "trigger"),
-        "market_watch": ("titulo", "porque_importa", "leitura_ma"),
-        "regulatory_developments": ("tema", "desenvolvimento", "impacto"),
+        "opportunities": ("empresa", "setor", "subcategoria", "descricao", "trigger"),
+        "market_watch": ("setor", "subcategoria", "titulo", "porque_importa", "leitura_ma"),
+        "regulatory_developments": ("setor", "subcategoria", "tema", "desenvolvimento", "impacto"),
     }[section]
     return _plain(" ".join(str(item.get(k) or "") for k in fields))
 
@@ -267,7 +272,7 @@ def analyse(news_items, prompt_text: str, model: str = "gpt-4.1-mini"):
         text={
             "format": {
                 "type": "json_schema",
-                "name": "daily_energy_ma_radar",
+                "name": "daily_energy_infrastructure_ma_radar",
                 "schema": SCHEMA,
                 "strict": True,
             }

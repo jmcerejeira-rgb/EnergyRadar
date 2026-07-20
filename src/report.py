@@ -84,6 +84,7 @@ TEMPLATE = """
 body { font-family: Arial, Helvetica, sans-serif; color:#17212b; line-height:1.45; max-width:820px; margin:auto; }
 h2 { margin-bottom:3px; }
 h3 { margin:24px 0 10px; border-bottom:1px solid #d9e0e7; padding-bottom:5px; }
+.sector {font-size:12px;font-weight:700;color:#1f5a7a;margin:4px 0 8px;}
 .meta { color:#66737f; font-size:12px; }
 .stats { display:flex; gap:10px; margin:14px 0; flex-wrap:wrap; }
 .stat { background:#f3f6f8; border-radius:6px; padding:9px 12px; font-size:13px; }
@@ -102,7 +103,7 @@ ul { padding-left:20px; }
 </style>
 </head>
 <body>
-<h2>Energy M&A Radar | Portugal | {{ date }}</h2>
+<h2>Energy & Infrastructure M&A Radar | Iberia | {{ date }}</h2>
 <p class="meta">Leitura diária de originação. Informação sujeita a confirmação nas fontes originais.</p>
 
 <div class="stats">
@@ -146,6 +147,7 @@ ul { padding-left:20px; }
 {% for m in r.market_watch %}
 <div class="card">
 <div class="title">{{ m.titulo }} <span class="refs">{{ m.source_ids | refs }}</span></div>
+<div class="sector">{{ m.setor }}{% if m.subcategoria %} → {{ m.subcategoria }}{% endif %}</div>
 <div class="score">{{ m.score | score }}</div>
 <div class="label">Porque importa</div><div>{{ m.porque_importa }}</div>
 <div class="label">Leitura M&A</div><div>{{ m.leitura_ma }}</div>
@@ -158,6 +160,7 @@ ul { padding-left:20px; }
 {% for d in r.regulatory_developments %}
 <div class="card">
 <div class="title">{{ d.tema }} <span class="refs">{{ d.source_ids | refs }}</span></div>
+<div class="sector">{{ d.setor }}{% if d.subcategoria %} → {{ d.subcategoria }}{% endif %}</div>
 <div class="score">{{ d.score | score }}</div>
 <div class="label">Desenvolvimento</div><div>{{ d.desenvolvimento }}</div>
 <div class="label">Impacto</div><div>{{ d.impacto }}</div>

@@ -1,4 +1,4 @@
-# Curated V1 source set.
+# Curated V3 source set: Iberian Energy & Infrastructure.
 # RSS is preferred. Official index parsers are used where no reliable feed exists.
 # Dead, duplicate and repeatedly timing-out sources are intentionally excluded.
 
@@ -12,7 +12,7 @@ rss:
     url: https://eco.sapo.pt/categoria/empresas/feed/
     limit: 25
 
-  # Specialist sector sources: filtered for Iberia and transaction-relevant themes
+  # Energy specialist sources: filtered for Iberia and transaction-relevant themes
   - name: PV Magazine
     url: https://www.pv-magazine.com/feed/
     limit: 30
@@ -129,6 +129,59 @@ rss:
       - solar
       - storage
 
+
+  # Infrastructure: digital, transport, water and broad infrastructure
+  - name: Data Center Dynamics
+    url: https://www.datacenterdynamics.com/en/rss/
+    limit: 30
+    include_text_terms:
+      - Portugal
+      - Spain
+      - Iberia
+      - Lisbon
+      - Madrid
+      - Barcelona
+      - Sines
+      - acquisition
+      - sale
+      - investment
+      - financing
+      - joint venture
+      - campus
+      - hyperscaler
+      - data center
+
+  - name: Capacity Media
+    url: https://www.capacitymedia.com/rss.xml
+    limit: 30
+    include_text_terms:
+      - Portugal
+      - Spain
+      - Iberia
+      - acquisition
+      - sale
+      - investment
+      - financing
+      - fibre
+      - fiber
+      - tower
+      - subsea cable
+      - data center
+
+  - name: Railway Gazette
+    url: https://www.railwaygazette.com/rss
+    limit: 25
+    include_text_terms:
+      - Portugal
+      - Spain
+      - Iberia
+      - concession
+      - PPP
+      - acquisition
+      - financing
+      - operator
+      - infrastructure
+
 html_indexes:
   # Portugal: energy regulation
   - name: ERSE Comunicados
@@ -234,6 +287,14 @@ html_indexes:
       - renováveis
       - infraestrutura
       - carregamento
+      - aeroporto
+      - porto
+      - autoestrada
+      - ferrovia
+      - data center
+      - telecomunicações
+      - água
+      - resíduos
       - concessão
 
 
@@ -258,7 +319,18 @@ html_indexes:
       - biometano
       - hidrogénio
       - infraestrutura
+      - aeroporto
+      - porto
+      - autoestrada
+      - ferrovia
+      - data center
+      - fibra
+      - telecomunicações
+      - torres
+      - água
+      - resíduos
       - concessão
+      - PPP
       - aquisição
       - compra
       - venda
@@ -269,6 +341,66 @@ html_indexes:
       - refinanciamento
       - parceria
       - capital
+
+
+  # Portugal: infrastructure and concessions
+  - name: Infraestruturas de Portugal Noticias
+    fetch_detail: true
+    url: https://www.infraestruturasdeportugal.pt/pt-pt/noticias
+    base_url: https://www.infraestruturasdeportugal.pt
+    limit: 20
+    include_text_terms:
+      - concessão
+      - subconcessão
+      - investimento
+      - financiamento
+      - ferrovia
+      - rodovia
+      - autoestrada
+      - PPP
+      - parceria
+
+  - name: ANAC Comunicados
+    fetch_detail: true
+    url: https://www.anac.pt/vPT/Generico/Noticias/Noticias/Paginas/Noticias.aspx
+    base_url: https://www.anac.pt
+    limit: 20
+    include_text_terms:
+      - aeroporto
+      - concessão
+      - operador
+      - investimento
+      - capacidade
+      - privatização
+
+  - name: AMT Noticias
+    fetch_detail: true
+    url: https://www.amt-autoridade.pt/comunicacao/noticias/
+    base_url: https://www.amt-autoridade.pt
+    limit: 20
+    include_text_terms:
+      - concessão
+      - porto
+      - ferrovia
+      - autoestrada
+      - transporte
+      - infraestrutura
+      - operador
+      - investimento
+
+  - name: ERSAR Noticias
+    fetch_detail: true
+    url: https://www.ersar.pt/pt/site-comunicacao/Paginas/noticias.aspx
+    base_url: https://www.ersar.pt
+    limit: 20
+    include_text_terms:
+      - água
+      - saneamento
+      - resíduos
+      - concessão
+      - investimento
+      - tarifa
+      - operador
 
   # Spain: official market and policy sources
   - name: REE Sala de Prensa
