@@ -169,7 +169,7 @@ def _title_from_anchor(a: Tag, context: str = "") -> str:
 def _fetch_detail(item_url: str, timeout: int = 15) -> tuple[str, str]:
     """Fetch detail page and return (summary, published). Best effort only."""
     try:
-        r = requests.get(item_url, headers=DEFAULT_HEADERS, timeout=timeout)
+        r = SESSION.get(item_url, headers=DEFAULT_HEADERS, timeout=(DEFAULT_CONNECT_TIMEOUT, timeout))
         r.raise_for_status()
         content_type = r.headers.get("Content-Type", "").lower()
         if "pdf" in content_type or item_url.lower().endswith(".pdf"):
@@ -186,7 +186,8 @@ def _fetch_detail(item_url: str, timeout: int = 15) -> tuple[str, str]:
         main = soup.find("main") or soup.find("article") or soup.body or soup
         text = _clean(main.get_text(" ", strip=True))
         return text[:3000], _normalise_date(date) if date else ""
-    except Exception:
+    except Exception as exc:
+        print(f"[WARN] Detail fetch failed for {item_url}: {type(exc).__name__}: {exc}", flush=True)
         return "", ""
 
 
@@ -204,23 +205,58 @@ def _make_item(source: str, source_type: str, title: str, url: str, summary: str
 
 
 def fetch_rss(sources):
-    """Fetch RSS/Atom feeds. Keeps compatibility with the original sources.yml format."""
+    """Fetch RSS/Atom feeds with explicit HTTP timeouts.
+
+    feedparser's direct URL mode can wait indefinitely on some hosts. We download
+    each feed with requests first, then pass the response bytes to feedparser.
+    A failed or slow source is logged and skipped without stopping the radar.
+    """
     items = []
+    failures = []
+
     for src in sources or []:
+        name = src.get("name", src.get("url", "RSS"))
+        url = src["url"]
+        timeout = int(src.get("timeout", DEFAULT_READ_TIMEOUT))
+        started = time.monotonic()
+        print(f"[SOURCE] RSS start: {name}", flush=True)
+
         try:
-            feed = feedparser.parse(src["url"])
+            response = SESSION.get(
+                url,
+                headers=DEFAULT_HEADERS,
+                timeout=(DEFAULT_CONNECT_TIMEOUT, timeout),
+            )
+            response.raise_for_status()
+            feed = feedparser.parse(response.content)
+
+            if getattr(feed, "bozo", False) and not getattr(feed, "entries", []):
+                raise ValueError(f"Invalid feed: {getattr(feed, 'bozo_exception', 'unknown parse error')}")
+
         except Exception as exc:
-            print(f"[WARN] RSS fetch failed for {src.get('name', src.get('url'))}: {exc}")
+            elapsed = time.monotonic() - started
+            failures.append(name)
+            print(
+                f"[SOURCE] RSS failed: {name} after {elapsed:.1f}s — "
+                f"{type(exc).__name__}: {exc}",
+                flush=True,
+            )
             continue
 
         limit = int(src.get("limit", 30))
         source_include = _as_list(src.get("include_text_terms"))
         source_exclude = _as_list(src.get("exclude_text_terms"))
+        source_count = 0
 
         for e in feed.entries[:limit]:
             title = _clean(getattr(e, "title", ""))
             link = _clean(getattr(e, "link", ""))
-            summary = _clean(BeautifulSoup(getattr(e, "summary", ""), "html.parser").get_text(" ", strip=True))
+            summary = _clean(
+                BeautifulSoup(
+                    getattr(e, "summary", ""),
+                    "html.parser",
+                ).get_text(" ", strip=True)
+            )
             published = getattr(e, "published", "") or getattr(e, "updated", "") or ""
             blob = f"{title} {summary} {link}"
 
@@ -232,7 +268,7 @@ def fetch_rss(sources):
                 continue
 
             items.append(_make_item(
-                source=src.get("name", src.get("url", "RSS")),
+                source=name,
                 source_type="rss",
                 title=title,
                 url=link,
@@ -240,6 +276,20 @@ def fetch_rss(sources):
                 published=published,
                 parser="rss",
             ))
+            source_count += 1
+
+        elapsed = time.monotonic() - started
+        print(
+            f"[SOURCE] RSS done: {name} — {source_count} items in {elapsed:.1f}s",
+            flush=True,
+        )
+
+    if failures:
+        print(
+            f"[WARN] RSS sources skipped ({len(failures)}): {', '.join(failures)}",
+            flush=True,
+        )
+
     return items
 
 
@@ -247,14 +297,21 @@ def fetch_http_pages(pages):
     """Fallback mode: one whole web page becomes one item. Use sparingly."""
     items = []
     for page in pages or []:
+        name = page.get("name", page.get("url", "HTTP page"))
+        started = time.monotonic()
+        print(f"[SOURCE] HTTP start: {name}", flush=True)
         try:
-            r = requests.get(page["url"], headers=DEFAULT_HEADERS, timeout=int(page.get("timeout", 20)))
+            r = SESSION.get(
+                page["url"],
+                headers=DEFAULT_HEADERS,
+                timeout=(DEFAULT_CONNECT_TIMEOUT, int(page.get("timeout", DEFAULT_READ_TIMEOUT))),
+            )
             r.raise_for_status()
             soup = _strip_noise(BeautifulSoup(r.text, "html.parser"))
             text = _clean(soup.get_text(" ", strip=True))
             title = _clean(soup.title.get_text(" ", strip=True)) if soup.title else page["name"]
             items.append(_make_item(
-                source=page["name"],
+                source=name,
                 source_type="http_page",
                 title=title,
                 url=page["url"],
@@ -262,8 +319,15 @@ def fetch_http_pages(pages):
                 published=datetime.now(timezone.utc).date().isoformat(),
                 parser="http_page",
             ))
+            elapsed = time.monotonic() - started
+            print(f"[SOURCE] HTTP done: {name} in {elapsed:.1f}s", flush=True)
         except Exception as exc:
-            print(f"[WARN] HTTP fetch failed for {page.get('name', page.get('url'))}: {exc}")
+            elapsed = time.monotonic() - started
+            print(
+                f"[SOURCE] HTTP failed: {name} after {elapsed:.1f}s — "
+                f"{type(exc).__name__}: {exc}",
+                flush=True,
+            )
     return items
 
 
@@ -435,12 +499,24 @@ def fetch_html_indexes(indexes):
         url = page["url"]
         parser = page.get("parser", "generic")
 
+        started = time.monotonic()
+        print(f"[SOURCE] INDEX start: {name} (parser={parser})", flush=True)
+
         try:
-            r = requests.get(url, headers=DEFAULT_HEADERS, timeout=int(page.get("timeout", 20)))
+            r = SESSION.get(
+                url,
+                headers=DEFAULT_HEADERS,
+                timeout=(DEFAULT_CONNECT_TIMEOUT, int(page.get("timeout", DEFAULT_READ_TIMEOUT))),
+            )
             r.raise_for_status()
             soup = _strip_noise(BeautifulSoup(r.text, "html.parser"))
         except Exception as exc:
-            print(f"[WARN] HTML index fetch failed for {name}: {exc}")
+            elapsed = time.monotonic() - started
+            print(
+                f"[SOURCE] INDEX failed: {name} after {elapsed:.1f}s — "
+                f"{type(exc).__name__}: {exc}",
+                flush=True,
+            )
             continue
 
         if parser in {"erse", "dgeg", "ren_mercado", "ren_corporate"}:
@@ -448,7 +524,12 @@ def fetch_html_indexes(indexes):
         else:
             parsed = _generic_index_items(page, soup)
 
-        print(f"[INFO] Parsed {len(parsed)} items from {name} using parser={parser}")
+        elapsed = time.monotonic() - started
+        print(
+            f"[SOURCE] INDEX done: {name} — {len(parsed)} items in {elapsed:.1f}s "
+            f"(parser={parser})",
+            flush=True,
+        )
         items.extend(parsed)
 
     return items

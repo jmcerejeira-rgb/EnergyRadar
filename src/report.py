@@ -7,249 +7,217 @@ from jinja2 import Environment, select_autoescape
 
 
 def _fmt(value: Any, fallback: str = "-") -> str:
-    """Return a safe display string for empty/missing values."""
     if value is None:
         return fallback
-    if isinstance(value, str):
-        value = value.strip()
-        return value if value else fallback
-    return str(value)
+    text = str(value).strip()
+    return text if text else fallback
 
 
-def _fmt_list(value: Any, fallback: str = "-") -> str:
-    """Render list-like fields such as buyers/investors."""
-    if not value:
-        return fallback
-    if isinstance(value, list):
-        cleaned = [_fmt(v, "") for v in value]
-        cleaned = [v for v in cleaned if v]
-        return ", ".join(cleaned) if cleaned else fallback
-    return _fmt(value, fallback)
-
-
-def _score_label(value: Any) -> str:
+def _score(value: Any) -> str:
+    labels = {5: "Acionável", 4: "Forte", 3: "Monitorizar", 2: "Baixa prioridade"}
     try:
-        score = int(value)
+        number = int(value)
     except Exception:
         return "-"
+    return f"{number}/5 — {labels.get(number, '')}".strip(" —")
 
+
+def _opportunity_type(value: Any) -> str:
     labels = {
-        5: "5 / Acionável",
-        4: "4 / Forte",
-        3: "3 / Monitorizar",
-        2: "2 / Baixa prioridade",
-        1: "1 / Irrelevante",
+        "processo_venda_provavel": "Processo de venda provável",
+        "mandato_financiamento": "Potencial mandato de financiamento",
+        "cliente_acompanhar": "Cliente a acompanhar",
+        "contexto_mercado": "Contexto de mercado",
     }
-    return labels.get(score, str(score))
+    return labels.get(str(value or "").strip(), _fmt(value))
+
+
+def _probability(value: Any) -> str:
+    labels = {"alta": "Probabilidade alta", "media": "Probabilidade média", "baixa": "Probabilidade baixa"}
+    return labels.get(str(value or "").strip().lower(), _fmt(value))
+
+
+def _source_index(report: dict, catalog: dict) -> tuple[list[dict], dict[int, int]]:
+    """Build a compact, consecutive source list and collapse duplicate URLs."""
+    ordered_ids: list[int] = []
+    for section in ("opportunities", "market_watch", "regulatory_developments"):
+        for item in report.get(section, []):
+            for sid in item.get("source_ids", []):
+                try:
+                    sid = int(sid)
+                except Exception:
+                    continue
+                if sid not in ordered_ids:
+                    ordered_ids.append(sid)
+
+    sources: list[dict] = []
+    source_map: dict[int, int] = {}
+    url_to_display: dict[str, int] = {}
+
+    for sid in ordered_ids:
+        source = catalog.get(sid) or {}
+        url = str(source.get("url") or "").strip()
+        if not url:
+            continue
+        normalized = url.rstrip("/").lower()
+        if normalized in url_to_display:
+            source_map[sid] = url_to_display[normalized]
+            continue
+
+        display_id = len(sources) + 1
+        url_to_display[normalized] = display_id
+        source_map[sid] = display_id
+        entry = dict(source)
+        entry["display_id"] = display_id
+        sources.append(entry)
+
+    return sources, source_map
 
 
 TEMPLATE = """
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <style>
-    body { font-family: Arial, Helvetica, sans-serif; color: #1f2933; line-height: 1.35; }
-    h2 { margin-bottom: 4px; }
-    h3 { margin-top: 26px; margin-bottom: 8px; }
-    p.meta { color: #697386; margin-top: 0; }
-    .summary { background: #f4f6f8; border-left: 4px solid #697386; padding: 12px; margin: 14px 0 18px 0; }
-    .kpis { margin: 12px 0 20px 0; }
-    .kpi { display: inline-block; padding: 6px 10px; background: #eef2f7; margin-right: 8px; border-radius: 4px; }
-    table { border-collapse: collapse; width: 100%; margin-bottom: 18px; }
-    th { background: #eef2f7; text-align: left; font-weight: bold; }
-    th, td { border: 1px solid #d8dee9; padding: 7px; vertical-align: top; }
-    td.small, th.small { width: 7%; }
-    td.medium, th.medium { width: 13%; }
-    .muted { color: #697386; }
-    .empty { color: #697386; font-style: italic; }
-    ul { margin-top: 6px; }
-  </style>
+<meta charset="utf-8">
+<style>
+body { font-family: Arial, Helvetica, sans-serif; color:#17212b; line-height:1.45; max-width:820px; margin:auto; }
+h2 { margin-bottom:3px; }
+h3 { margin:24px 0 10px; border-bottom:1px solid #d9e0e7; padding-bottom:5px; }
+.sector {font-size:12px;font-weight:700;color:#1f5a7a;margin:4px 0 8px;}
+.meta { color:#66737f; font-size:12px; }
+.stats { display:flex; gap:10px; margin:14px 0; flex-wrap:wrap; }
+.stat { background:#f3f6f8; border-radius:6px; padding:9px 12px; font-size:13px; }
+.hero { background:#f3f6f8; padding:14px 18px; margin:16px 0; border-radius:6px; }
+.action { background:#fff8e6; padding:12px 16px; border-left:4px solid #c58b00; margin:14px 0; }
+.card { border:1px solid #d9e0e7; border-radius:6px; padding:13px 15px; margin-bottom:10px; }
+.title { font-size:16px; font-weight:bold; }
+.label { color:#66737f; font-size:12px; text-transform:uppercase; letter-spacing:.04em; margin-top:8px; }
+.refs { color:#3b668c; font-weight:bold; white-space:nowrap; }
+.score { font-size:12px; color:#52616f; }
+.empty { color:#66737f; font-style:italic; }
+.sources { font-size:12px; color:#52616f; }
+.sources li { margin-bottom:7px; }
+a { color:#185b8d; }
+ul { padding-left:20px; }
+</style>
 </head>
 <body>
+<h2>Energy & Infrastructure M&A Radar | Iberia | {{ date }}</h2>
+<p class="meta">Leitura diária de originação. Informação sujeita a confirmação nas fontes originais.</p>
 
-<h2>Energy M&A Deal Radar | Portugal | {{ date }}</h2>
-<p class="meta">Relatório automático de originação. Usar como triagem; confirmar sempre nas fontes originais.</p>
-
-<div class="summary">
-  <b>Resumo executivo:</b><br>
-  {{ r.executive_summary | fmt }}
+<div class="stats">
+<div class="stat"><b>Oportunidades M&A:</b> {{ r.opportunities | length }}</div>
+<div class="stat"><b>Notícias relevantes:</b> {{ r.market_watch | length }}</div>
+<div class="stat"><b>Regulação material:</b> {{ r.regulatory_developments | length }}</div>
 </div>
 
-<div class="kpis">
-  <span class="kpi"><b>{{ r.opportunities | length }}</b> oportunidades M&A</span>
-  <span class="kpi"><b>{{ r.regulatory_developments | length }}</b> desenvolvimentos regulatórios</span>
-  <span class="kpi"><b>{{ r.market_watch | length }}</b> notícias para monitorizar</span>
-  <span class="kpi"><b>{{ r.watchlist_hits | default([]) | length }}</b> watchlist hits</span>
-  <span class="kpi"><b>{{ r.critical_alerts | length }}</b> alertas críticos</span>
+<div class="hero">
+<b>Hoje em 30 segundos</b>
+<ul>
+{% for bullet in r.today_in_30_seconds %}<li>{{ bullet }}</li>{% endfor %}
+</ul>
+{% if r.executive_summary %}<div>{{ r.executive_summary }}</div>{% endif %}
 </div>
 
-{% if r.top_weekly_opportunities %}
-<h3>Top oportunidades da semana</h3>
-<ul>
-{% for t in r.top_weekly_opportunities %}
-  <li>{{ t | fmt }}</li>
-{% endfor %}
-</ul>
-{% endif %}
-
-{% if r.critical_alerts %}
-<h3>Alertas críticos</h3>
-<ul>
-{% for a in r.critical_alerts %}
-  <li>{{ a | fmt }}</li>
-{% endfor %}
-</ul>
-{% endif %}
-
-{% if r.watchlist_hits %}
-<h3>Watchlist hits</h3>
-<table>
-<tr>
-  <th>Título</th>
-  <th class="medium">Fonte</th>
-  <th class="medium">Data</th>
-  <th class="medium">Empresas</th>
-  <th class="medium">Compradores / investidores</th>
-  <th class="small">Link</th>
-</tr>
-{% for h in r.watchlist_hits %}
-<tr>
-  <td>{{ h.title | fmt }}</td>
-  <td>{{ h.source | fmt }}</td>
-  <td>{{ h.published | fmt }}</td>
-  <td>{{ h.companies | fmt }}</td>
-  <td>{{ h.buyers_investors | fmt }}</td>
-  <td>
-    {% if h.url %}<a href="{{ h.url }}">Abrir</a>{% else %}<span class="muted">Sem link</span>{% endif %}
-  </td>
-</tr>
-{% endfor %}
-</table>
+{% if r.banker_actions %}
+<div class="action">
+<b>O que faria hoje</b>
+<ul>{% for action in r.banker_actions %}<li>{{ action }}</li>{% endfor %}</ul>
+</div>
 {% endif %}
 
 <h3>Oportunidades M&A</h3>
-{% if r.opportunities %}
-<table>
-<tr>
-  <th>Empresa</th>
-  <th class="small">País</th>
-  <th class="medium">Setor</th>
-  <th>Descrição</th>
-  <th>Sinal observado</th>
-  <th>Ângulo M&A</th>
-  <th>Compradores / investidores</th>
-  <th class="medium">Fonte / data</th>
-  <th class="small">Score</th>
-  <th>Próximo passo</th>
-  <th class="small">Link</th>
-</tr>
 {% for o in r.opportunities %}
-<tr>
-  <td>{{ o.empresa | fmt }}</td>
-  <td>{{ o.pais | fmt }}</td>
-  <td>{{ o.setor | fmt }}</td>
-  <td>{{ o.descricao_2_linhas | fmt }}</td>
-  <td>{{ o.sinal_observado | fmt }}</td>
-  <td>{{ o.angulo_ma | fmt }}</td>
-  <td>{{ o.potenciais_compradores_investidores | fmt_list }}</td>
-  <td>{{ o.fonte_data | fmt }}</td>
-  <td>{{ o.score | score_label }}</td>
-  <td>{{ o.proximo_passo | fmt }}</td>
-  <td>
-    {% if o.url %}<a href="{{ o.url }}">Fonte</a>{% else %}<span class="muted">Sem link</span>{% endif %}
-  </td>
-</tr>
-{% endfor %}
-</table>
-{% else %}
-<p class="empty">Sem oportunidades M&A acionáveis neste lote.</p>
-{% endif %}
+<div class="card">
+<div class="title">{{ o.empresa }} — {{ o.setor }} <span class="refs">{{ o.source_ids | refs }}</span></div>
+<div class="score">{{ o.pais }} | Deal Score {{ o.deal_score }}/100 | {{ o.probabilidade_transacao | probability }}</div>
+<div class="label">Tipo</div><div>{{ o.tipo_oportunidade | opportunity_type }}</div>
+<div class="label">O que aconteceu</div><div>{{ o.descricao }}</div>
+<div class="label">Trigger</div><div>{{ o.trigger }}</div>
+<div class="label">Porque agora</div><div>{{ o.porque_agora }}</div>
+<div class="label">Ângulo M&A</div><div>{{ o.angulo_ma }}</div>
+{% if o.quem_pode_mexer %}<div class="label">Quem pode mexer</div><div>{{ o.quem_pode_mexer | join(', ') }}</div>{% endif %}
+<div class="label">Próximo passo</div><div>{{ o.proximo_passo }}</div>
+</div>
+{% else %}<p class="empty">Sem oportunidades M&A acionáveis.</p>{% endfor %}
 
-
-<h3>Notícias relevantes para monitorizar</h3>
 {% if r.market_watch %}
-<table>
-<tr>
-  <th>Título</th>
-  <th class="medium">Categoria</th>
-  <th>Motivo de relevância</th>
-  <th>Porque não é lead M&A</th>
-  <th class="medium">Fonte / data</th>
-  <th class="small">Score</th>
-  <th class="small">Link</th>
-</tr>
+<h3>Notícias que merecem leitura</h3>
 {% for m in r.market_watch %}
-<tr>
-  <td>{{ m.titulo | fmt }}</td>
-  <td>{{ m.categoria | fmt }}</td>
-  <td>{{ m.motivo_relevancia | fmt }}</td>
-  <td>{{ m.porque_nao_e_lead_ma | fmt }}</td>
-  <td>{{ m.fonte_data | fmt }}</td>
-  <td>{{ m.score | score_label }}</td>
-  <td>
-    {% if m.url %}<a href="{{ m.url }}">Fonte</a>{% else %}<span class="muted">Sem link</span>{% endif %}
-  </td>
-</tr>
+<div class="card">
+<div class="title">{{ m.titulo }} <span class="refs">{{ m.source_ids | refs }}</span></div>
+<div class="sector">{{ m.setor }}{% if m.subcategoria %} → {{ m.subcategoria }}{% endif %}</div>
+<div class="score">{{ m.score | score }}</div>
+<div class="label">Porque importa</div><div>{{ m.porque_importa }}</div>
+<div class="label">Leitura M&A</div><div>{{ m.leitura_ma }}</div>
+</div>
 {% endfor %}
-</table>
-{% else %}
-<p class="empty">Sem notícias de mercado/regulação para monitorização adicional.</p>
 {% endif %}
 
-<h3>Desenvolvimentos regulatórios</h3>
 {% if r.regulatory_developments %}
-<table>
-<tr>
-  <th>Tema</th>
-  <th>Desenvolvimento</th>
-  <th>Impacto esperado</th>
-  <th>Implicação M&A</th>
-  <th class="medium">Fonte / data</th>
-  <th class="small">Score</th>
-  <th class="small">Link</th>
-</tr>
+<h3>Regulação material</h3>
 {% for d in r.regulatory_developments %}
-<tr>
-  <td>{{ d.tema | fmt }}</td>
-  <td>{{ d.desenvolvimento | fmt }}</td>
-  <td>{{ d.impacto_esperado | fmt }}</td>
-  <td>{{ d.implicacao_ma | fmt }}</td>
-  <td>{{ d.fonte_data | fmt }}</td>
-  <td>{{ d.score | score_label }}</td>
-  <td>
-    {% if d.url %}<a href="{{ d.url }}">Fonte</a>{% else %}<span class="muted">Sem link</span>{% endif %}
-  </td>
-</tr>
+<div class="card">
+<div class="title">{{ d.tema }} <span class="refs">{{ d.source_ids | refs }}</span></div>
+<div class="sector">{{ d.setor }}{% if d.subcategoria %} → {{ d.subcategoria }}{% endif %}</div>
+<div class="score">{{ d.score | score }}</div>
+<div class="label">Desenvolvimento</div><div>{{ d.desenvolvimento }}</div>
+<div class="label">Impacto</div><div>{{ d.impacto }}</div>
+<div class="label">Potencial impacto em ativos</div><div>{{ d.implicacao_ma }}</div>
+</div>
 {% endfor %}
-</table>
-{% else %}
-<p class="empty">Sem desenvolvimentos regulatórios relevantes neste lote.</p>
 {% endif %}
 
+{% if sources %}
+<h3>Fontes</h3>
+<ol class="sources">
+{% for s in sources %}
+<li value="{{ s.display_id }}">
+<b>{{ s.source }}</b>{% if s.published %} — {{ s.published }}{% endif %}<br>
+{{ s.title }} — <a href="{{ s.url }}">abrir fonte</a>
+</li>
+{% endfor %}
+</ol>
+{% endif %}
 </body>
 </html>
 """
 
 
-def render_html(report: dict) -> str:
-    # Make optional sections safe even when older classify.py output is used.
+def render_html(report: dict, catalog: dict | None = None) -> str:
     report = dict(report or {})
+    for key in (
+        "today_in_30_seconds", "banker_actions", "opportunities",
+        "market_watch", "regulatory_developments",
+    ):
+        report.setdefault(key, [])
     report.setdefault("executive_summary", "")
-    report.setdefault("opportunities", [])
-    report.setdefault("regulatory_developments", [])
-    report.setdefault("market_watch", [])
-    report.setdefault("critical_alerts", [])
-    report.setdefault("top_weekly_opportunities", [])
-    report.setdefault("watchlist_hits", [])
+
+    catalog = catalog or {}
+    sources, source_map = _source_index(report, catalog)
+
+    def refs_filter(source_ids) -> str:
+        refs = []
+        seen = set()
+        for sid in source_ids or []:
+            try:
+                display_id = source_map.get(int(sid))
+            except Exception:
+                continue
+            if display_id and display_id not in seen:
+                refs.append(f"[{display_id}]")
+                seen.add(display_id)
+        return " ".join(refs)
 
     env = Environment(autoescape=select_autoescape(default=True))
     env.filters["fmt"] = _fmt
-    env.filters["fmt_list"] = _fmt_list
-    env.filters["score_label"] = _score_label
+    env.filters["score"] = _score
+    env.filters["refs"] = refs_filter
+    env.filters["opportunity_type"] = _opportunity_type
+    env.filters["probability"] = _probability
 
-    template = env.from_string(TEMPLATE)
-    return template.render(
+    return env.from_string(TEMPLATE).render(
         r=report,
+        sources=sources,
         date=datetime.now().strftime("%Y-%m-%d"),
     )

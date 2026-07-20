@@ -13,13 +13,9 @@ rss:
     url: https://eco.sapo.pt/categoria/empresas/feed/
     limit: 25
 
-  - name: Jornal de Negocios Empresas
-    url: https://www.jornaldenegocios.pt/rss/empresas
-    limit: 25
-
-  # Sector trade sources; useful for buyers, comparables and sentiment
-  - name: Renewables Now
-    url: https://renewablesnow.com/news/rss/
+  # Energy specialist sources: filtered for Iberia and transaction-relevant themes
+  - name: PV Magazine
+    url: https://www.pv-magazine.com/feed/
     limit: 30
     include_text_terms:
       - Portugal
@@ -29,25 +25,7 @@ rss:
       - Spanish
       - acquisition
       - sale
-      - merger
-      - investment
-      - financing
-      - PPA
-      - battery
-      - storage
-      - solar
-      - wind
-      - biomethane
-
-  - name: PV Magazine
-    url: https://www.pv-magazine.com/feed/
-    limit: 30
-    include_text_terms:
-      - Portugal
-      - Spain
-      - Iberia
-      - acquisition
-      - sale
+      - divestment
       - investment
       - financing
       - PPA
@@ -63,37 +41,156 @@ rss:
       - Spain
       - Iberia
       - acquisition
+      - sale
       - investment
       - financing
       - BESS
       - battery
       - storage
 
-  # REN REMIT feeds. These are operational/market signals, not M&A signals by themselves.
-  - name: REN REMIT Eletricidade Tempo Real
-    url: https://mercado.ren.pt/_layouts/SIMEE.Webfeeds/Electric.aspx
-    limit: 30
 
-  - name: REN REMIT Eletricidade Arquivo
-    url: https://mercado.ren.pt/_layouts/SIMEE.Webfeeds/Electric_arch.aspx
+  # Spain: specialist energy press
+  - name: El Periodico de la Energia
+    url: https://elperiodicodelaenergia.com/feed/
     limit: 30
+    include_text_terms:
+      - España
+      - Portugal
+      - Iberia
+      - adquisición
+      - compra
+      - venta
+      - desinversión
+      - inversión
+      - financiación
+      - refinanciación
+      - socio
+      - joint venture
+      - cartera
+      - proyecto
+      - solar
+      - eólica
+      - almacenamiento
+      - BESS
+      - biometano
+      - hidrógeno
 
-  - name: REN REMIT Gas Tempo Real
-    url: https://mercado.ren.pt/_layouts/SIMEE.Webfeeds/Gas.aspx
+  - name: Energia Estrategica
+    url: https://www.energiaestrategica.com/feed/
     limit: 30
+    include_text_terms:
+      - España
+      - Portugal
+      - Europa
+      - adquisición
+      - compra
+      - venta
+      - inversión
+      - financiación
+      - socio
+      - cartera
+      - solar
+      - eólica
+      - almacenamiento
+      - BESS
 
-  - name: REN REMIT Gas Arquivo
-    url: https://mercado.ren.pt/_layouts/SIMEE.Webfeeds/Gas_arch.aspx
+  - name: Energias Renovables
+    url: https://www.energias-renovables.com/rss.xml
     limit: 30
+    include_text_terms:
+      - España
+      - Portugal
+      - adquisición
+      - compra
+      - venta
+      - inversión
+      - financiación
+      - cartera
+      - solar
+      - eólica
+      - almacenamiento
+      - biometano
+
+  # Europe: transaction and market context
+  - name: reNEWS
+    url: https://renews.biz/feed/
+    limit: 30
+    include_text_terms:
+      - Portugal
+      - Spain
+      - Iberia
+      - acquisition
+      - sale
+      - divestment
+      - investment
+      - financing
+      - portfolio
+      - offshore
+      - wind
+      - solar
+      - storage
+
+
+  # Infrastructure: digital, transport, water and broad infrastructure
+  - name: Data Center Dynamics
+    url: https://www.datacenterdynamics.com/en/rss/
+    limit: 30
+    include_text_terms:
+      - Portugal
+      - Spain
+      - Iberia
+      - Lisbon
+      - Madrid
+      - Barcelona
+      - Sines
+      - acquisition
+      - sale
+      - investment
+      - financing
+      - joint venture
+      - campus
+      - hyperscaler
+      - data center
+
+  - name: Capacity Media
+    url: https://www.capacitymedia.com/rss.xml
+    limit: 30
+    include_text_terms:
+      - Portugal
+      - Spain
+      - Iberia
+      - acquisition
+      - sale
+      - investment
+      - financing
+      - fibre
+      - fiber
+      - tower
+      - subsea cable
+      - data center
+
+  - name: Railway Gazette
+    url: https://www.railwaygazette.com/rss
+    limit: 25
+    include_text_terms:
+      - Portugal
+      - Spain
+      - Iberia
+      - concession
+      - PPP
+      - acquisition
+      - financing
+      - operator
+      - infrastructure
 
 html_indexes:
-  # Regulador: tariffs, consultations, market rules, grid/access changes.
+  # Portugal: energy regulation
   - name: ERSE Comunicados
     parser: erse
     fetch_detail: true
     url: https://www.erse.pt/comunicacao/comunicados/
     base_url: https://www.erse.pt
-    limit: 25
+    limit: 20
     include_link_patterns:
       - /comunicacao/comunicados/
     include_text_terms:
@@ -113,7 +210,7 @@ html_indexes:
     fetch_detail: true
     url: https://www.erse.pt/atividade/consultas-publicas/em-curso/
     base_url: https://www.erse.pt
-    limit: 25
+    limit: 20
     include_text_terms:
       - eletricidade
       - gás
@@ -126,54 +223,13 @@ html_indexes:
       - autoconsumo
       - armazenamento
 
-  - name: ERSE Consultas Publicas Concluidas
-    parser: erse
-    fetch_detail: true
-    url: https://www.erse.pt/atividade/consultas-publicas/concluidas/
-    base_url: https://www.erse.pt
-    limit: 15
-    include_text_terms:
-      - eletricidade
-      - gás
-      - energia
-      - rede
-      - acesso
-      - tarifas
-      - regulamento
-      - mercado
-      - autoconsumo
-      - armazenamento
-
-  # Licenciamento / política energética.
-  - name: DGEG Destaques
-    parser: dgeg
-    fetch_detail: true
-    url: https://www.dgeg.gov.pt/pt/destaques/
-    base_url: https://www.dgeg.gov.pt
-    limit: 25
-    include_link_patterns:
-      - /pt/destaques/
-    include_text_terms:
-      - energia
-      - eletricidade
-      - renovável
-      - renováveis
-      - solar
-      - fotovoltaico
-      - autoconsumo
-      - armazenamento
-      - hidrogénio
-      - biometano
-      - licenciamento
-      - leilão
-      - rede
-
+  # Portugal: licensing and energy policy. Keep only the energy-filtered index.
   - name: DGEG Energia Destaques
     parser: dgeg
     fetch_detail: true
     url: https://www.dgeg.gov.pt/pt/destaques/?filter=Energia
     base_url: https://www.dgeg.gov.pt
-    limit: 25
+    limit: 20
     include_link_patterns:
       - /pt/destaques/
     include_text_terms:
@@ -191,13 +247,13 @@ html_indexes:
       - leilão
       - rede
 
-  # Grid and system operator news.
+  # Portugal: grid and system operator corporate news
   - name: REN Noticias
     parser: ren_corporate
     fetch_detail: true
     url: https://www.ren.pt/media/noticias
     base_url: https://www.ren.pt
-    limit: 25
+    limit: 20
     include_text_terms:
       - eletricidade
       - gás
@@ -210,29 +266,11 @@ html_indexes:
       - capacidade
       - investimento
 
-  - name: REN Mercado Eletrico Noticias
-    parser: ren_mercado
-    fetch_detail: true
-    url: https://mercado.ren.pt/PT/Electr/Comunicacao/Noticias
-    base_url: https://mercado.ren.pt
-    limit: 25
-    include_text_terms:
-      - mercado
-      - eletricidade
-      - energia
-      - rede
-      - restrições técnicas
-      - interligação
-      - desvios
-      - serviços de sistema
-      - capacidade
-      - indisponibilidade
-
-  # Competition authority: direct M&A / merger-control signal.
+  # Portugal: direct merger-control signal
   - name: AdC Noticias e Comunicados
     url: https://www.concorrencia.pt/index.php/pt/noticias-comunicados-e-intervencoes?created=&created_1=&from=&keys=&to=&type_1=All
     base_url: https://www.concorrencia.pt
-    limit: 30
+    limit: 25
     include_link_patterns:
       - /pt/noticias/
       - /pt/comunicados/
@@ -250,9 +288,185 @@ html_indexes:
       - renováveis
       - infraestrutura
       - carregamento
+      - aeroporto
+      - porto
+      - autoestrada
+      - ferrovia
+      - data center
+      - telecomunicações
+      - água
+      - resíduos
       - concessão
 
-http_pages:
-  # Keep this section short. Full-page scraping is noisy; prefer RSS/html_indexes above.
-  - name: ERSE Consultas Publicas Em Curso Full Page Fallback
-    url: https://www.erse.pt/atividade/consultas-publicas/em-curso/
+
+  # Portugal: general business press, tightly filtered for energy and transactions
+  - name: Expresso Economia
+    fetch_detail: true
+    url: https://expresso.pt/economia
+    base_url: https://expresso.pt
+    limit: 25
+    include_link_patterns:
+      - /economia/
+      - /economia/202
+    include_text_terms:
+      - energia
+      - eletricidade
+      - renováveis
+      - solar
+      - eólica
+      - armazenamento
+      - BESS
+      - biomassa
+      - biometano
+      - hidrogénio
+      - infraestrutura
+      - aeroporto
+      - porto
+      - autoestrada
+      - ferrovia
+      - data center
+      - fibra
+      - telecomunicações
+      - torres
+      - água
+      - resíduos
+      - concessão
+      - PPP
+      - aquisição
+      - compra
+      - venda
+      - desinvestimento
+      - investidor
+      - fundo
+      - financiamento
+      - refinanciamento
+      - parceria
+      - capital
+
+
+  # Portugal: infrastructure and concessions
+  - name: Infraestruturas de Portugal Noticias
+    fetch_detail: true
+    url: https://www.infraestruturasdeportugal.pt/pt-pt/noticias
+    base_url: https://www.infraestruturasdeportugal.pt
+    limit: 20
+    include_text_terms:
+      - concessão
+      - subconcessão
+      - investimento
+      - financiamento
+      - ferrovia
+      - rodovia
+      - autoestrada
+      - PPP
+      - parceria
+
+  - name: ANAC Comunicados
+    fetch_detail: true
+    url: https://www.anac.pt/vPT/Generico/Noticias/Noticias/Paginas/Noticias.aspx
+    base_url: https://www.anac.pt
+    limit: 20
+    include_text_terms:
+      - aeroporto
+      - concessão
+      - operador
+      - investimento
+      - capacidade
+      - privatização
+
+  - name: AMT Noticias
+    fetch_detail: true
+    url: https://www.amt-autoridade.pt/comunicacao/noticias/
+    base_url: https://www.amt-autoridade.pt
+    limit: 20
+    include_text_terms:
+      - concessão
+      - porto
+      - ferrovia
+      - autoestrada
+      - transporte
+      - infraestrutura
+      - operador
+      - investimento
+
+  - name: ERSAR Noticias
+    fetch_detail: true
+    url: https://www.ersar.pt/pt/site-comunicacao/Paginas/noticias.aspx
+    base_url: https://www.ersar.pt
+    limit: 20
+    include_text_terms:
+      - água
+      - saneamento
+      - resíduos
+      - concessão
+      - investimento
+      - tarifa
+      - operador
+
+  # Spain: official market and policy sources
+  - name: REE Sala de Prensa
+    fetch_detail: true
+    url: https://www.ree.es/es/sala-de-prensa/actualidad
+    base_url: https://www.ree.es
+    limit: 20
+    include_text_terms:
+      - inversión
+      - red
+      - interconexión
+      - almacenamiento
+      - capacidad
+      - renovables
+      - electricidad
+
+  - name: CNMC Energia
+    fetch_detail: true
+    url: https://www.cnmc.es/ambitos-de-actuacion/energia
+    base_url: https://www.cnmc.es
+    limit: 20
+    include_text_terms:
+      - electricidad
+      - gas
+      - energía
+      - redes
+      - acceso
+      - tarifas
+      - mercado
+      - almacenamiento
+
+  - name: MITECO Energia
+    fetch_detail: true
+    url: https://www.miteco.gob.es/es/energia.html
+    base_url: https://www.miteco.gob.es
+    limit: 20
+    include_text_terms:
+      - energía
+      - electricidad
+      - renovables
+      - almacenamiento
+      - hidrógeno
+      - biogás
+      - red
+      - subasta
+
+  - name: IDAE Noticias
+    fetch_detail: true
+    url: https://www.idae.es/noticias
+    base_url: https://www.idae.es
+    limit: 20
+    include_text_terms:
+      - inversión
+      - financiación
+      - ayudas
+      - renovables
+      - almacenamiento
+      - hidrógeno
+      - biogás
+      - autoconsumo
+
+
+# Excluded in V1:
+# - Jornal de Negócios Empresas RSS: endpoint returns 404.
+# - Renewables Now RSS: endpoint returns 404.
+# - REN REMIT feeds and REN Mercado Notícias: repeated timeouts and low M&A signal.
+# - ERSE concluded consultations/full-page fallback: duplicate and noisy.
+# - Generic DGEG highlights: duplicate of the energy-filtered index.

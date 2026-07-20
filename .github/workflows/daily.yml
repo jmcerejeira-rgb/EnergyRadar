@@ -5,7 +5,7 @@ on:
   schedule:
     # 07:00 Europe/Lisbon is usually 06:00 UTC in summer and 07:00 UTC in winter.
     # Adjust seasonally if exact local time matters.
-    - cron: "0 6 * * 1-5"
+    - cron: "0 6 * * *"
 
 jobs:
   radar:
