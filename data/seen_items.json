@@ -1252,5 +1252,245 @@
     "title": "El IDAE asigna 43 millones a 36 proyectos de redes de calor y frío alimentadas por renovables",
     "url": "https://www.idae.es/noticias/el-idae-asigna-43-millones-36-proyectos-de-redes-de-calor-y-frio-alimentadas-por",
     "editorial_key": "83c78a1f7aa43eac8d439b9a9160e2eda63dcd36e19ea91c21b22a58dd8edd80"
+  },
+  "cb96e357f958071ab25c9c5de63140eb82e35645ddb5b347e1fd7493f7fa43bf": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "South African airport tenders 2 MW solar plant",
+    "url": "https://www.pv-magazine.com/2026/07/24/south-african-airport-tenders-2-mw-solar-plant/",
+    "editorial_key": "109374b0650c714fd55e69c0050c4dc90f7e8da2bd5465d28be251834c1a7959"
+  },
+  "a30531ea63afc1100add19fa748e0f8198902d99586a2d9a13cd111548f399bc": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Superhydrophobic nanocomposite coating boosts PV power output by 16%, outperforms manual cleaning",
+    "url": "https://www.pv-magazine.com/2026/07/24/superhydrophobic-nanocomposite-coating-boosts-pv-power-output-by-16-outperforms-manual-cleaning/",
+    "editorial_key": "d58edafa2cbc9db88c510aad3e338746b8cb8353ac16974b3bfbc1ba0dce0501"
+  },
+  "36dcc238a342423b3011de8855f3f5db619bec1401de23c4f983edd0daefdbf7": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Idemitsu plans 864 MWh vanadium flow battery at Australian coal mine site",
+    "url": "https://www.pv-magazine.com/2026/07/24/idemitsu-plans-864-mwh-vanadium-flow-battery-at-australian-coal-mine-site/",
+    "editorial_key": "31fbad0af31c1e0018fcda51f7bbff77af2382722fc50fa113086717127c9d79"
+  },
+  "266bd217b8f5b5fd62e31cef305f5cea9c59a38f4ca0230adb8b0264a05d6054": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Wildfire resilience: How vegetation clearing protected an 11 MW solar plant in France",
+    "url": "https://www.pv-magazine.com/2026/07/24/wildfire-resilience-how-vegetation-clearing-protected-an-11-mw-solar-plant-in-france/",
+    "editorial_key": "669d11c469f234779aef0b2a9b94b7bca938a5f530c84cedf5059ff235b12af4"
+  },
+  "b8a329b96fa6ea4994b324df0b115a2b92997ba66d92b14fd1b33fb5a2f8cf3e": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "The geopolitics of solar manufacturing and how India can build a China-alternative supply chain",
+    "url": "https://www.pv-magazine.com/2026/07/24/the-geopolitics-of-solar-manufacturing-and-how-can-india-build-a-china-alternative-supply-chain/",
+    "editorial_key": "60086817a3909a5081a9a68e5a3e07bb6c399551ba6ffd7216ef486a6330340b"
+  },
+  "ca1e6cd5be988a6c3ff6529f28446a3a75d3bb4ed659c40f367eb26b0f561600": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "JinkoSolar targets retail power bills with Sunny 365 solar-storage platform",
+    "url": "https://www.pv-magazine.com/2026/07/24/jinkosolar-targets-retail-power-bills-with-sunny-365-solar-storage-platform/",
+    "editorial_key": "cd6808e9c79ea5df126289147f64c033d19ba8bead91178d7f58c2137cba96ec"
+  },
+  "dedec2af86aed5213013df49e287b38ab4e77f19e0f0b5eca6b33c3d44579be8": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Rayzon Solar, Navitas partner with Caelux to develop 10 GW of perovskite-silicon tandem modules in India",
+    "url": "https://www.pv-magazine.com/2026/07/24/rayzon-solar-navitas-partner-us-based-caelux-to-develop-10-gw-of-perovskite-silicon-tandem-modules-in-india/",
+    "editorial_key": "43dc86c4929a269da85885949dc0cf1876bb64e67e8f2b185e70f154a58f20a9"
+  },
+  "8f81b035bb6e0bd6f100d202ef46643aee5e63683b519c065d1478f0bcdf96ca": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Array Technologies announces $203 million AWM acquisition and new 60 degree solar tracker",
+    "url": "https://www.pv-magazine.com/2026/07/24/array-technologies-expands-balance-of-system-platform-with-203-million-awm-acquisition-and-new-60-degree-solar-tracker/",
+    "editorial_key": "c24af618bcdd476582dd0a1a95619ae09eb411b56497162a510828d8cb704159"
+  },
+  "e6462f2fceb4080d1ea691a3b29e199d435c5dace0f13d645afa559cfbf5ece3": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "AI data centres’ battery dilemma: when mission-critical uptime meets thermal runaway risk",
+    "url": "https://www.energy-storage.news/ai-data-centres-battery-dilemma-when-mission-critical-uptime-meets-thermal-runaway-risk/",
+    "editorial_key": "3eec9d100c768c8a744ca9db41262439b7aa171343162f05f6b839d14336937d"
+  },
+  "237362bd7958d94016489042daafcd870816567b1e75c8d54b6b3a9f8915aade": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Europe ROUNDUP: Grenergy, MaxSolar with Saft, and Amarenco progress BESS projects in Spain, Germany, and France",
+    "url": "https://www.energy-storage.news/europe-roundup-grenergy-maxsolar-with-saft-and-amarenco-progress-bess-projects-in-spain-germany-and-france/",
+    "editorial_key": "0411c3aa52b9c0af4dd4c3105e8510fefb381aa5d2608bb536b58860f16d485e"
+  },
+  "4d3d725c30089c654fee6756b96bf447008604aef5cc4886b90244ad0b889234": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Brookfield buys BESS developer Aypa Power from Blackstone",
+    "url": "https://www.energy-storage.news/brookfield-buys-bess-developer-aypa-power-from-blackstone/",
+    "editorial_key": "e1b5879107e1e23fdad4387ad07b4b4c83c06ceb57633878c26448ab98242551"
+  },
+  "3896ae68d3cee1ddb915654dec8fe85aab5e3634c62a01d68f6ea61151181c86": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Germany sets September date for first capacity market auction",
+    "url": "https://www.energy-storage.news/germany-sets-september-date-for-first-capacity-market-auction/",
+    "editorial_key": "2368412a59fa54a96d06fbbe2f5422e6ab4b524bfaea0d96e770e2aa3eefbb0f"
+  },
+  "31b76da39e81c4dbd7a3251cd36a180a8ee1153c56e6c0aae11fe004169f50e1": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Analysis: Recent AI data centre BESS technology and deployment partnerships",
+    "url": "https://www.energy-storage.news/analysis-recent-ai-data-centre-bess-technology-and-deployment-partnerships/",
+    "editorial_key": "cde7610e220f6a22ab828d8ceabe79d5445518f1c967b5ac24ebaf3aa1630978"
+  },
+  "1e977935ce851395a0d68c70e55c5caaddd96bed119e0bcf71d22d13bdacd943": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "‘Growing interest’ in US microgrids attracts tax equity investor Foss & Company to US$30 million Maryland deal",
+    "url": "https://www.energy-storage.news/growing-interest-in-us-microgrids-attracts-tax-equity-investor-foss-company-to-us30-million-maryland-deal/",
+    "editorial_key": "58efad88a1741bb36f8944dc3bf4043d10d5680da95bcc39fb682fa26ac4abbd"
+  },
+  "44922e5cf1dae434d4017c9b182bea606c22503349729ccb11a4169dc93ceeb4": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "ON.Energy and Crusoe partner on UPS technology for US data centres, Skeleton Tech in 800 VDC partnership with DG Matrix",
+    "url": "https://www.energy-storage.news/on-energy-and-crusoe-partner-on-ups-technology-for-us-data-centres-skeleton-tech-in-800-vdc-partnership-with-dg-matrix/",
+    "editorial_key": "bb608a56e176ee0f60ae887ae7b41a60721afe04c20a91ac789ada999d7991e8"
+  },
+  "1284c93ce3155c700b919f6affa4911a1fc9b9d1b0ac2717f7dc979b2596ed6d": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Spain and Portugal back 3.5GW of new pumped hydro energy storage capacity",
+    "url": "https://www.energy-storage.news/spain-and-portugal-back-3-5gw-of-new-pumped-hydro-energy-storage-capacity/",
+    "editorial_key": "982899a81630db5e2dc42d194697e6b21642c6bad44eeb9d45e00ed4532d4c03"
+  },
+  "58b067d764aefd85f81ed8fd3073b052aa130de4f8981143224588657735afaa": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Tesla’s energy division gross margin declines 19% despite battery storage deployment rebound",
+    "url": "https://www.energy-storage.news/teslas-energy-division-gross-margin-declines-19-despite-battery-storage-deployment-rebound/",
+    "editorial_key": "de454e28d9e7388b1bcf1753f959a9636af2e236aad3a08cd8781f5ead7218e9"
+  },
+  "59e43b0f0a79b986cbd77b8630c71bfe69213147d873f3186ea26b7664ba5c12": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "La operadora Western Power busca socios para modernizar la mayor red eléctrica aislada de Australia y dar cabida a más energías renovables",
+    "url": "https://elperiodicodelaenergia.com/la-operadora-western-power-busca-socios-para-modernizar-la-mayor-red-electrica-aislada-de-australia-y-dar-cabida-a-mas-energias-renovables/",
+    "editorial_key": "38df80438bf44a919cb99eda10ba31cc5897f4fc91d5e84bbe8f76716328d973"
+  },
+  "4d1813ff3e6cd9e12781f523b5b797744966841bdf51a4ab0831275ce053f715": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "El seguro de renovables entra en una nueva era: más capacidad, pero más exigencia",
+    "url": "https://elperiodicodelaenergia.com/el-seguro-de-renovables-entra-en-una-nueva-era-mas-capacidad-pero-mas-exigencia/",
+    "editorial_key": "e92608f0fc1cfcc66dd864bcea97ca6f14eb80db6df519136650a151b6be3d6d"
+  },
+  "cc0c44426682f59e4fa2544569ae0ab2c57bc26dfc1e106aabc38e2e700c90ee": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Hatta Energy eleva un 10% sus ventas en el primer semestre, alcanzando los 1,3 millones de m3 de carburante",
+    "url": "https://elperiodicodelaenergia.com/hatta-energy-eleva-un-10-sus-ventas-en-el-primer-semestre-alcanzando-los-1-3-millones-de-m3-de-carburante/",
+    "editorial_key": "9ca3451d9ec15e8ed52a23dbd96af24f37d58d7291fe08eb0b891dea10c09a1a"
+  },
+  "04a991f189007bbeab16609f51914808a62331b35e62c894072fc202775f0a21": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Ford y Geely se alían en una joint venture para elevar la producción de Almussafes a cinco vehículos",
+    "url": "https://elperiodicodelaenergia.com/ford-y-geely-se-alian-en-una-joint-venture-para-elevar-la-produccion-de-almussafes-a-cinco-vehiculos/",
+    "editorial_key": "a052f4791061da178ff08b107f4740af647a9700e7ef0071e04ab71f4a1c879d"
+  },
+  "509f91ef706a701310a3846aef94eb598d11bdc6b949f0b4dd15af912ff68133": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Taiwan sets out boosted offshore goals",
+    "url": "https://www.renews.biz/offshore-wind/taiwan-sets-out-boosted-offshore-goals/",
+    "editorial_key": "34dc5508fd56767d11928bed9528373b419fe9d7e1664a2a7550f16e531ada12"
+  },
+  "0e8a72f8bfce0adf64336959b068e713442cbd5d12b662073cc8a6ecfa48b311": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "TenneT posts revenue increase",
+    "url": "https://www.renews.biz/uncategorized/tennet-posts-revenue-increase/",
+    "editorial_key": "29c19d02a6e9c53343b4dc4d4e56f9b5145dcaa72f68f59622ca31971599349b"
+  },
+  "3288526a28658c67036ae4e9652ef18c04a833603e8060eaf46e6a769651983c": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Blue Mackerel gets Oz permitting nod",
+    "url": "https://www.renews.biz/offshore-wind/blue-mackerel-gets-oz-permitting-nod/",
+    "editorial_key": "0e47b798180b0102af65abe289732b683287f74daa4749cfa4aaf390d69ef733"
+  },
+  "13a45a165b57e80c87b3c763f59045193fa975247376a6b317208a0b070550d4": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "RWE launches peatland restoration study",
+    "url": "https://www.renews.biz/onshore-wind/rwe-launches-peatland-restoration-study/",
+    "editorial_key": "e0e49742780d4b1cc17198cb3f353a28deb5a6cd211ada9b2f490bacba561870"
+  },
+  "e7f782e8770bead0318cf18926eb45d2c91b73cdd63fca51d58825cd083e050d": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Cero refinances 190MW Larks Green hybrid",
+    "url": "https://www.renews.biz/uncategorized/cero-refinances-190mw-larks-green-hybrid/",
+    "editorial_key": "f29ed81e3174b773234256ee1b39437e613164ad143c8593bbda24a06f72191e"
+  },
+  "00bed814da445641dae70143abae67f89bd1c5d521cb373129ee541ec6a3716c": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "SSE wins consent for Sloy upgrades",
+    "url": "https://www.renews.biz/other-news/hydro/sse-wins-consent-for-sloy-upgrades/",
+    "editorial_key": "f9ed165966f406049739f02f87f379fadd5264fa7d6844ed5f55bb07d99c6def"
+  },
+  "0c6a32211b319e91303463daa4823505086de99134bcef5585ea8cd7baa8c4fe": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Wind Multiplikator adopts Semco Maritime name",
+    "url": "https://www.renews.biz/offshore-wind/wind-multiplikator-adopts-semco-maritime-name/",
+    "editorial_key": "6447bda8d49c2891e44cba7d05c28ea139b10655ccbc0443a65ef423f49453e1"
+  },
+  "2485771b5185b69ae49bfe46619824cd43bb45038ab076abf89c8b6e5a1f115e": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "BW Ideol signs pact for French fabrication facility",
+    "url": "https://www.renews.biz/offshore-wind/bw-ideol-signs-pact-for-french-fabrication-facility/",
+    "editorial_key": "a9964046b1850449c6458b15c4c34b8d6442aacfd0bb642c843d10fbfb4bb2a0"
+  },
+  "2f3fd4bf475e51d1b56597f80581e16c181cabde9f41a8c5bac3535f6bc0e766": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Hydrogen fuel cells for data center power",
+    "url": "https://www.datacenterdynamics.com/en/whitepapers/hydrogen-fuel-cells-for-data-center-power/",
+    "editorial_key": "ff20c2ce0513658be806617a57f1e04794c7f8f9117e0794399a03ecb9a8cd0c"
+  },
+  "eac8c4ee8b5767c8a0d7a5a1840a792d003d1b69142cfbc809ef1c0bed0e8767": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "AMD and Schneider Electric launch reference standards for Helios AI rack",
+    "url": "https://www.datacenterdynamics.com/en/news/amd-and-schneider-electric-launch-reference-standards-for-helios-ai-rack/",
+    "editorial_key": "7818c8927cc4146cd1acded61a6dfd7c51fa333184b37c6c6d5329bc8a057135"
+  },
+  "4931785932a6574e4d5b102f04edb23b3ce218f3fd90a09421fa4be1654653af": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "The new playbook to energize AI data center development",
+    "url": "https://www.datacenterdynamics.com/en/whitepapers/the-new-playbook-to-energize-ai-data-center-development/",
+    "editorial_key": "31973f5e77d6cfe77f216aa61a7b2481824ff16500e69abc570c8052384ba93f"
+  },
+  "597a301a66202657d6ef96f310e00b8c2970352eed942b044748d0c0e4231bfa": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "AMD officially launches Helios rackscale system, with MI455X GPUs, Venice Epyc CPUs, and Pensando",
+    "url": "https://www.datacenterdynamics.com/en/news/amd-officially-launches-helios-rackscale-system-with-mi455x-gpus-venice-epyc-cpus-and-pensando/",
+    "editorial_key": "8460983e83cf0ac0fe2af6b4757559ad2fe26b3e2ae86e4652cdd7feb0b89f8a"
+  },
+  "d793a5474336eb8aed574eedb7468327b35822e19c27f19b74de9e0cc4e6fd78": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Hong Kong property firm ITC inks memorandum to build 1GW data center near Shanghai",
+    "url": "https://www.datacenterdynamics.com/en/news/hong-kong-property-firm-itc-inks-memorandum-to-build-1gw-data-center-near-shanghai/",
+    "editorial_key": "aeff4714b9d31eae694d05ab5f8185250c741bbcef22c5b188dd8b7923d3b62a"
+  },
+  "71d231a2524753f51bdb922d7d28b71ffc6aeaf4c3f4d3748ef38486c0b51578": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Submer's Rubix Data Centers proposes 2GW data center at former steelworks in Kentucky",
+    "url": "https://www.datacenterdynamics.com/en/news/submers-rubix-data-centers-proposes-2gw-data-center-at-former-steelworks-in-kentucky/",
+    "editorial_key": "71b008bfce129ca3c94ab51cd9e4f81bb8e671c9a9d9c8eaac45a51e25802363"
+  },
+  "8bf1e1e6f0800372d71539939e6cfb7e765be5d2fb8420387c413629dbd53220": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "Sabey starts construction on 120MW data center campus in Oregon",
+    "url": "https://www.datacenterdynamics.com/en/news/sabey-starts-construction-on-120mw-data-center-campus-in-oregon/",
+    "editorial_key": "2699e3bb0142a12e3db0a37bdaa2a8106aaf51c5b2bfe57f255897c10207d6c5"
+  },
+  "bc562609b602cf5800d3c3ca6fac7acc26ac6fe71d8ed22097702422906eeee2": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "DG Matrix, Skeleton Technologies partner on 800V DC power systems for AI data centers",
+    "url": "https://www.datacenterdynamics.com/en/news/dg-matrix-skeleton-technologies-partner-on-800v-dc-power-systems-for-ai-data-centers/",
+    "editorial_key": "8d0f350ce6682eedf99d6bc993a446d38bf79503c6c35fd31441624acb2111a3"
+  },
+  "1be495185a22ae81604f7df0a3a556e2ede8ea2f4ecd52aa0d58ddba671b8fb6": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "NovoServe expands data center capacity in the Netherlands",
+    "url": "https://www.datacenterdynamics.com/en/news/novoserve-expands-data-center-capacity-in-the-netherlands/",
+    "editorial_key": "4a25b3aa424145f02e9b409de681c66cf82ef4c21d0afe49d2be4f369a807143"
+  },
+  "d0c5aa068b0bfc2de81814dc09976990a5403d5749483676c17adfe4ac23278e": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "OpenAI data center in Sydney, Australia, abandons plans for recycled water cooling system - report",
+    "url": "https://www.datacenterdynamics.com/en/news/openai-data-center-in-sydney-australia-abandons-plans-for-recycled-water-cooling-system-report/",
+    "editorial_key": "fc88adc108676398938f473766f302a55c5a073389af670c183b22193fdd04fc"
+  },
+  "4806b85dc88dd8585306fbed22106d036ec644a2639a5237023689baacdbd99f": {
+    "seen_at": "2026-07-24T08:26:10.171012+00:00",
+    "title": "La Conferencia Sectorial de Energía aprueba repartir 368 millones para climatizar hospitales y centros de salud, y centros educativos públicos",
+    "url": "https://www.idae.es/noticias/la-conferencia-sectorial-de-energia-aprueba-repartir-368-millones-para-climatizar",
+    "editorial_key": "e26cb1089fab92f77da5af39042b3e9f9cef730bfea19a7e9e0b494a2ba1bb19"
   }
 }
