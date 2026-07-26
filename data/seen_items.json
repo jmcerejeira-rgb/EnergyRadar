@@ -1696,5 +1696,11 @@
     "title": "Comunicados",
     "url": "https://www.erse.pt/comunicacao/comunicados/?filtro=2026",
     "editorial_key": "5e8b757e44b99a8198e34c3936a97a9b7d611885a6b0364693b05c5ecbfee207"
+  },
+  "02435c119d4a75cf1e6e9ad0c947cf18cd01e6e35771ec28f49397659495b415": {
+    "seen_at": "2026-07-26T08:24:51.722719+00:00",
+    "title": "Sponsored: The key to the data center power problem",
+    "url": "https://www.datacenterdynamics.com/en/opinions/the-key-to-the-data-center-power-problem/",
+    "editorial_key": "f80a7d7ad2067639ad3eb2b35ac1aa36c63a74e7f83fb310286e0111ea02080f"
   }
 }
