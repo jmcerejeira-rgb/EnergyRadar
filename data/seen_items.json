@@ -5566,5 +5566,17 @@
     "title": "US utility Southern Co reports 55% higher data center power usage compared to last year",
     "url": "https://www.datacenterdynamics.com/en/news/us-utility-southern-co-reports-55-higher-data-center-power-usage-compared-to-last-year/",
     "editorial_key": "d68d193b612b601449bc35f4d75c8519dadaaaa2660da01e038e39c5ad307b63"
+  },
+  "84f7abeb6a90b484cd9771b0c755fb89225bdde85939c3c79bca213524b2ed6f": {
+    "seen_at": "2026-08-16T06:37:06.788955+00:00",
+    "title": "Sponsored: Power on the critical path: why the IPP is moving to the center of data center development",
+    "url": "https://www.datacenterdynamics.com/en/opinions/power-on-the-critical-path-why-the-ipp-is-moving-to-the-center-of-data-center-development/",
+    "editorial_key": "8eab662d058a22cd4f554c5bcb77dfe0eef8f09cf171ff3b1b3f03adf98f8197"
+  },
+  "ab91de692343bdcbd9bc5fefa1a716d51a058ea6d25f26ac8d59a0c9ca9c2df8": {
+    "seen_at": "2026-08-16T06:37:06.788955+00:00",
+    "title": "Are orbital AI data centers the next frontier for compute infrastructure?",
+    "url": "https://www.datacenterdynamics.com/en/opinions/are-orbital-ai-data-centers-the-next-frontier-for-compute-infrastructure/",
+    "editorial_key": "1baf6889474db15d575d237f5e5850ba28d693b7ced6de0a90b86e7c6918da5f"
   }
 }
