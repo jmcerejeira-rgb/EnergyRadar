@@ -6802,5 +6802,53 @@
     "title": "Sponsored: Powering data centers is no longer a simple matter of supply and demand",
     "url": "https://www.datacenterdynamics.com/en/marketwatch/powering-data-centers-is-no-longer-a-simple-matter-of-supply-and-demand/",
     "editorial_key": "a4effc1848dd4a1668581a42115bb051ac04b9af5cd3bed6fa3532e97e363d69"
+  },
+  "96313accbce7f907f72288fee1ab7555c12778a1dd8121507794cb087ac755ce": {
+    "seen_at": "2026-08-24T06:55:37.852503+00:00",
+    "title": "European PPA prices rise 2.3% in July",
+    "url": "https://www.pv-magazine.com/2026/08/24/european-ppa-prices-rise-2-3-in-july/",
+    "editorial_key": "09b6c33cfaaf28769b6b4f3d7456b3685b339573b1c573b27566c2f282403c33"
+  },
+  "95e99d3173af76da06205a33c27fb0ab832119e08f33b8ce8a1fd69bcf78fc1a": {
+    "seen_at": "2026-08-24T06:55:37.852503+00:00",
+    "title": "India hits $0.068/kWh tariff in 4-hour peak renewable power tender",
+    "url": "https://www.pv-magazine.com/2026/08/24/seci-discovers-inr-5-99-kwh-tariff-for-4-hour-peak-renewable-power/",
+    "editorial_key": "e447aa2a295dab7b5a7b7e1f5cf06f2ff1749a5d95ed058a8021c74efe532a31"
+  },
+  "bdf3736b523e5eec4d28b1a14b75450d2ed999c2b20afb95d003d358367fd6d5": {
+    "seen_at": "2026-08-24T06:55:37.852503+00:00",
+    "title": "Quinbrook advances plans for polysilicon factory in Australia",
+    "url": "https://www.pv-magazine.com/2026/08/24/quinbrook-advances-plans-for-polysilicon-production-plant/",
+    "editorial_key": "d56791177bc0197a9255b2a7bd7bf3d907149eb5b9f97de2a2cbb86c19bece7c"
+  },
+  "838bb0c8eb10233a1087c5d3ba7e4cd5123d2825e89e5930333c0b4ee00da187": {
+    "seen_at": "2026-08-24T06:55:37.852503+00:00",
+    "title": "Quinbrook taps GE Vernova and CATL for the third stage of Australia’s largest battery storage system",
+    "url": "https://www.energy-storage.news/quinbrook-taps-ge-vernova-and-catl-for-the-third-stage-of-australias-largest-battery-storage-system/",
+    "editorial_key": "d7267488ebe315a3129874d2f12cc97316fde9c9cb547093cc9f512224c729db"
+  },
+  "907b336fd18666f1aa2c6da5d1da62ea95b128d6e75e3db0ac74ad0a40630932": {
+    "seen_at": "2026-08-24T06:55:37.852503+00:00",
+    "title": "España pide a la UE una discusión sobre el impuesto al beneficio de petroleras por la guerra de Irán",
+    "url": "https://elperiodicodelaenergia.com/espana-pide-a-la-ue-una-discusion-sobre-el-impuesto-al-beneficio-de-petroleras-por-la-guerra-de-iran/",
+    "editorial_key": "08d892c3ce65d838570c4a7ec5bcf33771ee55a5116786f3770c8d279efe8ec1"
+  },
+  "36a71aac48a3ec0b476f77255f10bea1445e4936c9503ef65f042c532baf20d7": {
+    "seen_at": "2026-08-24T06:55:37.852503+00:00",
+    "title": "Los paneles solares semitransparentes mejoran el microclima de los invernaderos",
+    "url": "https://elperiodicodelaenergia.com/los-paneles-solares-semitransparentes-mejoran-el-microclima-de-los-invernaderos/",
+    "editorial_key": "a05b81ea7b2cff7921158bc3a4c8369c0731ec0303acbb2cce5aa9d253999eea"
+  },
+  "08750f872242514c8504c8add6732fae620f365e41434e6606d1f47f289c23d5": {
+    "seen_at": "2026-08-24T06:55:37.852503+00:00",
+    "title": "Electricidad y productos petrolíferos: la relación energética que une a España y Marruecos",
+    "url": "https://elperiodicodelaenergia.com/electricidad-y-productos-petroliferos-la-relacion-energetica-que-une-a-espana-y-marruecos/",
+    "editorial_key": "a3e3ff6251fdd21ce607f3dad15348678a308d6dbb2828f48d8ec711bd85bb09"
+  },
+  "86c7fbb4e17e802d8fadc7a898912ff9fb7c904c2e2049cac027b2199783aec7": {
+    "seen_at": "2026-08-24T06:55:37.852503+00:00",
+    "title": "Lithium-ion batteries are reshaping data centers, fire safety must keep pace",
+    "url": "https://www.datacenterdynamics.com/en/opinions/lithium-ion-batteries-are-reshaping-data-centers-fire-safety-must-keep-pace/",
+    "editorial_key": "24fbdfc773b292cccf828e516df74c96b7a2bef95bad804d86c13a61a67754b1"
   }
 }
