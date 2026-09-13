@@ -10138,5 +10138,29 @@
     "title": "Microsoft targets 38GW of data center capacity in 2032 - report",
     "url": "https://www.datacenterdynamics.com/en/news/microsoft-targets-38gw-of-data-center-capacity-in-2032-report/",
     "editorial_key": "f92cd739cb1f684dd2d58fc86d04e65703686f7dbd0b65d30c403eaab832a27e"
+  },
+  "9127b7684384558afe8811030449c8d39919429686c0b35723fa4cc929b573c1": {
+    "seen_at": "2026-09-13T11:08:07.009071+00:00",
+    "title": "From grid constraint to grid asset: Rethinking the path to data center power",
+    "url": "https://www.datacenterdynamics.com/en/opinions/from-grid-constraint-to-grid-asset-rethinking-the-path-to-data-center-power/",
+    "editorial_key": "cd4080ee2b1442dc20eeff36cddc502457f32dcdab58de26e3c1c82ae9e75d5d"
+  },
+  "175f528df33129a7f554c8a24bac3b2c2590dd1cdc5649d959aea9907c5f6a57": {
+    "seen_at": "2026-09-13T11:08:07.009071+00:00",
+    "title": "Sponsored: From pilot to production: Direct liquid cooling deployment risks in AI data center cooling",
+    "url": "https://www.datacenterdynamics.com/en/opinions/from-pilot-to-production-direct-liquid-cooling-deployment-risks-in-ai-data-center-cooling/",
+    "editorial_key": "753296e21843273fa338495dad5a12c9c650f4bec4a40e97954f4daeb1014add"
+  },
+  "4fde20ac825ff2250273f0c70ad54ef842ba08ab7e5f5499503ed4256b0c687a": {
+    "seen_at": "2026-09-13T11:08:07.009071+00:00",
+    "title": "Sponsored: Making data centers ready for AI workloads with rack-level cooling",
+    "url": "https://www.datacenterdynamics.com/en/opinions/making-data-centers-ready-for-ai-workloads-with-rack-level-cooling/",
+    "editorial_key": "1e0f5ccf043a910d2b9d09c8b4fb4933cc3417a2dd9267965f8e2f1225e17218"
+  },
+  "e8fb5c5dd043f3b86633212e1776b2c8cd6b177c3bf8475412223d2e30be343a": {
+    "seen_at": "2026-09-13T11:08:07.009071+00:00",
+    "title": "AI has changed the data center's job description",
+    "url": "https://www.datacenterdynamics.com/en/opinions/ai-has-changed-the-data-centers-job-description/",
+    "editorial_key": "6114238218f0783e1812fbcf00aba9ed553df8213859215adc969cc411c6a475"
   }
 }
