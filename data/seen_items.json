@@ -1,10 +1,4 @@
 {
-  "02435c119d4a75cf1e6e9ad0c947cf18cd01e6e35771ec28f49397659495b415": {
-    "seen_at": "2026-07-26T08:24:51.722719+00:00",
-    "title": "Sponsored: The key to the data center power problem",
-    "url": "https://www.datacenterdynamics.com/en/opinions/the-key-to-the-data-center-power-problem/",
-    "editorial_key": "f80a7d7ad2067639ad3eb2b35ac1aa36c63a74e7f83fb310286e0111ea02080f"
-  },
   "0f385c7ca2cfd1b77583766e6e136020b29e5c84127707d61d613c0d897ec51b": {
     "seen_at": "2026-07-27T09:50:58.799157+00:00",
     "title": "Lebanon tenders 350 MW of solar",
@@ -16414,5 +16408,179 @@
     "title": "Tareas de la CNMC",
     "url": "https://www.cnmc.es/sectores-que-regulamos/energia/mibel",
     "editorial_key": "584141b1e54b7cc2bdcc6044471789d52896b2536dcc2c5b87a5a16e5981869f"
+  },
+  "cc3669e56bdacb1c6352ca0ff56721667a89c180612493df209b8c65f7fa3501": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Gritt Robotics brings AI-assisted robotics to bolster shrinking solar workforce",
+    "url": "https://www.pv-magazine.com/2026/10/24/gritt-robotics-brings-ai-assisted-robotics-to-bolster-shrinking-solar-workforce/",
+    "editorial_key": "5090cfed5d17d61abac57fcc2500d85b6dc38876c3be25b7284422dd826c0be9"
+  },
+  "5bb3a890e9e69ec4b8f45143783d499b532fe8fefc389ff07ff9f165ac6e16bb": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Italy deploys 4.83 GW of PV in January-September",
+    "url": "https://www.pv-magazine.com/2026/10/24/italy-deploys-4-83-gw-of-pv-in-january-september/",
+    "editorial_key": "0d9ed88bc8a2fd6307812552ac3cfb1e70c036dd2bc3be9f3c565fed08daf15e"
+  },
+  "f1ed36f93acf8ba0893fb9bc7431918dd856670baf3014ed1ed8c36785dc5b37": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Mozambique entrusts small solar panel factory to UAE’s Jampur Group",
+    "url": "https://www.pv-magazine.com/2026/10/24/mozambique-entrusts-solar-panel-factory-to-uaes-jampur-group/",
+    "editorial_key": "27da893d4c11971d7a22f1c39d22207f165759087c592b834cbe2fac7a3e21f6"
+  },
+  "fefb9c49627314fde76b6ce2d107fa2bf891597f0f1a3e5a8800e54730567d46": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "‘When it is your turn, open the door for the woman coming next’",
+    "url": "https://www.pv-magazine.com/2026/10/24/when-it-is-your-turn-open-the-door-for-the-woman-coming-next/",
+    "editorial_key": "2ccff38e3339686239521ffe7b2657a11ef34d590d95887a33da2c61a017cf33"
+  },
+  "4bc7d7a70ec67a0b177cc81a3f675721d2c548df6b398f495eee3ae5e6001479": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Glass-free European photovoltaic modules for vehicles, noise barriers and boats",
+    "url": "https://www.pv-magazine.com/2026/10/24/glass-free-european-photovoltaic-modules-for-vehicles-noise-barriers-and-boats/",
+    "editorial_key": "d104b7a88635fb9e34d5ff7d3806e79bc238329decd2f7b91a4fa918cd22fbe3"
+  },
+  "28bf5d61f87fdda90b0a50d3635a7b4422bc80fd57f34cb7b209cc6f83289d59": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Vietnam orders provinces to introduce rooftop solar incentives by December 2026",
+    "url": "https://www.pv-magazine.com/2026/10/24/vietnam-orders-provinces-to-introduce-rooftop-solar-incentives-by-december-2026/",
+    "editorial_key": "b8803d4a0512d722ab31f6f4bc61b42f2fbc830c5cc971e4b27186f63236162a"
+  },
+  "b6bb4e2a001b6ca84d491df635d0d7df712ee4cc20f8749f2ddf923d1d945296": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Couple travels through 10 African countries in solar-powered motorhome with battery storage",
+    "url": "https://www.pv-magazine.com/2026/10/24/couple-travels-through-10-african-countries-in-solar-powered-motorhome-with-battery-storage/",
+    "editorial_key": "5657989803920bbcbf36cc44e7cc9b38926fa2f7ac78db956fc605576b77ac7d"
+  },
+  "18eb62edba1f89f175677d2a8e6734aab23b9aa45e5957102759e337910b627d": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Australia’s 2.2 GW Snowy 2.0 pumped hydro cost estimate rises again",
+    "url": "https://www.pv-magazine.com/2026/10/24/australias-2-2-gw-snowy-2-0-pumped-hydro-cost-estimate-rises-again/",
+    "editorial_key": "5ed77e9cf1bb97b33576eea2dad035519dc1c9d34db42c228ea8f5bb0b290d79"
+  },
+  "7e4975a8208eaef356f7adc162ba8eb1540924b55627f91bd85d209f3fb4d6ea": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "U.S. residential solar prices rise 3.2% as third-party ownership gains ground",
+    "url": "https://www.pv-magazine.com/2026/10/24/residential-solar-prices-rise-3-2-as-third-party-ownership-gains-ground/",
+    "editorial_key": "699e444b3b2739b70666a200f9942d97d9cc6c755fa5936579a3981a1f4d9424"
+  },
+  "17fbd9a6fafb5a62b18fd744a47b1f71fcabdf80fda0a7fe2a1c397df018e8ac": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Tesla Q3 2026 energy storage revenues fall despite second-highest quarterly deployments",
+    "url": "https://www.energy-storage.news/tesla-q3-2026-energy-storage-revenues-fall-despite-second-highest-quarterly-deployments/",
+    "editorial_key": "19e540f06d17504f42f0f687c7b4e256b30908c580739bd21dcbb7b2d8bbc687"
+  },
+  "042fb7ed1cb2e323a5fc04acd49a772316e8fabf45aaa08a5ae332daccb9e6c1": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Google and Voltus expand PJM virtual power plant agreement to 1GW",
+    "url": "https://www.energy-storage.news/google-and-voltus-expand-pjm-virtual-power-plant-agreement-to-1gw/",
+    "editorial_key": "ffc118d262f3b34ae743dc509c74019ef17733df189544b21e984446bbc61286"
+  },
+  "95f46226a45ac79f9db8902713622bf2b32f4dd05ec21cf7077bb6fd3e577284": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "La gran apuesta de Argentina por la energía nuclear de próxima generación",
+    "url": "https://elperiodicodelaenergia.com/la-gran-apuesta-de-argentina-por-la-energia-nuclear-de-proxima-generacion/",
+    "editorial_key": "07a9dc81c5d8c0d4d2698f5ffcbf6527b5654f0a1784533d09c7ce4c5c3da9dc"
+  },
+  "ce22b8a9139634f6ded7dc2bbaec1f79ac8a4311743b0bd12017c01a896754eb": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Crean en Málaga un simulador de perforación de Oil&Gas, geotérmica y almacenamiento de CO2",
+    "url": "https://elperiodicodelaenergia.com/crean-en-malaga-un-simulador-de-perforacion-de-oil-gas-geotermica-y-almacenamiento-de-co2/",
+    "editorial_key": "32c58ef872ace5ccff9b545feebd2fa3b76c6bc20a214f920d07d7d17e773268"
+  },
+  "e733141217dc67f364161054ecc24ae88282cb23f8fe91a968dbf6d60cff3870": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "El fin del periodo transitorio de los créditos fiscales en EEUU redefinirá las perspectivas de la energía eólica y solar",
+    "url": "https://elperiodicodelaenergia.com/el-fin-del-periodo-transitorio-de-los-creditos-fiscales-en-eeuu-redefinira-las-perspectivas-de-la-energia-eolica-y-solar/",
+    "editorial_key": "5a16008c06cadacd7d1761ea5e2f07dd05bbf2c79c28ce3cdf6134b529dfb5c2"
+  },
+  "61a1e7112daa5c3e26a53590cd10021a62b6172b0e74e6235b331a5f06c20c9d": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Jinko Solar presenta un nuevo panel solar totalmente negro para tejados residenciales",
+    "url": "https://elperiodicodelaenergia.com/jinko-solar-presenta-un-nuevo-panel-solar-totalmente-negro-para-tejados-residenciales-diseno-elegante-y-altas-prestaciones/",
+    "editorial_key": "1460db9570a757fc81319eaa420c733a836ff603a44dd355364e66e7d4abbb10"
+  },
+  "02d4338517b504d385fd5a7359705f278905fb092accf1ab1cd2261ea05358b1": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Llegan al Congreso de EEUU los paneles solares de balcón: el primer proyecto federal para legalizarlos",
+    "url": "https://elperiodicodelaenergia.com/llegan-al-congreso-de-eeuu-los-paneles-solares-de-balcon-el-primer-proyecto-federal-para-legalizarlos/",
+    "editorial_key": "819f49bd55299c5c7348a2781ad62cb8084ddbd8858b8e7be9fed0d18742228a"
+  },
+  "951c342421546295878dcf9d2bd928b23dd2e4daf0c24c579f3e9c1f04045f8d": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "ERM to support 368MW Welsh wind project",
+    "url": "https://www.renews.biz/onshore-wind/erm-to-support-368mw-welsh-wind-project/",
+    "editorial_key": "513ab9f9cb862d4d9becc3d2aa4410c77bd066b3a7579f0c7957395d16d2eebb"
+  },
+  "98c85d071d38f0c8970c298cc78f1a75727ff6441a209ab7ec6975baebf413a1": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "SpaceXAI facing $6.1m fine in Mississippi for building data centers without securing correct permits",
+    "url": "https://www.datacenterdynamics.com/en/news/spacexai-data-center-mississippi-memphis-elon-musk/",
+    "editorial_key": "9ec708f1e18e8794e5d769ddf58e1ae7bdc423648f6a4ee46ba75be09668e97f"
+  },
+  "59dfa8d6a56371317b7821d7cd5764ea3966e320b330c8aeb1ec84a6b2988e33": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Core Stack JV adds more data centers to €1bn Italy network",
+    "url": "https://www.datacenterdynamics.com/en/news/core-stack-jv-adds-more-data-centers-to-1bn-italy-network/",
+    "editorial_key": "49d5259b3c0b972ba76636fd1d8f782d60cb99d541db7ab1229a4977986deb0a"
+  },
+  "52b62148596d12dec768d6f48c66cc197b94783f6bd90260e2fe561203da1915": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "New Libyan telecom firm to launch data center in 2027",
+    "url": "https://www.datacenterdynamics.com/en/news/new-libyan-telecom-firm-to-launch-data-center-in-2027/",
+    "editorial_key": "f15b20ccf559e6f6fe17f583a7d50669c48b2e39c29387f1afa98c5eecb06674"
+  },
+  "afb0814fcea1db82737dd9ff2de17d041e6b4aa648a3a62cf71550b825ce64ad": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Actyus, Adequita, and Nethits launch fund for Edge data centers - report",
+    "url": "https://www.datacenterdynamics.com/en/news/actyus-adequita-and-nethits-launch-fund-for-edge-data-centers-report/",
+    "editorial_key": "a1dda12693d00297b28cbce690a966d3a7e1433500c6012b2fb7a7d68fc1b8a0"
+  },
+  "267efa7647439b277975e5e9fd366bf43ecdae55553f7ba0082cb4544256dfd5": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Short seller bets against Csquare, says data center firm's shares are worthless",
+    "url": "https://www.datacenterdynamics.com/en/news/short-seller-bets-against-csquare-says-data-center-firms-shares-are-worthless/",
+    "editorial_key": "9562d11a3ec6ccffb02779dfb8f00016901192ec7a3ecf6c04a1655caa8b37e7"
+  },
+  "474957300488ce614deb0461f42f9c122d2ab49d6b791c1ca8fc2474c598dcf5": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Meta details Ohio Prometheus data center campus, with first phase live",
+    "url": "https://www.datacenterdynamics.com/en/news/meta-details-ohio-prometheus-data-center-campus-with-first-phase-live/",
+    "editorial_key": "7ee217a30c5e50e2243ae2b438263100a50e4f1c0bc6d084f71b64c931a74895"
+  },
+  "8c91dc7ecee70e7477053abfbf2067349c704a533642b20b13d9f96922e71dc0": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "ZTE unveils data center module designed for AI workloads",
+    "url": "https://www.datacenterdynamics.com/en/news/zte-unveils-data-center-module-designed-for-ai-workloads/",
+    "editorial_key": "862aab2c8b1ce691e61954adf124c24c2c0578bb06acc9b1c491de72c35367ed"
+  },
+  "2a770ec77ad4359725b9ceb77b05475f95f2c4ff3ca042620a4d8c3425cb8f2d": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Oregon city declares state of emergency over lost data center revenue amid state-wide ban",
+    "url": "https://www.datacenterdynamics.com/en/news/oregon-city-declares-state-of-emergency-over-lost-data-center-revenue-amid-state-wide-ban/",
+    "editorial_key": "2bee419573eb6074dfb1ab1443d8a75fd2c0feb58d4e0f81634a6247c4760713"
+  },
+  "c8a681944b563c001db3f885dfcf7e239e169f0839c025ec5d42c7e51f241428": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Sponsored: Data center optionality: Why day one decisions determine day two success",
+    "url": "https://www.datacenterdynamics.com/en/opinions/data-center-optionality-why-day-one-decisions-determine-day-two-success/",
+    "editorial_key": "872b85e68e49d7b272f3f30c269350ba35c040884dff82ad36036f507dcac9e0"
+  },
+  "c14c06ee8f016b33476ea6d111e3d399bc3f40d559198a3e6be74c185d50c4c8": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Russian finance ministry data center struck by Ukrainian forces",
+    "url": "https://www.datacenterdynamics.com/en/news/russian-tax-dc-0-gorodets/",
+    "editorial_key": "7825d61f376dfe9f27c583926b77fd76e698bd554fa80d143187dd80ec5bc39d"
+  },
+  "14cb36a5843f4b2244c845ac1fe78aec1b2af9d3ef880705d92d8d0374f6d2fd": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "O-Green plans data center campus in Zaragoza, Spain",
+    "url": "https://www.datacenterdynamics.com/en/news/o-green-plans-data-center-campus-in-zaragoza-spain/",
+    "editorial_key": "ee125e5163fc803eb3b245911cae1d76d8729a4e9818d44175d3a2dec3552bc9"
+  },
+  "c90c8c525304a8dd217ffd7e766a1b38b53c6d4dcaacbb7057b88b7f73d15031": {
+    "seen_at": "2026-10-24T10:19:30.409368+00:00",
+    "title": "Data center outage leaves Portugal's National Health Service without prescriptions",
+    "url": "https://www.datacenterdynamics.com/en/news/a-data-center-outage-leaves-portugals-sns-without-prescriptions/",
+    "editorial_key": "666765e2a7b6cc0739cc0290aae4eb601200b47a7f1123266194237f47a22e7d"
   }
 }
