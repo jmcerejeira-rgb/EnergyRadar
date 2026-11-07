@@ -1,10 +1,4 @@
 {
-  "a8eed5439ee4dae33a802b1911468d8549f7e9f17e408409e3e0891138745475": {
-    "seen_at": "2026-08-09T06:54:24.622844+00:00",
-    "title": "Sponsored: How high-performance coatings accelerate AI data center construction",
-    "url": "https://www.datacenterdynamics.com/en/marketwatch/how-high-performance-coatings-accelerate-ai-data-center-construction/",
-    "editorial_key": "d78d6c035eebe4085184c12ca81b499a22f902bd7537a05add6c8b5c659d6db2"
-  },
   "a7a8885f337dc4b0bbee252bf88388e06d917fd724daf90cf0b234e54c4521a6": {
     "seen_at": "2026-08-10T07:30:13.489456+00:00",
     "title": "India’s round-the-clock renewables tender attracts lowest bid of $0.055/kWh",
@@ -16384,5 +16378,143 @@
     "title": "Microsoft declined option for expanded compute contract in Texas with Nscale",
     "url": "https://www.datacenterdynamics.com/en/news/microsoft-declined-option-for-expanded-compute-contract-in-texas-with-nscale/",
     "editorial_key": "a414006f854410c2c0a75b65478bac060f3ee09be7c8f52d936836e0f021aa0d"
+  },
+  "c89fffceae948ea9be38520789bcb3986817b1fd947f57d10b575a082e4b397e": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "U.S. solar developers navigate policy stack as Section 232 deadline nears",
+    "url": "https://www.pv-magazine.com/2026/11/07/u-s-solar-developers-navigate-policy-stack-as-section-232-deadline-nears/",
+    "editorial_key": "3712828076387bab5464e350dd75f0e795a401f8c61392776adeb0b7bfef8120"
+  },
+  "650cf47ec27d9f2c35375138c80b811fc80920875acd79df45d36471ea185ee7": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "How the Solar+ industries can make better decisions for the energy transition",
+    "url": "https://www.pv-magazine.com/2026/11/07/how-the-solar-industries-can-make-better-decisions-for-the-energy-transition/",
+    "editorial_key": "2c7b444af1081947ad76c374930fe92881d7cf96da0e23ee369025032dfbc879"
+  },
+  "85ffc8b2875363418ae9a61a57f6dab7f6e8ce789cb5af2f2211325c092df273": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Ecuador’s largest PV plant goes online",
+    "url": "https://www.pv-magazine.com/2026/11/07/ecuadors-largest-pv-plant-goes-online/",
+    "editorial_key": "2a1828dd527304439a8be2a36cf6396b7aa348d9411caad12c292a515b40180f"
+  },
+  "9b65215342612d3c94519cde176a35c01bb4728fc0fb500e7e97df9e63ca4ab7": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Portable solar-powered system produces 1.64 liters of drinking water in 8 hours",
+    "url": "https://www.pv-magazine.com/2026/11/07/portable-solar-powered-system-produces-1-64-liters-of-drinking-water-in-8-hours/",
+    "editorial_key": "e7cc66ae07d6fd7c4e3fd9551552ed07b7cb879f967f43a2ded8e11c1b150f95"
+  },
+  "afce5e735e75107fcfbfa538dee7750727a054c3561498e5f01891760bb4dbf2": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Researchers develop 10.56 kW solar-powered pleasure boat",
+    "url": "https://www.pv-magazine.com/2026/11/07/researchers-unveil-10-56-kw-solar-powered-pleasure-boat/",
+    "editorial_key": "68469d59f14c68bd76b37d4899eda306201d15120b51811963a5b9913af15fda"
+  },
+  "aa421f4e93fd68a06d3619d0c7c93eb55889ea904bf7647502c69fa2983d0bbe": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Study finds 0.5-meter spacing between solar module rows improves cooling in floating PV systems",
+    "url": "https://www.pv-magazine.com/2026/11/07/study-finds-0-5-meter-spacing-between-solar-module-rows-improves-cooling-in-floating-pv-systems/",
+    "editorial_key": "5f1ce555735b066c3b74cd460ff93748fb80d18076e748eff39b04ee95188a8b"
+  },
+  "e012ba3e7bda19a391a7ccd0a8ad522b6d0edd48f22f6aaaaa69286ab4ceb85a": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "India’s installed solar PV capacity to exceed 350 GW by 2030, says IEA",
+    "url": "https://www.pv-magazine.com/2026/11/07/indias-installed-solar-pv-capacity-to-exceed-350-gw-by-2030-says-iea/",
+    "editorial_key": "65732b9709a60f9dbd2f92eec37d657e57071f6e3a6e04c91f50eb499eab4335"
+  },
+  "522debb6c54c8a5a83af61e59bf8422d272d4258ebbcfdd3a1774ee4a5db0a2c": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Beyond scale and hardware",
+    "url": "https://www.pv-magazine.com/2026/11/07/beyond-scale-and-hardware/",
+    "editorial_key": "ec8277b75a9cb5c91cf2995e39846bfa6f32a65b9c92da51b9e241bc53dcbab1"
+  },
+  "116c99bb656ef7ed1094886f14148762682de80c9292d47212251e10d9780a5d": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Ford Energy partners with DESRI to deploy US BESS",
+    "url": "https://www.energy-storage.news/ford-energy-partners-with-desri-to-deploy-us-bess/",
+    "editorial_key": "408f78c3798d8f8b41630e841fd4f5c17759b1872b6bc8443a0afa787611d3e6"
+  },
+  "2199eb30c75da0b84d7bd26e095fde6ed79d6c84907abc48c1a2ff6c20499ff4": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "BESS Industry Buzz: Blue Wave in the midterms, RTE disagreements, cybersecurity incident in Chile",
+    "url": "https://www.energy-storage.news/bess-industry-buzz-blue-wave-in-the-midterms-rte-disagreements-cybersecurity-incident-in-chile/",
+    "editorial_key": "9c9937f8bf83e530019f792e1bd2f6fb2536aca4eea93bf16cdf5f23c259b4bb"
+  },
+  "95f40baaffc55fd10fb45d12d0841ad2ff9c6c81cb582daf62328bf8f57b7e2a": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Norwegian central bank buys US$300 million stake in Brookfield’s soon-to-be acquired BESS developer Aypa Power",
+    "url": "https://www.energy-storage.news/norwegian-central-bank-buys-us300-million-stake-in-brookfields-soon-to-be-acquired-bess-developer-aypa-power/",
+    "editorial_key": "30a7bc83919f4201ad2ee83f9beb448b5b61755ad03d9a569de9fa7a1f5d3000"
+  },
+  "eb1e6624d6e79acde0ad99ca002fd609261d19091321a9d76c1e32ac2f13dbf4": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "India approves Viability Gap Funding to support 92GWh of BESS and pumped hydro energy storage capacity",
+    "url": "https://www.energy-storage.news/india-approves-viability-gap-funding-to-support-92gwh-of-bess-and-pumped-hydro-energy-storage-capacity/",
+    "editorial_key": "185c07339d32aaccd7da980a8ea1eebb1bceda9733a7157ea3b61745f49b2b7a"
+  },
+  "5b8c5ce285576cd26664f62ded5b67c1f581fbfcb4caf9017227fab6d63b4be0": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Australia se encamina a su mayor año de crecimiento de la energía solar en tejados, mientras se prepara el despegue de las instalaciones de mediana escala",
+    "url": "https://elperiodicodelaenergia.com/australia-se-encamina-a-su-mayor-ano-de-crecimiento-de-la-energia-solar-en-tejados-mientras-se-prepara-el-despegue-de-las-instalaciones-de-mediana-escala/",
+    "editorial_key": "d4a055095564cfe83675b8833830abba484afc8872ed79117fed43df26aaf032"
+  },
+  "d1a19253aa56032ab17e1c2681b512239667f89655ac7747e50dea4524f528c0": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Asia-Pacífico liderará el crecimiento del mercado mundial de transformadores eléctricos hasta 2030",
+    "url": "https://elperiodicodelaenergia.com/asia-pacifico-liderara-el-crecimiento-del-mercado-mundial-de-transformadores-electricos-hasta-2030/",
+    "editorial_key": "24bbed40d1c168a858043bc638f93e86f930595993855f01333ac60df49cfe72"
+  },
+  "d91a40a805f491be7073655523f6341e8153417b682ca5bc572ce188bd341f68": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "La perovskita solar encuentra una vía para superar uno de sus grandes obstáculos comerciales: la degradación por la luz",
+    "url": "https://elperiodicodelaenergia.com/la-perovskita-solar-encuentra-una-via-para-superar-uno-de-sus-grandes-obstaculos-comerciales-la-degradacion-por-la-luz/",
+    "editorial_key": "3268cec27cad3ca819c80969038d40ad82a7405e0503f67728a5d4e18a0e928f"
+  },
+  "c3f8ec68d9767a8ac41e45c1a4972a546d6b7e5df954d74accc6a1e9318c07ba": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Sif warns of ‘significant’ financial challenges",
+    "url": "https://www.renews.biz/offshore-wind/sif-warns-of-significant-financial-challenges/",
+    "editorial_key": "a3b30874e01abe49cfe5c6da09a6ad51efbe0404c1a1afacf4b0edbf41665b04"
+  },
+  "098f54c985e9e048edf3197d2f91eada62e9e597cad1d127593f84f5f4178fb6": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "SSE secures Berwick Bank C cable consent",
+    "url": "https://www.renews.biz/offshore-wind/sse-secures-berwick-bank-c-cable-consent/",
+    "editorial_key": "ffdf3b964d4586453dca45663c53de7587419fa5691e4f1672ccdb9dbeee7196"
+  },
+  "ee7bde7cf2d0ee77da8c48db409bca35481f887048e70c2bd3b7466fa8812ee3": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "SpaceXAI plans data center in Arizona, Musk's firm claims it will have 6GW capacity",
+    "url": "https://www.datacenterdynamics.com/en/news/spacexai-data-center-arizona-cochise-county-elon-musk/",
+    "editorial_key": "0dda1dacf03dc60ca586464e0dcdaeb993ed2f8d9ca9d008f2b4dfc5f89d39c8"
+  },
+  "9d90fa8d834f03c52f6803d406551804b56e1b84ba63e96d99a1e9960b2a25f2": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Two days of anti-data center protests planned across Europe",
+    "url": "https://www.datacenterdynamics.com/en/news/two-days-of-anti-data-center-protest-planned-across-europe/",
+    "editorial_key": "19314b14912cb8410a84eac8ae6f0adad3737e0f86f6338fdda759e4c973c0a5"
+  },
+  "966f0cc7da7d1eeed4e6f30667c80e84037b47c028ce01d3956b33624ac25287": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "ING Bank looks to sell $500m in data center loans at once, including at Stargate site",
+    "url": "https://www.datacenterdynamics.com/en/news/ing-bank-looks-to-sell-500m-in-data-center-loans-at-once-including-at-stargate-site/",
+    "editorial_key": "37a4da607f1a88b19775b466d688a16be88bda64c88dce6dac6d0ac7101e991a"
+  },
+  "099cbdf3790e5628df8c2c620ffb09fca8cdbd5a56653394b8af61c1a38ab441": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "Why Ireland’s data centers need a new approach to energy resilience",
+    "url": "https://www.datacenterdynamics.com/en/opinions/why-irelands-data-centers-need-a-new-approach-to-energy-resilience/",
+    "editorial_key": "7a739c42d2474efcdcbdc7ce83048de5f29d0116633180ad0740a209ea9d1372"
+  },
+  "2185f0e641ccf7b527bf843480a97a4d409a791ec86dfac3ef63baf93c6f9ec2": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "More than 100 protesters break into Microsoft data center construction site in Amsterdam",
+    "url": "https://www.datacenterdynamics.com/en/news/more-than-100-protesters-break-into-microsoft-data-center-construction-site-in-amsterdam/",
+    "editorial_key": "1495075f48ff0e761319007925ea5d40e885cff36de5c44bd345175c246b1dd4"
+  },
+  "fad75f86b810a541b8fb4255df17accc43763f7e3fa190dc792a6627bd06e305": {
+    "seen_at": "2026-11-07T12:29:15.189895+00:00",
+    "title": "DTE Energy ups five-year utility investment plan to $44bn, cites data center demand",
+    "url": "https://www.datacenterdynamics.com/en/news/dte-energy-ups-five-year-utility-investment-plan-to-44bn-cites-data-center-demand/",
+    "editorial_key": "8cf00981ac5bed2a2a1ab0e61eea4697d51de933f40082dff994b087a1a10d6d"
   }
 }
