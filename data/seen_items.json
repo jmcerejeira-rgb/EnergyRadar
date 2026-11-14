@@ -1,16 +1,4 @@
 {
-  "84f7abeb6a90b484cd9771b0c755fb89225bdde85939c3c79bca213524b2ed6f": {
-    "seen_at": "2026-08-16T06:37:06.788955+00:00",
-    "title": "Sponsored: Power on the critical path: why the IPP is moving to the center of data center development",
-    "url": "https://www.datacenterdynamics.com/en/opinions/power-on-the-critical-path-why-the-ipp-is-moving-to-the-center-of-data-center-development/",
-    "editorial_key": "8eab662d058a22cd4f554c5bcb77dfe0eef8f09cf171ff3b1b3f03adf98f8197"
-  },
-  "ab91de692343bdcbd9bc5fefa1a716d51a058ea6d25f26ac8d59a0c9ca9c2df8": {
-    "seen_at": "2026-08-16T06:37:06.788955+00:00",
-    "title": "Are orbital AI data centers the next frontier for compute infrastructure?",
-    "url": "https://www.datacenterdynamics.com/en/opinions/are-orbital-ai-data-centers-the-next-frontier-for-compute-infrastructure/",
-    "editorial_key": "1baf6889474db15d575d237f5e5850ba28d693b7ced6de0a90b86e7c6918da5f"
-  },
   "cb94ff861ed0dbc7ca8525b98b0f1803f961e1954a1852ec579722c181f1a044": {
     "seen_at": "2026-08-17T06:53:01.251974+00:00",
     "title": "Saatvik Solar to add 3.6 GW of cell manufacturing capacity in India",
@@ -16444,5 +16432,119 @@
     "title": "Sponsored: Huawei Digital Power launches four innovative solutions in Dubai to power the next generation of data centers",
     "url": "https://www.datacenterdynamics.com/en/product-news/huawei-digital-power-launches-four-innovative-solutions-in-dubai-to-power-the-next-generation-of-data-centers/",
     "editorial_key": "896ffd065624331644d90d654b6424d1e2c5772ce5effb8bed1f42df639a0637"
+  },
+  "95b7b195652a2b76568f37ef34224b5c963f408a3ea1c818342d3975f38628ce": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "First attempt to address screen printing-induced degradation in copper-plated heterojunction solar cells",
+    "url": "https://www.pv-magazine.com/2026/11/14/first-attempt-to-address-screen-printing-induced-degradation-in-copper-plated-heterojunction-solar-cells/",
+    "editorial_key": "712eaa6bc529ecb338aa7e78151776bf35f57cb840f976cfda3fefab9605afac"
+  },
+  "81dc64dd7895a4e986f3006a61d9d8a1079ada7b04ec9f2670682785fcd9d68c": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "Great Lakes irradiance surges as wet weather weighs on Southwest solar resource",
+    "url": "https://www.pv-magazine.com/2026/11/14/great-lakes-irradiance-surges-as-wet-weather-weighs-on-southwest-solar-resource/",
+    "editorial_key": "7bde6d160baee6b07fbbcdb16df07b08167318b334389ed5139e1413140955c8"
+  },
+  "b18cd95fe5edf790547a852046f8391bd270253056c02fb4a51445a686645b73": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "‘The times I regret are the ones when I didn’t value myself enough to speak up’",
+    "url": "https://www.pv-magazine.com/2026/11/14/the-times-i-regret-are-the-ones-when-i-didnt-value-myself-enough-to-speak-up/",
+    "editorial_key": "1831547b97abc1ee7f1454fef979c471b65f72b73fc7cf9aba70de1fde51e408"
+  },
+  "6246023791856e6e0761736164083e1779001c8b697bc3f2dc877c4b8fef02ce": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "Masdar completes $950 million solar and battery storage project in California",
+    "url": "https://www.pv-magazine.com/2026/11/14/masdar-completes-950-million-solar-and-battery-storage-project-in-california/",
+    "editorial_key": "39ee5227404a5365fabea05f438cae56417dfa2c78eb31d2aa5134aa2436d054"
+  },
+  "4b74adc6c7b9818fa569647fb37831aaca4b14823b9eea56d7fd31d21e3b6768": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "Transparent bamboo boosts energy performance of solar PV skylights",
+    "url": "https://www.pv-magazine.com/2026/11/14/transparent-bamboo-boosts-energy-performance-of-solar-pv-skylights/",
+    "editorial_key": "11e985d4dde764810a147444f0457261c7f3d4ff3e942f010398c29bc8acaba7"
+  },
+  "fd035edb8f96ab91bdc231a10ed23fd276ee2f389f40b69a493f23a23e3a8d97": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "Yanhe Technology launches three perovskite solar module technologies into orbit",
+    "url": "https://www.pv-magazine.com/2026/11/14/yanhe-technology-launches-three-perovskite-solar-module-technologies-into-orbit/",
+    "editorial_key": "724beaa7ba13e1900a51cbcfd1ad534a228a02a28e2c9433e08520d4fb869779"
+  },
+  "387f41029da15e32c954897ed0759d2dc8254f72e7ecb93a78886ae7beaf6587": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "Shinsung E&G unveils 650 W bifacial TOPCon solar modules with 23.25% efficiency",
+    "url": "https://www.pv-magazine.com/2026/11/13/shinsung-eg-unveils-650-w-bifacial-topcon-solar-modules-with-23-25-efficiency/",
+    "editorial_key": "96136d2eb359755569ed10be394816866529702300dede4f8657783c58d0ad24"
+  },
+  "a8d7e697a8a709e50da0b28ed55a060ec5ec02f25c4b155f1a103875dfb87745": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "The next phase of ESS: LG Energy Solution’s strategy for an evolving energy market",
+    "url": "https://www.energy-storage.news/the-next-phase-of-ess-lg-energy-solutions-strategy-for-an-evolving-energy-market/",
+    "editorial_key": "f63becf6f80426694c984768a25501d4bcb998f6d17a07f6023db453ab4271e9"
+  },
+  "94ee5611c443ec4e82ac445cc797cd39d49bce50e4c8d14ccce4d71eb003b838": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "La australiana SunDrive se suma a un proyecto nacional para fabricar paneles solares integrados en naves espaciales",
+    "url": "https://elperiodicodelaenergia.com/la-australiana-sundrive-se-suma-a-un-proyecto-nacional-para-fabricar-paneles-solares-integrados-en-naves-espaciales/",
+    "editorial_key": "0d0a85b1444ad57ef73a5011f59c19f9c1d8eb8629ed163265a760868a479544"
+  },
+  "3a1563f8bf0ce59b2d7672327ec2152dc9981d957275e7b367948c9702c34701": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "La startup EDENenergy transforma baterías usadas de patinetes eléctricos en sistemas de almacenamiento energético industrial",
+    "url": "https://elperiodicodelaenergia.com/la-startup-edenenergy-transforma-baterias-usadas-de-patinetes-electricos-en-sistemas-de-almacenamiento-energetico-industrial/",
+    "editorial_key": "2f3280c4cf801ac0bd2e1e5123b036cd64dc7e559e6b20ba81a1a6c7c34d7efb"
+  },
+  "ce2c2b1eef51ec5060dee0917499df9044e32aa9f886ae7659cfc6b62df57d54": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "La terraza como minicentral solar: una barandilla con células solares promete cubrir un tercio de la luz de un piso",
+    "url": "https://elperiodicodelaenergia.com/la-terraza-como-minicentral-solar-una-barandilla-con-celulas-solares-promete-cubrir-un-tercio-de-la-luz-de-un-piso/",
+    "editorial_key": "f09afa597fc413eb385c8c580e7987d07350a16f91dbb95151346788c2f08017"
+  },
+  "14d9873b4b240615bff96c9fea2765c447dc00bbfab54bd8647e439c5d32e958": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "GWEC unveils wind accelerator plan at COP31",
+    "url": "https://www.renews.biz/other-news/gwec-unveils-wind-accelerator-plan-at-cop31/",
+    "editorial_key": "3c3521e919e59cb45e1c4356886f656c89c24e210fb165cc487d917a513f7710"
+  },
+  "524bd6d1ceb12b500c1aec8b34fa582551fccefef022ab03d5c46c1447d31786": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "AirTrunk signs MoU for 1.8GW of data center capacity in Andhra Pradesh, India",
+    "url": "https://www.datacenterdynamics.com/en/news/airtrunk-signs-mou-for-18gw-of-data-center-capacity-in-andhra-pradesh-india/",
+    "editorial_key": "fcc30514499194096779072b60a419b30daf6162df666c9679af41a6edf9b66f"
+  },
+  "c37e257cc21a8b199fdf4470b98557dc0c20346251ab096b685ac1c15eae32a1": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "European Union offers to build data center for Moldova",
+    "url": "https://www.datacenterdynamics.com/en/news/european-union-offers-to-build-data-center-for-moldova/",
+    "editorial_key": "01f231b61d9f55d9cfd82564698c34ba6cebf9af8304979e224c931d00e5a2d1"
+  },
+  "7696581f8b593cef30796b68aa5689798c5cb05dc62fd3fcfa97fcb88cc36851": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "Sponsored: When the pressure heats up, what really cools servers down?",
+    "url": "https://www.datacenterdynamics.com/en/marketwatch/when-the-pressure-heats-up-what-really-cools-servers-down/",
+    "editorial_key": "4d2f11305759365fe0516cef91f2a764e671b9024bd08f0606322df3eff74c80"
+  },
+  "aa5df2dae461c2f8f59a53f8aca8fd8b5344cc01e6ea020e62ff23c0625d1ccc": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "NTT Docomo to pilot data center heat-reuse for on-shore shrimp farm in Japan",
+    "url": "https://www.datacenterdynamics.com/en/news/ntt-docomo-to-pilot-data-center-heat-reuse-for-on-shore-shrimp-farm-in-japan/",
+    "editorial_key": "9577cee11b1eaa74484a9b20d86811aa07fbeece2ab462b806a09819406fd723"
+  },
+  "fee6b59e2601183fd10892fc0d192d4204aa7738eb6385731c8033dea323d879": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "Integrated data center infrastructure",
+    "url": "https://www.datacenterdynamics.com/en/whitepapers/integrated-data-center-infrastructure/",
+    "editorial_key": "32b0d79fa848afe440935b4b2d81a19ba5cf7127da13fb5898f937e113b7f32e"
+  },
+  "f8d01fea370c5e20a9ab30a6b9bdec4c733fec479611a61750272218c2ff6349": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "Samsung in talks to acquire data center cooling company Modine Manufacturing - report",
+    "url": "https://www.datacenterdynamics.com/en/news/samsung-in-talks-to-acquire-data-center-cooling-company-modine-manufacturing-report/",
+    "editorial_key": "5fae63352e5ac86b6b62e4f59d79988aeffb34f7ad5d86bde6c39ca9a6156887"
+  },
+  "8a2e3e89b4c839ffb77b8d158563d83430f0f7f6141b8ab357eac2b01016db83": {
+    "seen_at": "2026-11-14T12:59:17.947693+00:00",
+    "title": "Syntys breaks ground on 20MW data center in Qatar",
+    "url": "https://www.datacenterdynamics.com/en/news/syntys-breaks-ground-on-20mw-data-center-in-qatar/",
+    "editorial_key": "63134b5a072da9c48122af6ea042a021b8e34af4c7dcba75e5ab7340654ed0a2"
   }
 }
