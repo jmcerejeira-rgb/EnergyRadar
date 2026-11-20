@@ -1,184 +1,4 @@
 {
-  "c62ce8b2bfa3f73db1f51827fc13526ee65368260ffa3c57ae48459b7a5fcd54": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "AC-Coupled vs. DC-Coupled",
-    "url": "https://www.pv-magazine.com/2026/08/22/ac-coupled-vs-dc-coupled/",
-    "editorial_key": "ecc50f30a9d190dbee50f94b359f20b04d3c50007eb557e1b7bf1f206bbef7f2"
-  },
-  "a9edb890e4565c8c39402a2198a5eaa9cdc2461ccd566267f739f3158a6a770f": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Austria announces energy storage offensive, shifting solar subsidy focus",
-    "url": "https://www.pv-magazine.com/2026/08/21/austria-announces-energy-storage-offensive-shifting-solar-subsidy-focus/",
-    "editorial_key": "6480b1a29baab1d6a45a16c4ddc2ee0de39b34ba3aac27ce84b7ebf1b02e4055"
-  },
-  "4127f48a1f9b8ee350328deb9b7671bd6a4b9d2cb5696b5421e3c5c8d5f637ab": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Utility-scale projects drive New Zealand’s solar rollout",
-    "url": "https://www.pv-magazine.com/2026/08/21/utility-scale-projects-drive-new-zealands-solar-rollout/",
-    "editorial_key": "74d81419dd5a1c2e867f12c8be0ebcd53d3459c62633e32c4451b7ee65f2bd0b"
-  },
-  "6b37325b4723652ca80e24f00541ee81eac6f592ddd22af3c64c8f7512b30853": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "China’s Jiangsu province crosses 100 GW solar milestone",
-    "url": "https://www.pv-magazine.com/2026/08/21/chinas-jiangsu-province-crosses-100-gw-solar-milestone-as-distributed-pv-drives-growth/",
-    "editorial_key": "bc3f69589d106d1c00be9e50270cdf6be9a95af199a331e8984e7714b686aea1"
-  },
-  "572183b78f550bfd564081de98bfc2b9aaa6d305b0eee13c2da87a3ed98a36b7": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Silicon dioxide coating boosts PV module light transmission, thermal performance",
-    "url": "https://www.pv-magazine.com/2026/08/21/silicon-dioxide-coating-boosts-pv-module-light-transmission-thermal-performance/",
-    "editorial_key": "67566ef490bf80b7e87024d945b43a05480811a9add5111772067513205be87b"
-  },
-  "33bf93da7c53d3b0706c0b8c7a18d761e29d60dbaa8cc88757c6f0a8733a14bd": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "‘Inclusion means judging ideas on their merits’",
-    "url": "https://www.pv-magazine.com/2026/08/21/inclusion-means-judging-ideas-on-their-merits/",
-    "editorial_key": "c9ee96dd3298bd2e423456609f7ba0a3f1084feb9ab7d122a85d05ccdc581536"
-  },
-  "475d92a62dd2cae085a1d2e47de44d699c6010e7bf7e7efebd8f2960f5795c5b": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "‘Company wasn’t ready in 2021’: ESS Inc CEO on pivoting away from iron flow batteries to sodium-ion",
-    "url": "https://www.energy-storage.news/company-wasnt-ready-in-2021-ess-inc-ceo-on-pivoting-away-from-iron-flow-batteries-to-sodium-ion/",
-    "editorial_key": "c14eecbcd23e9d02d9d3ccb229d8d7497a2bc86f1d7face83a86fe87aa8d3a6c"
-  },
-  "c74de53f512d213ab6097b1e02f5a4e40aefa49481000b16496af698808c9966": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "New Jersey Board of Public Utilities releases 150MW BTM energy storage proposal",
-    "url": "https://www.energy-storage.news/new-jersey-board-of-public-utilities-releases-150mw-btm-energy-storage-proposal/",
-    "editorial_key": "99ef27400f56c1b9cfeb9f4f24a3fd21ccc0c80fa1e24787f9a975cce78b4904"
-  },
-  "8cef488b8993d4e9a47bb256e2f178ccc3fd05997367ec73aa85100c03f2f442": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "India’s BESS supply chain suffers a ‘policy intent and operational capacity’ gap, with battery cell self-sufficiency a decade or more away",
-    "url": "https://www.energy-storage.news/indias-bess-supply-chain-suffers-a-policy-intent-and-operational-capacity-gap-with-battery-cell-self-sufficiency-a-decade-or-more-away/",
-    "editorial_key": "e3ac6b6202145880a6f2224944802e7935b5374f42399de8a20131d002e268e9"
-  },
-  "54031a69e53f6b8ee9c8ae5182c302c100b774bae0f2a524a36797092b08a2e8": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Low Carbon wins permit for 400MW UK solar farm",
-    "url": "https://www.renews.biz/solar/low-carbon-wins-permit-for-400mw-uk-solar-farm/",
-    "editorial_key": "52a47c24e628183b8d780f0162f700ac903dd2d76f7c1672e2d10f2e01165024"
-  },
-  "f4d19e7eef843ccce8fe1302aa892f076f59acf05882aa2d0144f7e0589389b2": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Orsted probes turbine fire at Greater Changhua 4",
-    "url": "https://www.renews.biz/offshore-wind/orsted-probes-turbine-fire-at-greater-changhua-4/",
-    "editorial_key": "74d00b589f6384bd08ea2d60841b7a6ded00643aeba12dc9a8511d3c69dce2b5"
-  },
-  "4fe985e85c8e33c43ffc64da0225ddac1d693efe96df7caeeffd22c391c3c91b": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Orsted, PGE wrap up Baltica 2 monopile installation",
-    "url": "https://www.renews.biz/offshore-wind/orsted-pge-wrap-up-baltica-2-monopile-installation/",
-    "editorial_key": "b8f1593ccfa7c69a6c73ada18f6b546901116e2f15b1c65680bcb9e78b67e31c"
-  },
-  "c8208444b4a8e5f3bbc92511afa7a1e6a66ddc3ef0a91db446e4d99ec9e839ad": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "GE Vernova lands Supernode Stage 3 deal",
-    "url": "https://www.renews.biz/other-news/energy-storage/ge-vernova-wins-supernode-stage-3/",
-    "editorial_key": "bf3ce090a5829c664591af45394f73d0d91cc12ee2a3fde863bf752cd201613a"
-  },
-  "3f090182155e91059fdc7cb8f8d7d4c59541f168484b8074deedd8bead206e08": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "OX2 starts Muswellbrook construction",
-    "url": "https://www.renews.biz/solar/ox2-starts-muswellbrook-construction/",
-    "editorial_key": "ff9f8e7c84d69448790ca44da60dbccaebea9ce35a5e72751c6542c2ad4f40df"
-  },
-  "2ebe4296639d037557374c5966600e32ed734f8e4ada846607ae3a766bfbc806": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Sonfor searching for new partner on Lillebælt Syd",
-    "url": "https://www.renews.biz/offshore-wind/sonfor-searching-for-new-partner-on-lillebaelt-syd/",
-    "editorial_key": "df322f6cce2af049450a2afca0605c9dc058fd19dae48e33059df60d74dfee21"
-  },
-  "fe769fe92f3278d1cf0300942a9cb3624b14174336e1ae35b4d40f956c99518e": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Romania proposes three Black Sea wind sites",
-    "url": "https://www.renews.biz/offshore-wind/romania-proposes-three-black-sea-wind-sites/",
-    "editorial_key": "21c13c021ea5837b8c6de8ca19aabfd69990f6cab9cf694d00aca7e3bc29a0d1"
-  },
-  "fba706668013244c6820d0d19ac0079d116d31b47913dbacd033c5f8d3dd5356": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "TenneT completes Maasvlakte cable drilling",
-    "url": "https://www.renews.biz/other-news/grid/tennet-completes-maasvlakte-cable-drilling/",
-    "editorial_key": "1db637f48f0f19b0d3d3917eee577250bcf67202e0fba222d9bbeafe932aaead"
-  },
-  "4713474d431fceca060df570e5ba0e87909034d4ad089dd8c0f374a403aafaf1": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Vapat Enters the data center market with a 160MW project in Valladolid",
-    "url": "https://www.datacenterdynamics.com/en/news/vapat-enters-the-data-center-market-with-a-160mw-project-in-valladolid/",
-    "editorial_key": "297dd7d1c09a2b2e5342c41b1bf420e26ed1880360823209d79e51659d5559e9"
-  },
-  "7a5147fbbd04ebb436292d015aa6ce91ebdab3b19d308d5f4d716892ac18fc12": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Nvidia backs data center powered land company Cloverleaf",
-    "url": "https://www.datacenterdynamics.com/en/news/nvidia-backs-data-center-powered-land-company-cloverleaf/",
-    "editorial_key": "fc3ebf9bcb34ad9c1ae9d2cf997d9ee095264fbcf54982d43c43ea4adf500b48"
-  },
-  "895282f1e3643455c4e32545b1c10011e6299300421ab0bff640780588f8a1b0": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Edge data center for AI workloads proposed in Manchester, UK",
-    "url": "https://www.datacenterdynamics.com/en/news/edge-data-center-for-ai-workloads-proposed-in-manchester-uk/",
-    "editorial_key": "6255c241789eb5b316402cb132da31e4bd4d637577203423c3ca179f6d8e1f53"
-  },
-  "572498e61a2e66571d4bca7716ec4544226f4ced6199f160afb8184e18623f5e": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Rocket Lab has no plans to enter orbital data center market",
-    "url": "https://www.datacenterdynamics.com/en/news/rocket-lab-has-no-plans-to-enter-orbital-data-center-market/",
-    "editorial_key": "d421f6785ee0fef15c580f2182987e4740f4afa26bff0a6647c88ddea1475a26"
-  },
-  "8576489e1b131600fa675b6ee86da6dffad7713edcd9acdc35dfb04fd45d4762": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Sponsored: The \"power-first\" era: A new playbook for data center projects",
-    "url": "https://www.datacenterdynamics.com/en/opinions/the-power-first-era-a-new-playbook-for-data-center-projects/",
-    "editorial_key": "8b57d98dd44a3665e16b3cb58c652e33dbc429c621391b7e987270372e4bc7c8"
-  },
-  "070d410a4a3359e53c15bfadc4fa2ef2f2fae17803660b2b7f75b1efe1fa7aa3": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Charter secures $34.5bn Cox merger, completes Liberty Broadband acquisition",
-    "url": "https://www.datacenterdynamics.com/en/news/ca/",
-    "editorial_key": "fcb88c230d6c64cbbdb0cfc9d40297faa4da64bca56636334f7efbb4d1ce10dc"
-  },
-  "442b44ca5dc2f5cd1329479903bb8187825736ed5ed979e8899dcee38dd04032": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "The what, where, and why of high-temperature superconducting feeders in data centers",
-    "url": "https://www.datacenterdynamics.com/en/opinions/the-what-where-and-why-of-high-temperature-superconducting-feeders-in-data-centers/",
-    "editorial_key": "302c9d0294bd2e201a5c4d66b253b6433a0710f895ff6f7a32fc17ce05fcfebe"
-  },
-  "34cc331a6308fe23f722028383ec7ead82328c98395f676eb46b373d5fca01a7": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "STT GDC backs out of planned Vietnam data center project",
-    "url": "https://www.datacenterdynamics.com/en/news/stt-gdc-backs-out-of-planned-vietnam-data-center-project/",
-    "editorial_key": "3f4fea9357fd4bae712c75e170a68056d1954f6f9b601e2d3b3fccb5400ed03a"
-  },
-  "f9ef25bc36ea6648176400c70228b249f020dba965b8798795c94dedf6213b10": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Evolution DC secures long-term lease for land in Ho Chi Minh City, Vietnam",
-    "url": "https://www.datacenterdynamics.com/en/news/evolution-dc-secures-long-term-lease-for-land-in-ho-chi-minh-city-vietnam/",
-    "editorial_key": "49d679bbc2890bff1ff94f5e1181d145d0d293aaed4636a40f66176212dbf50e"
-  },
-  "eb30a2f7824061a3cbfad42ffa409d441f443ae6b452f04876b8147eb42fbd07": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Harworth enters exclusivity agreement with unnamed data center provider for powered land site in UK",
-    "url": "https://www.datacenterdynamics.com/en/news/harworth-enters-exclusivity-agreement-with-unnamed-data-center-provider-for-powered-land-site-in-uk/",
-    "editorial_key": "a9bb48b0aa706fccb37ee06c12dea3ff5cdc2115a435597d008bac39f59d60a3"
-  },
-  "d0127704d8be2fbd27beb0890b2b87fef1aa20baef6fbd3e3e80ad778f3660b2": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Prometheus Hyperscale partners with Istmo to develop up to 2.5GW gas powered data center in Reeves County, Texas",
-    "url": "https://www.datacenterdynamics.com/en/news/prometheus-hyperscale-partners-with-istmo-to-develop-up-to-25gw-gas-powered-data-center-in-reeves-county-texas/",
-    "editorial_key": "e71ed4e6709c1c7aa2ac05b49d5fe3e3faf2109b358323ecb20af5451a188f49"
-  },
-  "f4158a98ba0db6bfd9b88e754b1d987c114665df13a3633c367b479450a0ee70": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "Itochu to begin data center development, plans 10 new facilities by 2030",
-    "url": "https://www.datacenterdynamics.com/en/news/itochu-to-begin-data-center-development-plans-10-new-facilities-by-2030/",
-    "editorial_key": "5f154ff8bf5fe33a993b59c2b9153c8bf714e65b84706b4d43f50d183b1d0897"
-  },
-  "1d9860f43f16034d33166b0ff012acdc0f16d13f40f4e9c17261f9cb47fe491d": {
-    "seen_at": "2026-08-22T06:37:24.453669+00:00",
-    "title": "US utility TVA imposes new rates on data center firms",
-    "url": "https://www.datacenterdynamics.com/en/news/us-utility-tva-imposes-new-rates-on-data-center-firms/",
-    "editorial_key": "0c737ec443bc03c6ecfad31d3a041f76cff863f7bdc92c34c2a39439a4eeeea6"
-  },
   "ee31f0cca5caf6cd0bd72927290882caffa0c6aba19fb42c8cc202dcebc56e34": {
     "seen_at": "2026-08-23T06:38:24.654487+00:00",
     "title": "Sponsored: What coolant should you use for data center liquid cooling?",
@@ -16534,5 +16354,197 @@
     "title": "ChronoScale and STN form JV to develop data center campus in Odessa, Texas",
     "url": "https://www.datacenterdynamics.com/en/news/chronoscale-and-stn-form-jv-to-develop-data-center-campus-in-odessa-texas/",
     "editorial_key": "25a1fb3f557b60af1a013668eab8cea7f3da24ffdaa9b65108bf5895c7f71627"
+  },
+  "bcb09ad7fc2edadb2eecfdaede189a258753c4305839a4f8637cb6ed263d4a31": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "China grid-connects world’s first artificial-cavern CAES plant",
+    "url": "https://www.pv-magazine.com/2026/11/20/china-grid-connects-worlds-first-artificial-cavern-caes-plant/",
+    "editorial_key": "af8beaf71af65ff6e1ce3d8fd637c3a9f0b918eff32b052f3da5e07da7ffcd9a"
+  },
+  "b04411f2686916bf17bb7f495cbb418c04240ef40fec2574b69cd192cb118788": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Enphase highlights new batteries, bidirectional charging",
+    "url": "https://www.pv-magazine.com/2026/11/20/enphase-highlights-new-batteries-bidirectional-charging-and-800-vdc-sst-gear/",
+    "editorial_key": "7b70de949cd30d7b439e8429923d7e2a46cffbff780a8f9c8f759eed6c8eb5ec"
+  },
+  "15bcf698886a32a1ed7d53bc3831986ea413efaeff70ea7ba5a75b2b586db688": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Proper Voltage, Unigrid unveil sodium-ion storage solution for data centers",
+    "url": "https://www.pv-magazine.com/2026/11/20/proper-voltage-unigrid-unveil-sodium-ion-storage-solution-for-data-centers/",
+    "editorial_key": "b45254307772556012eee0e9bcc849f6a6f7e329e4687c55163fc4c5a7fc89dd"
+  },
+  "24d246746419ffd62b99b94904410be84ffcd976b21738ab68c2872754c8bb48": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Chinese PV Industry Brief: China Three Gorges opens 5.24 GW solar module tender",
+    "url": "https://www.pv-magazine.com/2026/11/20/chinese-pv-industry-brief-china-three-gorges-opens-5-24-gw-solar-module-tender/",
+    "editorial_key": "62d5924ae3da938d8cc70e782bac4e7d8cc5442ee4bddef553a43d16a6d25809"
+  },
+  "a89a9347dcede58ab165679c75d10eafa5635a8e1f92c0ed8bad042f83064508": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Vietnam sets rooftop solar monitoring and control acceptance procedure",
+    "url": "https://www.pv-magazine.com/2026/11/20/vietnam-sets-rooftop-solar-monitoring-and-control-acceptance-procedure/",
+    "editorial_key": "0dfdffaffdb2b0cca940c65c4c8bdeb5590452ae7874c90b53a9fc27ff92b103"
+  },
+  "4d6a024af48b16094fbedc10579439450d71c80f1bb3c83e87b127b725b193a0": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "High pressure drives irradiance gains across South East Asia as Sichuan misses out",
+    "url": "https://www.pv-magazine.com/2026/11/20/high-pressure-drives-irradiance-gains-across-south-east-asia-as-sichuan-misses-out/",
+    "editorial_key": "73e5eba0fbb9727915863548ccff31a156a90f5da6bab9d8e4d666206c878c4b"
+  },
+  "c100140cbc755de216aac461d95f5afc19a74900ed1c3c07652830c8176a1d79": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "JinkoSolar claims 35.24% efficiency for perovskite-silicon tandem solar cell",
+    "url": "https://www.pv-magazine.com/2026/11/20/jinkosolar-claims-35-24-efficiency-for-perovskite-silicon-tandem-solar-cell/",
+    "editorial_key": "73d700952416a9314ab034977bb7d4dd14dea70623a7d1fbd237dde9b1a492ec"
+  },
+  "061260099ee005a42d54f4efb61d2367c04bf88fe0059495bb73ceb8af8ecd2b": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Mexico’s solar capacity could reach 43.8 GW by 2035",
+    "url": "https://www.pv-magazine.com/2026/11/20/mexicos-solar-capacity-could-reach-43-8-gw-by-2035/",
+    "editorial_key": "3acc61367e400760c31dc2632ef96c7a9d48959cebd204d52b0f1c39c68f839f"
+  },
+  "fccee89b21a0da7527e670e12c803d1eb1a883cad716d83d0da1101040c57a1f": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "China’s TOPCon solar module export prices slip as makers clear low-efficiency stock ahead of new standard",
+    "url": "https://www.pv-magazine.com/2026/11/20/chinas-topcon-solar-module-export-prices-slip-as-makers-clear-low-efficiency-stock-ahead-of-new-standard/",
+    "editorial_key": "8a7b5e3eccbd96bba17b56e83a28b55e4efffc60c8c22cc63c411d44f91aa7a9"
+  },
+  "b2ea003074889be7c667c670e035cdeb3056b5decab3ab7fd919da395678de4b": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "‘Sodium is a chance for us to lean forward and win’: Alsym Energy at RE+ on why US battery policy needs to shift upstream",
+    "url": "https://www.energy-storage.news/sodium-is-a-chance-for-us-to-lean-forward-and-win-alsym-energy-at-re-on-why-us-battery-policy-needs-to-shift-upstream/",
+    "editorial_key": "3612e7afd297cd8faca840ff67f436ea7626efe2a63c18d7e8b7893f4a702c34"
+  },
+  "07907a00df5982251760d6b3e1b1b9b877cff5a990f240b3ba5b6c07815904d0": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Who’s gaining geopolitical advantage in the energy transition?",
+    "url": "https://www.energy-storage.news/whos-gaining-geopolitical-advantage-in-the-energy-transition/",
+    "editorial_key": "eaa6692adc6d37c5007212674383d0cc87b2413d5f9de36eff5c83b78d6c65fb"
+  },
+  "e02f1d457f020be3e942081dc3144a1a0b16dce5ccfa582c29733e57ae80973c": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Germany: operators progress over 4GWh of BESS towards construction ahead of year-end FID deadline",
+    "url": "https://www.energy-storage.news/germany-operators-4gwh-large-scale-bess-construction-fid-deadline/",
+    "editorial_key": "e238f04490abbb8fd80357c84050e7072d72cf411833a99e84b083fa97f4f6e7"
+  },
+  "c7c7364afcfb219fa22d1c5cc70f20104687878aca861abc0c134fa1f59b01b2": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "BESS Industry Buzz: RE+, EU-made premiums, European revenue variability",
+    "url": "https://www.energy-storage.news/bess-industry-buzz-re-eu-made-premiums-european-revenue-variability/",
+    "editorial_key": "2fd9f19069804b4968202e49dea8107e53bac751450b4f7b6c3b49398cff8507"
+  },
+  "b01c12ce0541cd6731f3e9db8b5de75dde7d55f07bb3882d9acad377505b0d23": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "‘Close proximity to key grid infrastructure’: EDF buys 1GWh battery storage system in Australia",
+    "url": "https://www.energy-storage.news/edf-acquires-250mw-holloway-battery-storage-project-new-south-wales-australia/",
+    "editorial_key": "834baaf78c5712e5ec17df5feb49818437b78096f0cd39a36a2eac4204aba240"
+  },
+  "4fd9630ae8f9640ac928b698018fe8062e7cb2b6fd48c8af26dce694b3997394": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Australia’s remaining BESS gap to 2030 could be in construction within 18 months, IEEFA scorecard finds",
+    "url": "https://www.energy-storage.news/australia-bess-storage-gap-2030-construction-18-months-ieefa-scorecard/",
+    "editorial_key": "de65103e91b3682115bd80fe17f7aaa0a74d68073e2b19b5589cd744e051a68c"
+  },
+  "767e423c0067647031e641e6279898de1e81ecb1da3b975f6792efd65d30a0d8": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "How a Spanish battery makes money today, and what lenders will finance tomorrow",
+    "url": "https://www.energy-storage.news/how-a-spanish-battery-makes-money-today-and-what-lenders-will-finance-tomorrow/",
+    "editorial_key": "ac2569836fe4693bc6ef66161f2e9c41827457005dc9e29ed19adca0e8faad30"
+  },
+  "835b0e6d4c247689b7f0182c12e1a0d688a1a909758567ef949fc7e7b14689d6": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "‘The biggest change is scale’: Giga Storage on evolution of BESS asset management in Europe",
+    "url": "https://www.energy-storage.news/the-biggest-change-is-scale-giga-storage-on-evolution-of-bess-asset-management-in-europe/",
+    "editorial_key": "5c59870e53d62ab800693efb0e0a3664141ccccda0d7a6516a1f8d1cdf135cbf"
+  },
+  "c7bfeecabb0eaa8d3858251d367c3dbc8ebb40fb52fbb272a1dff62ae24db77d": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "España refuerza la repotenciación eólica, el autoconsumo industrial, y el almacenamiento con hidroeléctrica y solar termoeléctrica",
+    "url": "https://elperiodicodelaenergia.com/espana-refuerza-la-repotenciacion-eolica-el-autoconsumo-industrial-y-el-almacenamiento-con-hidroelectrica-y-solar-termoelectrica/",
+    "editorial_key": "a47dfac38f15469bb6c488e6c2ef8b5fb3106c06074fe8b7f333799d63e2faf9"
+  },
+  "fd9eeb9433bfd28caa86b1ca7ecb72d0a064bba5e27d66c14c9455788b55bd99": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "La industria alerta de que España pierde competitividad energética frente a Europa por los costes regulados y la falta de ayudas",
+    "url": "https://elperiodicodelaenergia.com/la-industria-alerta-de-que-espana-pierde-competitividad-energetica-frente-a-europa-por-los-costes-regulados-y-la-falta-de-ayudas/",
+    "editorial_key": "e2ca203be58b75a914ef581cd67dde1bf7eea12a50ef56b629066127fb8c1aef"
+  },
+  "7273030b0078a1572b99d82882c512f034767f6a02e5cf96ee1e196ff18381eb": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Orsted and Siemens probe damaged blade at Hornsea 3",
+    "url": "https://www.renews.biz/offshore-wind/orsted-and-siemens-probe-damaged-blade-at-hornsea-3/",
+    "editorial_key": "ca51ca9a93ebf97842d7d5151ffa2893a79aefc1d797e3396bb22857803f0b36"
+  },
+  "3afd13aa0e16e493783f657d0d23b92a725c7a4dec35b57f5da4c1a78724820a": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "SSEN Distribution unveils £8.7bn network plan",
+    "url": "https://www.renews.biz/other-news/ssen-distribution-unveils-8-7bn-network-plan/",
+    "editorial_key": "1b8bdd098cf3ffb44bb21dd030a1115a01484c528114f9412b52f8601b918ef9"
+  },
+  "4f3538d97a4cfe8e3c0d105f6d30f7df4878469adf8ac1612261ae0c01e77038": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Ming Yang wins 500MW Egypt turbine order",
+    "url": "https://www.renews.biz/onshore-wind/ming-yang-wins-500mw-egypt-turbine-order/",
+    "editorial_key": "60c489ad1373079fcfd5f6994facd824f06dcf0cac443356778dbed04f44769f"
+  },
+  "84ab036d3da744fa9f11652cc84b2c34eb1b93cce574eaa00ac5bcc9a19d42f1": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Vestas bags 62MW of turbine orders in Germany, Austria",
+    "url": "https://www.renews.biz/onshore-wind/vestas-bags-62mw-of-turbine-orders-in-germany-austria/",
+    "editorial_key": "5e5943b07b7e3e4a6f3b775610e05f930aefea1d1d02312c8f056ab33ab27d6e"
+  },
+  "81a36085101a019626776284e7dd0aff72f5d968ce165da7bdaec7632fbc1b6b": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "‘Dozens’ of turbines need work at Dogger Bank",
+    "url": "https://www.renews.biz/offshore-wind/dozens-of-turbines-need-work-at-dogger-bank/",
+    "editorial_key": "8650509929b9118c3e96005619f5f45da6ff35f5a6bc21aa14601de380e5124f"
+  },
+  "107b791fbb02f1ff342abf4583098bb080bf7388eea183431cc1761b726359ea": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Nebius expands Israel data center lease with Mega Or by 134MW",
+    "url": "https://www.datacenterdynamics.com/en/news/nebius-expands-israel-data-center-lease-with-mega-or-by-134mw/",
+    "editorial_key": "d4f5bab0f3dcfd29abe75c47cd67085cfcaabfa3d740ccf4ae3a501afee43998"
+  },
+  "b61a4f49c9d4a925ae0a73a0cb975a04f1c53e230575c87132122c1906ffd019": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "L&G-led 90MW data center site in East London sold to unnamed buyer",
+    "url": "https://www.datacenterdynamics.com/en/news/lg-led-90mw-data-center-site-in-east-london-sold-to-unnamed-buyer/",
+    "editorial_key": "535578512cecb3d6d1f104fa8446ca58b902bf8c98b94c3dbe1e0f1d54e82dd6"
+  },
+  "19b36854e3a9741eb21f083627e9d67622f4dc61278b1c351cc9fdccb3bc1146": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "PJM plan could cut data center and power plant grid connection times to 12 months",
+    "url": "https://www.datacenterdynamics.com/en/news/pjm-plan-could-cut-data-center-and-power-plant-grid-connection-times-to-12-months/",
+    "editorial_key": "e77578ca5326039862cf8e74bfa986626545cc69fba0df40f77b89e11ed56d98"
+  },
+  "03273ffadd6310767b8a5550061906d87b8d97caa451988149dc3d66ede9336b": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "EdgeCore launches Reno data center, tops out second building on campus",
+    "url": "https://www.datacenterdynamics.com/en/news/edgecore-launches-reno-data-center-tops-out-second-building-on-campus/",
+    "editorial_key": "dfd554c03cd8a2a4a87e121a9d9f7d64d97f52473d0548a143bcc3f40b36b209"
+  },
+  "02b9679d07a44e3dc859f9c5d0818d237f856e99d36b7a17000ce257fb7ae362": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "TeraWulf starts construction at Kentucky data center campus",
+    "url": "https://www.datacenterdynamics.com/en/news/terawulf-starts-construction-at-kentucky-data-center-campus/",
+    "editorial_key": "189a8ef4d20e93f0138020257e42f298b227d8a6605c04562dd644c191876964"
+  },
+  "0801532a799a26bf5fd0b671e477a51bbae22197d2c6369d0ff0dd701769253c": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Hochtief's Yexio launches Edge data center in Paderborn, Germany",
+    "url": "https://www.datacenterdynamics.com/en/news/hochtiefs-yexio-launches-edge-data-center-in-paderborn-germany/",
+    "editorial_key": "2c70835a9a12b9eabb20a6dc0c93313132e7c51d0288db6914a215e781be4794"
+  },
+  "b2537c4a9aaf034224e4ffe99b262acc2a22a68d5c9cb631f296bb99ef5abfdb": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Nexalus and Renda launch liquid-cooled AI server for data center retrofit market",
+    "url": "https://www.datacenterdynamics.com/en/news/nexalus-and-renda-launch-liquid-cooled-ai-server-for-data-center-retrofit-market/",
+    "editorial_key": "d803f3983c3b407e68f8554a3142f373e79a087764494aa4ed1b3e713cab556d"
+  },
+  "fbc85cd8c4c4b2c231df4da3bb124b5173c562f14cdc011818ce286702ccd5a3": {
+    "seen_at": "2026-11-20T14:55:53.986157+00:00",
+    "title": "Alibaba Cloud launches sixth data center in Malaysia",
+    "url": "https://www.datacenterdynamics.com/en/news/alibaba-cloud-launches-sixth-data-center-in-malaysia/",
+    "editorial_key": "adddd114d2523e6d05044d21762c9d5e37434813f192249067060b84a024a431"
   }
 }
