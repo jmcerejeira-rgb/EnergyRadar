@@ -1,34 +1,4 @@
 {
-  "ee31f0cca5caf6cd0bd72927290882caffa0c6aba19fb42c8cc202dcebc56e34": {
-    "seen_at": "2026-08-23T06:38:24.654487+00:00",
-    "title": "Sponsored: What coolant should you use for data center liquid cooling?",
-    "url": "https://www.datacenterdynamics.com/en/opinions/what-coolant-should-you-use-for-data-center-liquid-cooling/",
-    "editorial_key": "2ea345039f3d83dd6661d38cdb3682d4dcd79dec60d4f907c759035b82ff47b0"
-  },
-  "022ba06f45e8c6c7ec5c6787ac1b584e0852152098be8fb68c92bcef17e48152": {
-    "seen_at": "2026-08-23T06:38:24.654487+00:00",
-    "title": "Ignis and Acciona look to build a data center in Segovia, Spain",
-    "url": "https://www.datacenterdynamics.com/en/news/ignis-and-acciona-join-forces-to-build-a-data-center-in-segovia/",
-    "editorial_key": "0c417b550a2d946d3ad34dca8de40a910371080d782464c4453116f2f6059db9"
-  },
-  "f06e6c520a26fbefe7476b7368bf9b0332a407cd6c070f7bbbb818dda317bbf6": {
-    "seen_at": "2026-08-23T06:38:24.654487+00:00",
-    "title": "Building data centers is getting easier. Building trust is not",
-    "url": "https://www.datacenterdynamics.com/en/opinions/building-data-centers-is-getting-easier-building-trust-is-not/",
-    "editorial_key": "495183a1ceebcc9c26c1f77420384fae088b7ec65525cfc4413adf3953811f58"
-  },
-  "4e8de94eeea62cc64045d7364f101b8944a79d5758e8efb5bffcc83f326d84de": {
-    "seen_at": "2026-08-23T06:38:24.654487+00:00",
-    "title": "Terronova starts work on 300MW data center campus outside São Paulo, Brazil",
-    "url": "https://www.datacenterdynamics.com/en/news/terranova-boosts-technology-infrastructure-with-the-construction-of-one-of-latin-americas-first-ai-data-centers/",
-    "editorial_key": "b338efd9bdbe71ce1a0e3504dcc6d3de6b36c99ec6acd0c8b5900a664a667c10"
-  },
-  "0aa0b1cac13d05ae55b1f79d8933510c798da12d487d851afe84868f0250c78d": {
-    "seen_at": "2026-08-23T06:38:24.654487+00:00",
-    "title": "Sponsored: Powering data centers is no longer a simple matter of supply and demand",
-    "url": "https://www.datacenterdynamics.com/en/marketwatch/powering-data-centers-is-no-longer-a-simple-matter-of-supply-and-demand/",
-    "editorial_key": "a4effc1848dd4a1668581a42115bb051ac04b9af5cd3bed6fa3532e97e363d69"
-  },
   "96313accbce7f907f72288fee1ab7555c12778a1dd8121507794cb087ac755ce": {
     "seen_at": "2026-08-24T06:55:37.852503+00:00",
     "title": "European PPA prices rise 2.3% in July",
@@ -16546,5 +16516,95 @@
     "title": "Alibaba Cloud launches sixth data center in Malaysia",
     "url": "https://www.datacenterdynamics.com/en/news/alibaba-cloud-launches-sixth-data-center-in-malaysia/",
     "editorial_key": "adddd114d2523e6d05044d21762c9d5e37434813f192249067060b84a024a431"
+  },
+  "d9db671286b0f32693341cd34b9eaab0050eaf6e912060a8a6b98de44f195533": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "CATL, BYD, ACWA among co-initiators of storage alliance unveiled at COP31",
+    "url": "https://www.pv-magazine.com/2026/11/21/catl-byd-acwa-among-co-initiators-of-storage-alliance-unveiled-at-cop31/",
+    "editorial_key": "32586bc77b06db6fea7121dcb01bde7362d94fc33c4a6e82d0b59b9d3cd6935d"
+  },
+  "cb1c972744cfaa2682abe9b668fac573f782cbf6225dfa0d1063e6eb219675e9": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "Celebrating men, challenging stereotypes, building a stronger energy future together",
+    "url": "https://www.pv-magazine.com/2026/11/21/celebrating-men-challenging-stereotypes-building-a-stronger-energy-future-together/",
+    "editorial_key": "efe4ff9748acbafaf7c3dac1323c43694286ce2993303c9058733b0888efe21e"
+  },
+  "08067f0fdb4d37b8cb40656ec171a4eb2f1c5e74c5ed080269f76837a65c06cc": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "Unigrid looks to fill gaps in lithium-ion storage with effective sodium-ion alternatives",
+    "url": "https://www.pv-magazine.com/2026/11/21/unigrid-looks-to-fill-gaps-in-lithium-ion-storage-with-effective-sodium-ion-alternatives/",
+    "editorial_key": "38076a324f684dc7838c60c077f55301ee26d651a81b09d8eadc3da77ebc86da"
+  },
+  "476abb9e2ec3212ac1b0dea68709a8698ceeae01ef3ac69922a387bc080cb44b": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "Spain approves new data center rules requiring 80% renewable electricity",
+    "url": "https://www.pv-magazine.com/2026/11/21/spain-approves-new-data-center-rules-requiring-80-renewable-electricity/",
+    "editorial_key": "37c7436f8f308945a81ee764621f7d95d8892dfd788cc394e115e420d52b670f"
+  },
+  "ccf79e9fcc3eb2208bc3dc11d8bf841b88f71779aeef6ea5b86a457e5dc47389": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "The U.S. solar manufacturing landscape in 2026",
+    "url": "https://www.pv-magazine.com/2026/11/21/the-us-solar-manufacturing-landscape-in-2026-2/",
+    "editorial_key": "cca3eb882cc993cf1fc03fec6b60764aacbd52fea53b340e7db828103fb733b0"
+  },
+  "070a304d0ba91e689bdc322faa81a98aeffaf38f008914cfcbde9c85b01ecfa8": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "Tariffs, taxes and a BESS price rise",
+    "url": "https://www.pv-magazine.com/2026/11/21/tariffs-taxes-and-a-bess-price-rise/",
+    "editorial_key": "1d27b21b101e9749ee521330a0379e765ea4c8190baf7e60857d28ff8d510759"
+  },
+  "b8524b318b47be5769f1a16ccfb91d408741d7daa23fc76505f1910525acb39a": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "Securing the turbine is only half the battle: the emissions monitoring path to data center power",
+    "url": "https://www.datacenterdynamics.com/en/opinions/securing-the-turbine-is-only-half-the-battle-the-emissions-monitoring-path-to-data-center-power/",
+    "editorial_key": "c7b5c2203bfecd39f8687a10f3b6db365477999cd9b7017dcebd6b199064bb4f"
+  },
+  "cb99ef7127e7d91266e5bf85b2136aa1278df4956ae0e7ac66e47fb61e07b1df": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "Microsoft files for 316.7-acre data center campus in Mecklenburg County, Virginia",
+    "url": "https://www.datacenterdynamics.com/en/news/microsoft-files-for-3167-acre-data-center-campus-in-mecklenburg-county-virginia/",
+    "editorial_key": "82668329c179fce9af722e627439c7c673054f28e3606936a0bf6936a35fb07a"
+  },
+  "db00046e355a8063339c8532fb40d4251f5377ce750b6516d56a85939efe0764": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "CyrusOne and KEP top out 48MW data center in Osaka, Japan",
+    "url": "https://www.datacenterdynamics.com/en/news/cyrusone-and-kep-top-out-48mw-data-center-in-osaka-japan/",
+    "editorial_key": "438f022f20eb31f22947fc506f80f9a527ff8ed541852b37ea28124cd9694e14"
+  },
+  "8fcb1d9df29a5945100b057ee91acbe2a472a282bbf622c23b7861ab0698e57c": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "Apollo, Ardian, Macquarie, and Rai line up to acquire Retelit data centers - report",
+    "url": "https://www.datacenterdynamics.com/en/news/apollo-ardian-macquarie-and-rai-line-up-to-acquire-retelit-data-centers-report/",
+    "editorial_key": "7f109b5562f670c755d3aa3256c44dc9857fe4693fb59ddc58a2796831244ec7"
+  },
+  "5262deb61c358e67077bd8c0f9ee8fd72e41269865992794757878d2015bbd24": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "Regulation ready",
+    "url": "https://www.datacenterdynamics.com/en/whitepapers/regulation-ready/",
+    "editorial_key": "406dcb9b24b51838982453aa109978c75488a01d43b649f9b1c19bbfcec7aef7"
+  },
+  "315067c85099734b4d74be165e87ff35fc989b373ee638351bcafae34bee79da": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "SpaceX expresses interest in building data centers in Bulgaria",
+    "url": "https://www.datacenterdynamics.com/en/news/spacex-expresses-interest-in-building-data-centers-in-bulgaria/",
+    "editorial_key": "4a6391d11d540a610ea5bdc97cb592c042f7a58b19a20108caee327bdbab4389"
+  },
+  "08dd1a70e7f33c8107132ffb6b213f303bd402b33c07e96430ff353bf1871424": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "AMD set to lease planned 5C data center in Pennsylvania",
+    "url": "https://www.datacenterdynamics.com/en/news/amd-set-to-lease-planned-5c-data-center-in-pennsylvania/",
+    "editorial_key": "79cb85cd2143524d44a9da780318f4f6f99607f81487b3342f1ad9d154a2c9dd"
+  },
+  "2fff0fab6feb819df23f9a85d248208bd45af782b56d9364eb0f8af78c3cbb2f": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "Egypt’s Forbes International Tower to house a data center",
+    "url": "https://www.datacenterdynamics.com/en/news/egypts-forbes-international-tower-to-house-a-data-center/",
+    "editorial_key": "0a4f228e1f3fcd29fc5750343452aae03ee9ba57ec1fa9d14354c3663c73c244"
+  },
+  "5d27fb28705f994f189ec578f4b2be35029ddb97d5a8d51621b5c51d380e8fa7": {
+    "seen_at": "2026-11-21T14:14:42.226436+00:00",
+    "title": "US Senate passes bill requiring data centers to pay more for grid infrastructure",
+    "url": "https://www.datacenterdynamics.com/en/news/us-senate-passes-bill-requiring-data-centers-to-pay-more-for-grid-infrastructure/",
+    "editorial_key": "4aca1a4aae3cb2a1d30831bbb38543a2a09d9b5591279c3879a86dd44a44d910"
   }
 }
