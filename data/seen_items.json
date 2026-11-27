@@ -1,244 +1,4 @@
 {
-  "2e6935594da6c5075a12dc7a972c29710759eed3e9f0233dc1c0d6a00a8b7727": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Investments in co-located solar-plus-storage reach $25 billion in H1, says BloombergNEF",
-    "url": "https://www.pv-magazine.com/2026/08/28/investments-in-co-located-solar-plus-storage-reach-25-billion-in-h1-says-bloombergnef/",
-    "editorial_key": "e8482c00c04b4eec1ea04d9ca88ae84eb97a4a620f680f43c1c73077c3e2e364"
-  },
-  "1f8a12840b32eed394a0305f4b6a655b25631c3f754b003ace2001c014c2a3f5": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "The Hydrogen Stream: Africa’s first PV-driven hydrogen hub powers up",
-    "url": "https://www.pv-magazine.com/2026/08/28/the-hydrogen-stream-africas-first-full-stack-pv-driven-hydrogen-hub-powers-up-in-namibia/",
-    "editorial_key": "1193f9b1a91397fe56192ed466ff235e8133b47ceba9572de9845e377625206a"
-  },
-  "724ed58351b150281907dd0b4937a2f5801cc45bd1504b095f0894c0ed5c38e6": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Wood Mackenzie raises Latin America storage forecast to 34 GW by 2035",
-    "url": "https://www.pv-magazine.com/2026/08/28/wood-mackenzie-raises-latin-america-storage-forecast-to-34-gw-by-2035/",
-    "editorial_key": "430d46609fe619ed1093037e73840a4e3aa9fc86741e21fe072946f8fb4240f9"
-  },
-  "f97d68242e7fc11204e45e8ac263201ca184fa49ec35508562bfba4a981607d2": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Canada’s solar sector sees growing momentum across differing provincial markets",
-    "url": "https://www.pv-magazine.com/2026/08/28/canadas-solar-sector-sees-growing-momentum-across-differing-provincial-markets/",
-    "editorial_key": "d6b07e3e9e884b352bbaae4066a121603f35fd5849e33b301ec04494acf6ed04"
-  },
-  "2b1c4bd047647c0e48187b47d817b7b36126939c5ab428a1a788c4b60bb291cd": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Europe’s solar resource surplus continues before late-August cloud shift",
-    "url": "https://www.pv-magazine.com/2026/08/28/europes-solar-resource-surplus-continues-before-late-august-cloud-shift/",
-    "editorial_key": "41bf23c565575da1e98f8118fb616d6cac3e7564113248a8e6527ed4fd63661f"
-  },
-  "6167f8e300950c44f87a42c334951c4ce2fb1adca5b3f1d203c3115aebbe1f94": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Chinese PV Industry Brief: Leading solar manufacturers report H1 losses",
-    "url": "https://www.pv-magazine.com/2026/08/28/chinese-pv-industry-brief-leading-pv-manufacturers-report-h1-losses/",
-    "editorial_key": "c41238c8ebe5a8d9c70d01d36a29f17099282668e2958bea5cd13a423407c894"
-  },
-  "fd1f2c38e2dbf3e926b9ad33a2abf08cdeb06bf6e1534b164014b3a0e63d2794": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Ontario municipality rejects Bedrock Energy’s Canada compressed air energy storage project rejected",
-    "url": "https://www.energy-storage.news/ontario-municipality-rejects-bedrock-energys-canada-compressed-air-energy-storage-project-rejected/",
-    "editorial_key": "24f143fbf85db14831ec3e97e958c221936dbaf0c508f403081144b5f2e2b16f"
-  },
-  "49620090a9c477e0feccd76d9f15209d0d386e468b9ac37b9f17d68ccc4fe822": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Mobile BESS provider Nomad begins life under new ownership with US DOE approval of Vermont pilot",
-    "url": "https://www.energy-storage.news/mobile-bess-provider-nomad-begins-life-under-new-ownership-with-us-doe-approval-of-vermont-pilot/",
-    "editorial_key": "3105b2fb0d713d6f9d5598832eaa7a4256cafeebb45e0216ffd9062097992517"
-  },
-  "d0a2598fecaf62dbb051a4171a2ce33bc0499eb7f727b2c23ca989a86d37ed2d": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "BESS Industry Buzz: hot takes, analysis and unofficial news from across the sector",
-    "url": "https://www.energy-storage.news/bess-industry-buzz-hot-takes-analysis-and-unofficial-news-from-across-the-sector/",
-    "editorial_key": "5e28b1cb3423778e5bf0cda6e5198a5b9bd6e230c072b52f659ed791375b4db1"
-  },
-  "0157841dfe086193c548e32ffe1b345ce9bbbfe8a0fb07205994910bfe8750c4": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Energy Storage Awards 2026: One week left to enter the industry-leading celebration of excellence",
-    "url": "https://www.energy-storage.news/energy-storage-awards-2026-one-week-left-to-enter-the-industry-leading-celebration-of-excellence/",
-    "editorial_key": "7ce550ec0158bfcf543567da11be1c9aed6bc14343f037e56a352f299b093f96"
-  },
-  "090edf54d895cbd3e2ac61e52bb50f2deba43596c9fd9bcb6c100c753c97d6c8": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Interim reports of CATL, EVE, REPT and other listed Chinese BESS players: Leaders see steady earnings growth, second‑tier returns to profitability",
-    "url": "https://www.energy-storage.news/interim-reports-of-catl-eve-rept-and-other-listed-chinese-bess-players-leaders-see-steady-earnings-growth-second-tier-returns-to-profitability/",
-    "editorial_key": "e22b76ae3a1717d9fb2cfb0313947f11738eaed4454841b7971d8ef007cd7c69"
-  },
-  "35b5c4a6f4d182afa3dbd8969b833cc606068c2ac54b978b0fd6fa794f5e6793": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Octopus Australia submits 4.8GWh Hanworth Battery Project for EPBC Act approval",
-    "url": "https://www.energy-storage.news/octopus-australia-submits-4-8gwh-hanworth-battery-project-for-epbc-act-approval/",
-    "editorial_key": "8e7e7cb56e87cfdb6f507e8281949c0a4ee5496020d7b0a0359b03c96c060db2"
-  },
-  "8a19568745502be69134d61872e3e18a2ce7f1aa62015f4347394cf4ab6f07c7": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "OptiGrid wins AMPYR Australia battery storage optimisation deal after digital twin benchmarking",
-    "url": "https://www.energy-storage.news/optigrid-wins-ampyr-australia-battery-storage-optimisation-deal-after-digital-twin-benchmarking/",
-    "editorial_key": "197dfdfbca70a2bd22b1a11f85955e01a5c4744cd289cb3f2d77d764f74833a4"
-  },
-  "9d33d9553bca57f51bf0b0c8b68c035afa22a75482d25a2f8a71bdcfb8b0f400": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Ausconnex starts construction on AU$65 million community battery programme in Australia",
-    "url": "https://www.energy-storage.news/ausconnex-starts-construction-on-au65-million-community-battery-programme-in-australia/",
-    "editorial_key": "0ee55281479a8f19d6cfcbcab0a3ebb14c2a4169c36c00168dc8029138d5396b"
-  },
-  "0f9867b67cfdd691a810974365abcc91888522a8a7cd55de767b27b7bc0bcaa0": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Netherlands to impose onshore distance standard",
-    "url": "https://www.renews.biz/onshore-wind/netherlands-to-impose-onshore-distance-standard/",
-    "editorial_key": "ef43c9c764b0ae2963c159e928088856169d5a1364ed27c74866715877d6499f"
-  },
-  "95b77300499d5dae3ffeb32da6b5560616f0860e922c0af826be1c72130255b8": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Unison wins 99.3 billion won Korea order",
-    "url": "https://www.renews.biz/offshore-wind/unison-wins-99-3-billion-won-korea-order/",
-    "editorial_key": "c0df1b9dd5842bb6ec0faa7797168ee818dc408cd8024f5f8712da01fd386336"
-  },
-  "47bfdaca82914830ae87fb203299224271e0fafbd61c8afbb4ede5109aa41299": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Onshore Wind 2026: Sector seeks policy certainty",
-    "url": "https://www.renews.biz/uncategorized/onshore-wind-2026-uk-seeks-clarity-on-delivery/",
-    "editorial_key": "9e151eaa71ff63f23bd664ed431b9c107039f9870e0c5d38dad9f29d9c1d5eb5"
-  },
-  "9bee4bd6af663fa88116ab8db9dec5cf999d00f2c95bed685b83a553695e5604": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Vestas ships 200th V236 nacelle",
-    "url": "https://www.renews.biz/offshore-wind/vestas-ships-200th-v236-nacelle/",
-    "editorial_key": "fb37b2a96c4460368cb6b9e0777d829729a71bdc9ccd0f2b2a49270e8cfac8d4"
-  },
-  "aa96c05a8823cef9b6cf7eff800fe51bf77d0f61230110a6d228e8ddd55008bd": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Low Carbon files to build 86MW Scots wind farm",
-    "url": "https://www.renews.biz/onshore-wind/low-carbon-submits-86mw-wind-application/",
-    "editorial_key": "ad1710b816c9563820987ad391b14a48b460472ad819ba489de7282fb838e16d"
-  },
-  "3768ef6d74b891f5abd36a8c1d87e3c9aaf6d62ff318cd5a6b6ecd67fbfb2b5b": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Amazon signs four Swedish wind PPAs",
-    "url": "https://www.renews.biz/onshore-wind/amazon-signs-four-swedish-wind-ppas/",
-    "editorial_key": "ce41ce9e6cbb520467f5a734ee2f66b986a3c63e26a72d16342f6347a2d522ea"
-  },
-  "b871f1b517ee35adb0d43f086cc69372ef583ef251820d986b2a271eb3f4a460": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Borkum 1 wind farm joins balancing market",
-    "url": "https://www.renews.biz/other-news/grid/borkum-1-wind-farm-joins-balancing-market/",
-    "editorial_key": "9f9a1e4dc95a3c8287a3b2acdce19f20b5db1ab10322091c94619a40bd2e7a5e"
-  },
-  "300d3bdb14fdd9cebcffeec1f0ea4a2c8ef2bdd7066a4234df8b86e2a43319df": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Encomara secures ABS nod for Squid",
-    "url": "https://www.renews.biz/offshore-wind/encomara-secures-abs-nod-for-squid-2/",
-    "editorial_key": "e36bb42e736c1963a69dfe295eab4c6e28ff42805fc214e59c66452daedc979e"
-  },
-  "af065d43ec3503e28fdeb34d1bb0b28c76c302a79bc92b83e0f4923e10da88d6": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Trump admin considers more semiconductor tariffs, could include data center servers",
-    "url": "https://www.datacenterdynamics.com/en/news/trump-admin-considers-more-semiconductor-tariffs-and-possibly-data-center-servers/",
-    "editorial_key": "b220379381b457cd3d7a6861f5f74069676b31f7fba4f9064cedce82d893950f"
-  },
-  "e874b6e4732d4f4dbdf68d2f6644cb2d1d0c03e70f0d71d7e19b2ce26bc60754": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "UK Green Party calls for nationwide data center moratorium",
-    "url": "https://www.datacenterdynamics.com/en/news/uk-green-party-calls-for-nationwide-data-center-moratorium/",
-    "editorial_key": "e1d39fce00fea74d8d06e1618a052482e1fc3e951787e0d185ed4ab8b8cb2616"
-  },
-  "9d073b5bb24a8e120b3bb53d4d8fe4f61310d7ae7e2dc73bc999bde8f40d3f0b": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "ESDS Software Solution targets Rs 720 Crore IPO, will use proceeds to expand data center footprint",
-    "url": "https://www.datacenterdynamics.com/en/news/esds-software-solution-targets-rs-720-crore-ipo-will-use-proceeds-to-expand-data-center-footprint/",
-    "editorial_key": "28742b9e9f783fbae595e2655d0889650b6b964536de23fc472ebf5717b43b2e"
-  },
-  "f6aaf748775e57d1135a40c98b52b9d0c3777877df33025b8995559ab6147271": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Impact of SLA exposure on data center financing and valuation",
-    "url": "https://www.datacenterdynamics.com/en/whitepapers/impact-of-sla-exposure-on-data-center-financing-and-valuation/",
-    "editorial_key": "f78d43ef85de6747afdadef939b512a94707add6ebeb8a3060ec64b801040d83"
-  },
-  "7a2e0eada3269ade49c6b245eaf3df4c67a1914315fb3a1e2f35253c0cfc5a96": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "X2M sets up dedicated data center subsidiary and signs a deal for data center project",
-    "url": "https://www.datacenterdynamics.com/en/news/x2m-sets-up-dedicated-data-center-subsidiary-and-signs-a-deal-for-data-center-project/",
-    "editorial_key": "2766361d28fd32f445dedaa745f86ce59dccb031b3af2a709f1b820c4bac39ce"
-  },
-  "e9da9684738fc9ce1d8c7feb93bb68ab3be50f4c2e27e788b3e61a260c0176b5": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "atNorth signs contract with YIT for additional data center building at campus in Finland",
-    "url": "https://www.datacenterdynamics.com/en/news/atnorth-signs-contract-with-yit-for-additional-data-center-building-at-campus-in-finland/",
-    "editorial_key": "e1be6743d75f23dd723bb580476daf5489df6bed2048bf0c87fa4fe51d2e42bf"
-  },
-  "361e5bf3ceb80f214aea0a857e102af1f87f5a7d20999ef0cd9d2bb82cb5c939": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "New Jersey governor signs law requiring data centers to report energy and water use",
-    "url": "https://www.datacenterdynamics.com/en/news/new-jersey-governor-signs-law-requiring-data-centers-to-report-energy-and-water-use/",
-    "editorial_key": "5d8ccb1f09810e4e1869b5699159abb4bc76705ec6eea4803e36ad7f8980ed4f"
-  },
-  "e9cba2146ba972f92640592fdb8cf88939554f76c3cbc1ded128b73a81a340c4": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Digital Realty breaks ground on fourth data center in Zurich, Switzerland",
-    "url": "https://www.datacenterdynamics.com/en/news/digital-realty-breaks-ground-on-fourth-data-center-in-zurich-switzerland/",
-    "editorial_key": "d5060a99af6e802ef9b9c1ec1afd066225ebcd41a3dfc7bffea945380d3f5fb2"
-  },
-  "8b5cc6f99c49943eb397500718ecd5e74c85b53a888693061783f345b7bf0d23": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Alibaba Cloud launches its first cloud region in Brazil",
-    "url": "https://www.datacenterdynamics.com/en/news/alibaba-brazil/",
-    "editorial_key": "6e4859acb9cdddfd8ffd81fe71b9fcc4ecfd07012c7e23de21efa04341cb98a5"
-  },
-  "70378cec8e240638ac29c4221137945105210f6d0c3602c2f1283a5d066dc360": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Warehouses De Pauw announces two data center projects in Ilfov County, Romania",
-    "url": "https://www.datacenterdynamics.com/en/news/warehouses-de-pauw-announces-two-data-center-projects-in-ilfov-county-romania/",
-    "editorial_key": "eb10391ff9b957273482f9242dff2da92012438ed79b7edcd8f5bfd40470a5a1"
-  },
-  "1a1b3c1723eb2dd9ed29cda98c5c4c9338f7307af0062e2d85c6cac97b01ffde": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "T1 Energy secures approval to convert solar manufacturing campus in Mo i Rana, Norway, into 50MW data center",
-    "url": "https://www.datacenterdynamics.com/en/news/t1-energy-secures-approval-to-convert-solar-manufacturing-campus-in-mo-i-rana-norway-into-50mw-data-center/",
-    "editorial_key": "49777ad42c89d2fd550390571916a529f4f91feb14c3f7be2c3e579a5cfab5f9"
-  },
-  "b519e5f707c4f3b4664bf3d3df8fa2a1c0f71208af7a40d29389cc2f0d5413c9": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "Pasqal partners with Eleven Ventures to expand its quantum computing services in Saudi Arabia",
-    "url": "https://www.datacenterdynamics.com/en/news/pasqal-partners-with-eleven-ventures-to-expand-its-quantum-computing-services-in-saudi-arabia/",
-    "editorial_key": "1163ec197905b5e9b8c7ca5ca282027f73f18a09c6bdc5b3fd99e0ac0b0337a1"
-  },
-  "7c5b44036559c1bf20bd01493daaf190946868dd8225f9d00cd0ca222d053bc7": {
-    "seen_at": "2026-08-28T18:13:40.231427+00:00",
-    "title": "GARBE.DC exploring data center development in Leopoldsdorf, Austria",
-    "url": "https://www.datacenterdynamics.com/en/news/ndc-garbe-proposes-data-center-development-in-leopoldsdorf-austria/",
-    "editorial_key": "8b1ed979e3d10c91ac58cb24d8851a3f98bfc359293f0775543586278e0e7ae4"
-  },
-  "5e596e620054bddc81271003f70c9067f5602b3eeef3cde7c7597ed05ec26a83": {
-    "seen_at": "2026-08-29T12:19:38.081457+00:00",
-    "title": "Chile’s hybrid heroics",
-    "url": "https://www.pv-magazine.com/2026/08/29/chiles-hybrid-heroics/",
-    "editorial_key": "e70ae0792e9b8e4081c6f391725ab1f6c84636231c5b25f11dffacc90802b8af"
-  },
-  "7d9d844cb6ca9288def1d0f236972edee61665923532b44b25352df70a530887": {
-    "seen_at": "2026-08-29T12:19:38.081457+00:00",
-    "title": "Desarrollan por primera vez un sistema que aprovecha el calor residual y la energía solar para una refrigeración sostenible",
-    "url": "https://elperiodicodelaenergia.com/desarrollan-por-primera-vez-un-sistema-que-aprovecha-el-calor-residual-y-la-energia-solar-para-una-refrigeracion-sostenible/",
-    "editorial_key": "7ee4b20ead58e25b3a132c5b159579a8f2ad653bb1049b6145d9445ccbd8a317"
-  },
-  "5d6d5446f63a3c81f0d705b0ba2deb96b0be773b58f36d014951b61acce91ca0": {
-    "seen_at": "2026-08-29T12:19:38.081457+00:00",
-    "title": "Mitsubishi Heavy Industries crea un sistema capaz de capturar 450.000 tonelas de CO2 al año",
-    "url": "https://elperiodicodelaenergia.com/mitsubishi-heavy-industries-crea-un-sistema-capaz-de-capturar-450-000-tonelas-de-co2-al-ano/",
-    "editorial_key": "d1bd94ceb041c08903a0e8c713b756e2f570b08bcf936265a2c7f69a1b757949"
-  },
-  "5e23d23ea4d124faf7f2e4067b13ad4b2e4c8329015ea85c8029343f88888dc4": {
-    "seen_at": "2026-08-29T12:19:38.081457+00:00",
-    "title": "Adiós al oro: una capa ultrafina de cromo abarata las células solares de perovskita",
-    "url": "https://elperiodicodelaenergia.com/adios-al-oro-una-capa-ultrafina-de-cromo-abarata-las-celulas-solares-de-perovskita/",
-    "editorial_key": "0f1b2b751f547696a4b6d39f548982543fec0a9807ae4acf85f36d3bd0ceb1ed"
-  },
-  "1d6ded6bc57d29fd5f19c4eacfed25209f67243328fddcaf3e4b73b57cf307cb": {
-    "seen_at": "2026-08-29T12:19:38.081457+00:00",
-    "title": "From pressure to proof: Leading through constraint in the data center era",
-    "url": "https://www.datacenterdynamics.com/en/opinions/from-pressure-to-proof-leading-through-constraint-in-the-data-center-era/",
-    "editorial_key": "b5f95888b9af88c8c3e04239e0f85b73163ebfdcb678da9d62e8666c93f4bb78"
-  },
   "286eb2e423c700a152918ed2caacf5f05acff51276c79d6da2d34c3cea44a4f3": {
     "seen_at": "2026-08-31T12:45:28.420783+00:00",
     "title": "Storing renewables with firebrick thermal batteries",
@@ -16876,5 +16636,275 @@
     "title": "El Consejo de Ministros aprueba la planificación de la red de transporte de energía eléctrica Horizonte 2030",
     "url": "https://www.miteco.gob.es/es/energia/novedades/novedad-00047.html",
     "editorial_key": "1235293237a6d88cb0be08e75810c37ff8e33ceb1d5e6abadbe43f4e98e1591c"
+  },
+  "ed6912422fbc427c525f2cfe74b188be840d955453dea6afa2ac865d1090fdca": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "The Hydrogen Stream: BP, Iberdrola start operations at Spain’s largest green hydrogen plant",
+    "url": "https://www.pv-magazine.com/2026/11/27/the-hydrogen-stream-bp-iberdrola-start-operations-at-spains-largest-green-hydrogen-plant/",
+    "editorial_key": "ecd9d5d4e568fad3cb55c238793632ca7b0f2bc71a363d330611d9ee9cb5e03c"
+  },
+  "91aa4354bab334b1692f2249d616744abc845e7b5c2c55e23670486c54e3ca50": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Japan’s 30th solar auction allocates 27.7 MW of PV capacity",
+    "url": "https://www.pv-magazine.com/2026/11/27/japans-30th-solar-auction-allocates-27-7-mw-of-pv-capacity/",
+    "editorial_key": "104eb8e740a8f4b467f0d199292a99a5a6c13bc19035720f16889cdd6ae0ceb3"
+  },
+  "ba48efb0130a90dd0093893cf2d15e2f1714d6e360678b81fb2500d0149a8ebc": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Greenhushing, PV prices, battery prices and the shifting bottleneck",
+    "url": "https://www.pv-magazine.com/2026/11/27/greenhushing-pv-prices-battery-prices-and-the-shifting-bottleneck/",
+    "editorial_key": "841303784f7726db51f7c8f17116b32012a3d43d48094be31675d3b172041a50"
+  },
+  "968014875397e7702610e1c96154e928b6a8a1ab670f061fa3b599ae07b30e3e": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Bangladesh makes solar equipment recycling mandatory",
+    "url": "https://www.pv-magazine.com/2026/11/27/bangladesh-makes-solar-equipment-recycling-mandatory/",
+    "editorial_key": "3d8167ba3b0e76339c7b520de0f8df7c9cb480b924e7df0d8866fbeaa9759c74"
+  },
+  "e363a3297476dce987e4e90d2fe63fea67f078bc384508a230d1f3647f41a262": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "EU restrictions on inverters could cut European solar deployment by up to 6%, says Wood Mackenzie",
+    "url": "https://www.pv-magazine.com/2026/11/27/eu-restrictions-on-inverters-could-cut-european-solar-deployment-by-up-to-6-says-wood-mackenzie/",
+    "editorial_key": "5e29885a7203ac0427f029bc735d0c3b3cb924d5a3a440d3f64b5b629d6c7603"
+  },
+  "3cd98164d3ddbbe52376d6ec36167a4546d8b36442e16df08be4fcfe85138655": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Japan battery financing adapts to inflation-linked capacity contracts",
+    "url": "https://www.pv-magazine.com/2026/11/27/japan-battery-financing-adapts-to-inflation-linked-capacity-contracts/",
+    "editorial_key": "efdb131d9a16b26f79e5146590406119c4ea616c92d6d70b31004cb875254070"
+  },
+  "5fcf07126c7f378fa23aa9e13c5368e538f823de401e8e8d6fcd3e6c4080f109": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Chinese PV Industry Brief: China hits 1.33 TW of cumulative solar capacity",
+    "url": "https://www.pv-magazine.com/2026/11/27/chinese-pv-industry-brief-china-hits-1-33-tw-of-cumulative-solar-capacity/",
+    "editorial_key": "c8a8ffb0736fd34993b06bbdc3174d16ea8f4babacebf23d1cd5e98112045ecf"
+  },
+  "08480a583745a060d193b8422f0facb2ac95c2e441be10c698ebe3e7afecee53": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "New record for UK rooftop solar, more growth predicted",
+    "url": "https://www.pv-magazine.com/2026/11/27/new-record-for-uk-rooftop-solar-more-growth-predicted/",
+    "editorial_key": "8999aed5b2727fde8b327185e6569f86dc51817b84f919ff67780c3d549245ec"
+  },
+  "fc2b20fd5c7d518a33630a6c4d52f94c9b2343cdc7dd9c7f0cb7913fddfae4af": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Strong El Niño coincides with uneven October solar resource across South America",
+    "url": "https://www.pv-magazine.com/2026/11/27/strong-el-nino-coincides-with-uneven-october-solar-resource-across-south-america/",
+    "editorial_key": "7d788009d64d44c0cc1c22b1bb88f824f671d64ae7a0d04cb36501b86bbb9e23"
+  },
+  "0449b514035c5c966041468f2a097410c1fbb227db4db1627a52111b56e8726a": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Continued operating losses for Narada Power as battery OEM falls to lowest Bankability rating",
+    "url": "https://www.energy-storage.news/continued-operating-losses-for-narada-power-as-battery-oem-falls-to-lowest-bankability-rating/",
+    "editorial_key": "9236f150ba923bc0a43086752b32e343e9d1a74c068f372aa59a22d9bc9f9b3f"
+  },
+  "2099be566820659e669b4c22796a5ebba05170b1420790b9c9a6559cd972a8ce": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "BESS Industry Buzz: Battery tests questioned, hugs at RE+, IPP exit crisis and Europe’s battery race loss",
+    "url": "https://www.energy-storage.news/bess-industry-buzz-battery-tests-questioned-hugs-at-re-ipp-exit-crisis-and-europes-battery-race-loss/",
+    "editorial_key": "5f06b07db974fa42196708e5c9759a2dda503b6b21dfd9428c56949e82eb7552"
+  },
+  "5365d652f8b2edf6fdbfb071097649952cf27e15958d2d4ef4b1ef5779e4b775": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "‘Among the most powerful’: Alpiq seeks approval for 1.2GWh BESS in Switzerland",
+    "url": "https://www.energy-storage.news/alpiq-1-2gwh-bess-switzerland-niedergosgen/",
+    "editorial_key": "f1d7e2997e74799091c85447ac8ee3fa844d57cc95657062ba66c84454fd8cfb"
+  },
+  "94a537c7acb5aa6b71df65db8e56e2ca0da379dfe4ce8594c8890a668c3e3a92": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "‘Solar and energy storage belong together’: Blue Elephant buys 160MWh Dutch BESS from TPSolar",
+    "url": "https://www.energy-storage.news/blue-elephant-160mwh-dutch-bess-tpsolar/",
+    "editorial_key": "906d048d53e8880c65db22e30961cddd04305c1a2a56cd0a06485ca18bac0ab1"
+  },
+  "a3946560250ee118e2892c5e2947e143cfdba1aa22ef2672e3c884ffdb5c4cd3": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "De la abundancia renovable a la rentabilidad empresarial",
+    "url": "https://elperiodicodelaenergia.com/de-la-abundancia-renovable-a-la-rentabilidad-empresarial/",
+    "editorial_key": "4471ddf005616f98a04d61125f221ca0cb972976780937053e5066603bda54f9"
+  },
+  "112dc4dbf131c1db3bdc51854730e6b2becf31ac448ba7dd78f9d8dadcbf893d": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Cuba inaugura un sistema de almacenamiento en baterías, el segundo en el país",
+    "url": "https://elperiodicodelaenergia.com/cuba-inaugura-un-sistema-de-almacenamiento-en-baterias-el-segundo-en-el-pais/",
+    "editorial_key": "8f84324ae87eded19b638eb6a78bcd3a9f89a274e37d6dee40cc7149fff4ece0"
+  },
+  "7fa3ae1f632f06b13571c748c996fa2f379fcbf3b64e30d1605689c5a7e567d9": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Las restricciones de la UE a los inversores podrían frenar un 5% las instalaciones de almacenamiento y solares en Europa Central y del Este hasta 2030",
+    "url": "https://elperiodicodelaenergia.com/las-restricciones-de-la-ue-a-los-inversores-podrian-frenar-un-5-las-instalaciones-de-almacenamiento-y-solares-en-europa-central-y-del-este-hasta-2030/",
+    "editorial_key": "1fb078462dfc93f183a878a48441762090b063c0eacae54de8f3d339230ea45b"
+  },
+  "232572efe4c1e4f1d95f53da9bcff4fd1db56d8185c6218be63e52bdc5f62853": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Financial close for 17MW Donegal wind farm",
+    "url": "https://www.renews.biz/onshore-wind/financial-close-for-17mw-donegal-wind-farm/",
+    "editorial_key": "d16b8a59c3103ddee0b9c49423bccbfcdc0f07c0cfa5fcf796508ea3b6166e1a"
+  },
+  "1983dced5ab703bc5d4677ca52b584dbfc0bd5d3285e6cb2953228a72a141d76": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "KK Group names boss of wind sector unit",
+    "url": "https://www.renews.biz/other-news/people/kk-group-names-boss-of-wind-sector-unit/",
+    "editorial_key": "5bb9e015d7810dc7d6373e70fe8622d87f51b84feedf0fbfe4428374f5ccc227"
+  },
+  "73b1aa41c0fe9d6433f022631fe6f2fb0ea32ff23789ca123a2c025502488bf8": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Aukera hits financial close on Scottish hybrid site",
+    "url": "https://www.renews.biz/solar/aukera-hits-financial-close-on-scottish-hybrid-site/",
+    "editorial_key": "9571719e4495f44a8dfcfb2e31a161ab35a5f9852eed86c32892b8512c73fd4f"
+  },
+  "ef83de2e2df9e4f4039d8b86ca6b39a5ad9f90f171a2d51fcb9b74c2d11695a3": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "WindEurope calls for phased CBAM extension",
+    "url": "https://www.renews.biz/other-news/windeurope-calls-for-phased-cbam-extension/",
+    "editorial_key": "a821b24d6fa1154de4b34d649c6212ababf84c8b9c290c36699138d06fa8ae85"
+  },
+  "e2fcfddac298ea9a62abb481b958526f4fd10ded74f196fe3c63d1c9d34bf8a4": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Ocean Winds completes Tréport turbine job",
+    "url": "https://www.renews.biz/offshore-wind/ocean-winds-completes-treport-turbine-job/",
+    "editorial_key": "9f45457702fa9033b6a69c5d2b63206f320ef06942ccd984767db64747be25a9"
+  },
+  "d225bcfec4e8d1a58b1ed6fb0f3f9eff94d225dbb38ead43b8d127fd8a5854c0": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "BAIT plans 100 cell towers to expand Altán's network in Mexico",
+    "url": "https://www.datacenterdynamics.com/en/news/bait-will-build-100-radio-bases-to-expand-the-altan-network/",
+    "editorial_key": "2cea9c7918b5182b8e9f04b0d54b5a9de6b10365cbd2ac3be3f835684855ec63"
+  },
+  "e3ee2c981a9b263867ae707c4596ef92089848a5fd16f5264c7f2b31c604f66d": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "The silicone advantage: why next-gen data centers need a breathable skin",
+    "url": "https://www.datacenterdynamics.com/en/opinions/the-silicone-advantage-why-next-gen-data-centers-need-a-breathable-skin/",
+    "editorial_key": "35cd0cf3417fd43f8a8ca45fed27716d4a03db1169118dae60654b372b0a81b6"
+  },
+  "1cd7647c17c0ed6c7c35cfe00879670ac45bc5e5c906f914a8fa87062a8152c9": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Hyperscale data center solutions for confident decommissioning",
+    "url": "https://www.datacenterdynamics.com/en/whitepapers/hyperscale-data-center-solutions-for-confident-decommissioning/",
+    "editorial_key": "47b7e7b45b623328ee6cdf19159cde3ef7226a75319e1a2a14f6d1c3282c6951"
+  },
+  "f6b0f650d7667cd31f948719a7bc3aaaa74dc473ae4808932ddbbed1b5ef8da8": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Nexus DC files to build two data center buildings at site in Hubbard, Texas",
+    "url": "https://www.datacenterdynamics.com/en/news/nexus-dc-files-to-build-two-data-center-buildings-at-site-in-hubbard-texas/",
+    "editorial_key": "6f5bad61746d70af1c0f6db3ec6c17e5d7719c1e6b6b186ae51d428aa1faaa96"
+  },
+  "153f4ef8421433eec813c1f16c88d6299efdafc0e9e3d7c0ab78f14a6393c707": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "SpaceX installs $250m worth of Tesla Megapack batteries at Starbase data center site in Texas - report",
+    "url": "https://www.datacenterdynamics.com/en/news/spacex-installs-250m-worth-of-tesla-megapack-batteries-at-starbase-data-center-site-in-texas-report/",
+    "editorial_key": "ea058cba24c8e01deb222d3ed5cfc7acb4aa8a9d4b33a1ed2acac6509fab20a5"
+  },
+  "c56d9c4e84613b346629d653983f83bc85b694affcbea91a64c732665b763e8c": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Vodafone to triple Safaricom’s data center footprint to 35MW",
+    "url": "https://www.datacenterdynamics.com/en/news/vodafone-to-triple-safaricoms-data-center-footprint-to-35mw/",
+    "editorial_key": "ca4b091d678272701ef9a7b490234968e967bf083656728303252f34d7c79fde"
+  },
+  "73e159a08bb272caacdd7147988a6ecb781f23e0cf0705c6416fdf9d947dc157": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Galaxy Digital files for next phase of development at Helios data center campus in Texas",
+    "url": "https://www.datacenterdynamics.com/en/news/galaxy-digital-files-for-next-phase-of-development-at-helios-data-center-campus-in-texas/",
+    "editorial_key": "160049f502f0d99ae4e44080430c59577a2c60995b8cac5d39842417c2c9f401"
+  },
+  "d60c7be72a78a26a9af951657bc16ee901719085af27adf3f053a43b38741747": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "FCC approves SpaceX application to deploy one million satellites for data centers in space",
+    "url": "https://www.datacenterdynamics.com/en/news/fcc-approves-spacex-application-to-deploy-one-million-satellites-for-data-centers-in-space/",
+    "editorial_key": "36f8f42a75e389c652303e97b24462ab64dee5d7c4394667153f704787111672"
+  },
+  "15ee51b1d01745484647092d8f680748e695a2d80181c8940424cf2103e23334": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "UAE's BitHash targets AI data centers, eyes 250MW project in Oman",
+    "url": "https://www.datacenterdynamics.com/en/news/uaes-bithash-targets-ai-data-centers-eyes-250mw-project-in-oman/",
+    "editorial_key": "d08fcb3bef3fce1310a138adac9bdcb2fe2a269cbbb15d24b7ca129ab1084a7f"
+  },
+  "193c91118095fbf843f1b6334e06af98b9649cd9ee2d45e1834cd26b2f2e5b3f": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Helios Solar and Galaxy Venus Data Center sign MoU to explore solar supply for data center in Perak, Malaysia",
+    "url": "https://www.datacenterdynamics.com/en/news/helios-solar-and-galaxy-venus-data-center-sign-mou-to-explore-solar-supply-for-data-center-in-perak-malaysia/",
+    "editorial_key": "eeb2294cb218658e282b63298366ede3048fadd170b42658c56b4b1455389d48"
+  },
+  "a16d190a69db21d3e808524eb77f7bf09c01c1a2d898b2c258cdeb96c9c5366c": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Japan's Jera in talks with US hyperscalers to colocate data centers at thermal power plants in Japan",
+    "url": "https://www.datacenterdynamics.com/en/news/japans-jera-in-talks-with-us-hyperscalers-to-colocate-data-centers-at-thermal-power-plants-in-japan/",
+    "editorial_key": "aae29836cb81c2b8c6eb132d78fbc0f6f4f1da9ee2f2084f25fa5ef57e3f838e"
+  },
+  "8eaf5035e62b9cb53f6a487f0424bdf45ad65a8dc4c8bd1f3134c844cb82ba66": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Kuwait wealth fund-backed investment firm purchases GIC’s majority stake in xScale",
+    "url": "https://www.datacenterdynamics.com/en/news/kuwait-wealth-fund-backed-investment-firm-purchases-gics-majority-stake-in-xscale/",
+    "editorial_key": "8ac6e7e8606158775243a0081d9c05e2325259304c90b549b2f358134255d582"
+  },
+  "ab755f3d418e9241460a89f07096aaa1c6b3146e7f0ec9899c3aba850252ee4b": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Construction paused at Google data center in Farciennes, Belgium",
+    "url": "https://www.datacenterdynamics.com/en/news/construction-paused-at-google-data-center-in-farciennes-belgium/",
+    "editorial_key": "7616db8673279649c1cd6424a8a4646b416f85419a6115e3744f37e801567852"
+  },
+  "ce8bf1b004cb04c70b9041e7630b7ff1bcb38c2271dd039ce66d7ed33723c18f": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Preferred bidder selected for second phase of Lisboa – Porto high speed line",
+    "url": "https://www.railwaygazette.com/portugal/2026/11/27/preferred-bidder-selected-for-second-phase-of-lisboa-porto-high-speed-line/",
+    "editorial_key": "cae5045892569c851decebab9a4cc19f78281c4525118e4754fda28a00514d5f"
+  },
+  "fced8d20295b8c62606832e673357ac609a7f48159843ffde49dcada05016cbc": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "The mole beneath the beach: Euskotren’s cross-city tunnel opens in San Sebastián",
+    "url": "https://www.railwaygazette.com/spain/2026/11/27/the-mole-beneath-the-beach-euskotrens-cross-city-tunnel-opens-in-san-sebastian/",
+    "editorial_key": "90a6b1b76669369ae4937a500f218e77f873738d93bfbc3b1ba802024125cbc2"
+  },
+  "05921090e7827b2fc08e6db875a8482b41df3e38a43548b251966cbfc310c036": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Deutsche Bahn wins partial victory in appeal over ticket sales practices",
+    "url": "https://www.railwaygazette.com/germany/2026/11/27/deutsche-bahn-wins-partial-victory-in-appeal-over-over-ticket-sales-practices/",
+    "editorial_key": "9c729a4c11016cfec9a4891d0c6d5dbb80942c90f621e7ba44f23b2f46bc8cb3"
+  },
+  "5311639367d171863c999318a18a8fd4bb7b549de0b1280efc23fa18313431c7": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Westbahn seeks entry into Austrian regional passenger market",
+    "url": "https://www.railwaygazette.com/passenger/2026/11/27/westbahn-seeks-entry-into-austrian-regional-passenger-market/",
+    "editorial_key": "a5499aec603ee8a4add4d84f9d01c7a672c3971eee4a33552b9edff0600aec88"
+  },
+  "e32bf71c4e6b43cb3529f8944547d85d7c5117cfb4b916f7d576e88c015f904b": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Railway supply industry news round-up",
+    "url": "https://www.railwaygazette.com/business/2026/11/27/railway-supply-industry-news-round-up-34/",
+    "editorial_key": "f55e8ed766be932a29b37d98c0e804c7eee143b201d9557b68bcb716b62504ba"
+  },
+  "8984f8c4c691bd4158a8098aad2e1daed7756a924ab067cf31e28d6e7686735f": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "Deutsche Bahn agrees to sell FlixTrain tickets through its digital platforms",
+    "url": "https://www.railwaygazette.com/germany/2026/11/26/deutsche-bahn-agrees-to-sell-flixtrain-tickets-through-its-digital-platforms/",
+    "editorial_key": "187e034196e6bc23534d7ab0e257bb91ad0ef189ed301a8b5e9e835e6e8598c1"
+  },
+  "a109fe941364e1fb9a3dbdc542828fa8deea50cc31b04e15d300a71a4c3e46fa": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "NS launches second-hand train sales portal as EU closes competition inquiry",
+    "url": "https://www.railwaygazette.com/netherlands/2026/11/25/ns-launches-second-hand-train-sales-portal-as-eu-closes-competition-inquiry/",
+    "editorial_key": "7df74d1d28919d526dacb7630a5f1528df2648e014cdfe54d4678a2326229d38"
+  },
+  "939eac2f8b3ec015aa6f21d6dfb4bd6be048e413d0d1f0a69854e4332796b2f0": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "El IDAE impulsa un nuevo programa de ayudas para mejorar la eficiencia energética de viviendas de hogares vulnerables",
+    "url": "https://www.idae.es/noticias/el-idae-impulsa-un-nuevo-programa-de-ayudas-para-mejorar-la-eficiencia-energetica-de",
+    "editorial_key": "ea179bcd672db7d34b0974d6b27b3f1b7a01cbb29f78a0249887f26ce3d987ef"
+  },
+  "cfd95db28a12db358d92745bb448519c6be8ab56d539dddcc713544a959094e3": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "El MITECO abre a audiencia pública un nuevo programa para la promoción de las comunidades energéticas dotado con 10 millones",
+    "url": "https://www.idae.es/noticias/el-miteco-abre-audiencia-publica-un-nuevo-programa-para-la-promocion-de-las-comunidades",
+    "editorial_key": "499be896cb4ae2d279cee06ca42b2a3f20de1b212f9fbf3d58ebcc70e9b103c5"
+  },
+  "7d5709ee709564730f0ec2de6215e1e3f0b3cf2d391103cea10de8f3b3f8229d": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "El IDAE ultima una línea de ayudas a proyectos singulares de eficiencia energética impulsados por municipios",
+    "url": "https://www.idae.es/noticias/el-idae-ultima-una-linea-de-ayudas-proyectos-singulares-de-eficiencia-energetica",
+    "editorial_key": "ce20058490f2e402dc0e641312cfd5a8099b1aa6671245473620525ad723220f"
+  },
+  "f2d35d98d5aa2d4ee7709f1353994fcfbcb2ed3024d0eb892bd4078490d740bd": {
+    "seen_at": "2026-11-27T16:11:06.067897+00:00",
+    "title": "El IDAE asigna casi 150 millones en ayudas a la movilidad eléctrica a través del programa MOVES Red de Recarga",
+    "url": "https://www.idae.es/noticias/el-idae-asigna-casi-150-millones-en-ayudas-la-movilidad-electrica-traves-del-programa",
+    "editorial_key": "fd8167479ea311f6f58c6288863b2526b7f61ad42d366468831e5dab15226f17"
   }
 }
